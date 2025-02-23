@@ -1,0 +1,405 @@
+2025-01-24 17:53:20,432 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2025-01-24 17:53:20,483 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'submit']
+2025-01-24 17:53:20,493 DEBUG    root            Running [gcloud.builds.submit] with arguments: [--async: "True", --config: "src/lyra/cloudbuild.yaml", --gcs-source-staging-dir: "gs://dde-prj-orbit-d001_cloudbuild/lyra", --impersonate-service-account: "cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com", --project: "dde-prj-orbit-d001", --region: "europe-west2", --service-account: "projects/dde-prj-orbit-d001/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com", SOURCE: "."]
+2025-01-24 17:53:20,498 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com].
+2025-01-24 17:53:20,504 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-01-24 17:53:20,509 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-01-24 17:53:20,604 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-01-24 17:53:20,623 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken
+2025-01-24 17:53:20,624 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-01-24 17:53:20,750 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken HTTP/1.1" 200 None
+2025-01-24 17:53:20,753 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com].
+2025-01-24 17:53:20,755 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-01-24 17:53:20,756 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-01-24 17:53:20,884 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-01-24 17:53:20,889 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken
+2025-01-24 17:53:20,891 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-01-24 17:53:21,004 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken HTTP/1.1" 200 None
+2025-01-24 17:53:21,034 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-01-24 17:53:23,213 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/dde-prj-orbit-d001_cloudbuild?alt=json HTTP/1.1" 200 1182
+2025-01-24 17:53:23,223 INFO     root            Using default gcloudignore file:
+--------------------------------------------------
+# This file specifies files that are *not* uploaded to Google Cloud
+# using gcloud. It follows the same syntax as .gitignore, with the addition of
+# "#!include" directives (which insert the entries of the given .gitignore-style
+# file at that point).
+#
+# For more information, run:
+#   $ gcloud topic gcloudignore
+#
+.gcloudignore
+# If you would like to upload your .git directory, .gitignore file or files
+# from your .gitignore file, remove the corresponding line
+# below:
+.git
+.gitignore
+#!include:.gitignore
+
+--------------------------------------------------
+2025-01-24 17:53:23,249 DEBUG    root            Skipping file [.gitignore]
+2025-01-24 17:53:23,251 DEBUG    root            Skipping file [.git]
+2025-01-24 17:53:23,277 DEBUG    root            Skipping file [infra/live/dev/terraform-setup/.terraform.lock.hcl]
+2025-01-24 17:53:23,279 DEBUG    root            Skipping file [infra/live/dev/terraform-setup/.terragrunt-cache]
+2025-01-24 17:53:23,281 DEBUG    root            Skipping file [infra/live/dev/cicd/.terraform.lock.hcl]
+2025-01-24 17:53:23,283 DEBUG    root            Skipping file [infra/live/dev/cicd/.terragrunt-cache]
+2025-01-24 17:53:23,285 DEBUG    root            Skipping file [infra/live/dev/artifactory/.terraform.lock.hcl]
+2025-01-24 17:53:23,286 DEBUG    root            Skipping file [infra/live/dev/artifactory/.terragrunt-cache]
+2025-01-24 17:53:23,422 INFO     ___FILE_ONLY___ Creating temporary archive of 200 file(s) totalling 21.0 MiB before compression.
+
+2025-01-24 17:53:23,425 DEBUG    root            Added dir [infra]
+2025-01-24 17:53:23,425 DEBUG    root            Added dir [sqls]
+2025-01-24 17:53:23,425 DEBUG    root            Added dir [tests]
+2025-01-24 17:53:23,425 DEBUG    root            Added dir [.vscode]
+2025-01-24 17:53:23,425 DEBUG    root            Added dir [notebooks]
+2025-01-24 17:53:23,425 DEBUG    root            Added dir [src]
+2025-01-24 17:53:23,425 DEBUG    root            Added dir [infra/live]
+2025-01-24 17:53:23,425 DEBUG    root            Added dir [infra/modules]
+2025-01-24 17:53:23,426 DEBUG    root            Added dir [infra/live/dev]
+2025-01-24 17:53:23,426 DEBUG    root            Added dir [infra/live/dev/terraform-setup]
+2025-01-24 17:53:23,426 DEBUG    root            Added dir [infra/live/dev/cicd]
+2025-01-24 17:53:23,426 DEBUG    root            Added dir [infra/live/dev/artifactory]
+2025-01-24 17:53:23,426 DEBUG    root            Added dir [infra/modules/terraform-setup]
+2025-01-24 17:53:23,426 DEBUG    root            Added dir [infra/modules/cicd]
+2025-01-24 17:53:23,426 DEBUG    root            Added dir [infra/modules/artifactory]
+2025-01-24 17:53:23,426 DEBUG    root            Added dir [src/copilot]
+2025-01-24 17:53:23,426 DEBUG    root            Added dir [src/lyra_v0]
+2025-01-24 17:53:23,427 DEBUG    root            Added dir [src/common]
+2025-01-24 17:53:23,427 DEBUG    root            Added dir [src/lyra]
+2025-01-24 17:53:23,427 DEBUG    root            Added dir [src/copilot/scripts]
+2025-01-24 17:53:23,427 DEBUG    root            Added dir [src/lyra_v0/.streamlit]
+2025-01-24 17:53:23,427 DEBUG    root            Added dir [src/lyra_v0/tests]
+2025-01-24 17:53:23,427 DEBUG    root            Added dir [src/lyra_v0/.vscode]
+2025-01-24 17:53:23,427 DEBUG    root            Added dir [src/common/utils]
+2025-01-24 17:53:23,427 DEBUG    root            Added dir [src/lyra/frontend]
+2025-01-24 17:53:23,428 DEBUG    root            Added dir [src/lyra/backend]
+2025-01-24 17:53:23,428 DEBUG    root            Added dir [src/lyra/ollama]
+2025-01-24 17:53:23,428 DEBUG    root            Added dir [src/lyra/frontend/public]
+2025-01-24 17:53:23,428 DEBUG    root            Added dir [src/lyra/frontend/src]
+2025-01-24 17:53:23,428 DEBUG    root            Added dir [src/lyra/frontend/src/types]
+2025-01-24 17:53:23,428 DEBUG    root            Added dir [src/lyra/frontend/src/utils]
+2025-01-24 17:53:23,428 DEBUG    root            Added dir [src/lyra/frontend/src/styles]
+2025-01-24 17:53:23,429 DEBUG    root            Added dir [src/lyra/frontend/src/components]
+2025-01-24 17:53:23,429 DEBUG    root            Added dir [src/lyra/frontend/src/pages]
+2025-01-24 17:53:23,429 DEBUG    root            Added dir [src/lyra/backend/dags]
+2025-01-24 17:53:23,429 DEBUG    root            Added dir [src/lyra/backend/tests]
+2025-01-24 17:53:23,429 DEBUG    root            Added dir [src/lyra/backend/utils]
+2025-01-24 17:53:23,429 DEBUG    root            Added dir [src/lyra/backend/api]
+2025-01-24 17:53:23,429 DEBUG    root            Added dir [src/lyra/backend/notebooks]
+2025-01-24 17:53:23,429 DEBUG    root            Added dir [src/lyra/backend/services]
+2025-01-24 17:53:23,429 DEBUG    root            Added dir [src/lyra/backend/notebooks/evaluations]
+2025-01-24 17:53:23,430 DEBUG    root            Added dir [src/lyra/backend/notebooks/report_outputs]
+2025-01-24 17:53:23,430 DEBUG    root            Added dir [src/lyra/backend/notebooks/scripts]
+2025-01-24 17:53:23,430 DEBUG    root            Added dir [src/lyra/backend/services/topic_modeling]
+2025-01-24 17:53:23,430 DEBUG    root            Added dir [src/lyra/backend/services/translation]
+2025-01-24 17:53:23,430 DEBUG    root            Added dir [src/lyra/backend/services/summarization]
+2025-01-24 17:53:23,430 DEBUG    root            Added dir [src/lyra/backend/services/sentiment_analysis]
+2025-01-24 17:53:23,430 DEBUG    root            Added dir [src/lyra/backend/services/topic_modeling/prompts]
+2025-01-24 17:53:23,430 DEBUG    root            Added dir [src/lyra/backend/services/sentiment_analysis/prompts]
+2025-01-24 17:53:23,431 DEBUG    root            Added [pyproject.toml]
+2025-01-24 17:53:23,432 DEBUG    root            Added [build_ci.sh]
+2025-01-24 17:53:23,433 DEBUG    root            Added [README.md]
+2025-01-24 17:53:23,447 DEBUG    root            Added [poetry.lock]
+2025-01-24 17:53:23,448 DEBUG    root            Added [ini_3.code-workspace]
+2025-01-24 17:53:23,449 DEBUG    root            Added [infra/terragrunt.hcl]
+2025-01-24 17:53:23,449 DEBUG    root            Added [infra/README.md]
+2025-01-24 17:53:23,450 DEBUG    root            Added [infra/live/dev/backend.hcl]
+2025-01-24 17:53:23,450 DEBUG    root            Added [infra/live/dev/environment.hcl]
+2025-01-24 17:53:23,451 DEBUG    root            Added [infra/live/dev/terraform-setup/terragrunt.hcl]
+2025-01-24 17:53:23,451 DEBUG    root            Added [infra/live/dev/cicd/terragrunt.hcl]
+2025-01-24 17:53:23,452 DEBUG    root            Added [infra/live/dev/artifactory/terragrunt.hcl]
+2025-01-24 17:53:23,452 DEBUG    root            Added [infra/modules/terraform-setup/outputs.tf]
+2025-01-24 17:53:23,453 DEBUG    root            Added [infra/modules/terraform-setup/main.tf]
+2025-01-24 17:53:23,453 DEBUG    root            Added [infra/modules/terraform-setup/variables.tf]
+2025-01-24 17:53:23,454 DEBUG    root            Added [infra/modules/cicd/data.tf]
+2025-01-24 17:53:23,455 DEBUG    root            Added [infra/modules/cicd/main.tf]
+2025-01-24 17:53:23,455 DEBUG    root            Added [infra/modules/cicd/variables.tf]
+2025-01-24 17:53:23,456 DEBUG    root            Added [infra/modules/artifactory/main.tf]
+2025-01-24 17:53:23,456 DEBUG    root            Added [infra/modules/artifactory/variables.tf]
+2025-01-24 17:53:23,457 DEBUG    root            Added [sqls/user_app_interactions_queries.sql]
+2025-01-24 17:53:23,457 DEBUG    root            Added [sqls/create_app_interactions.sql]
+2025-01-24 17:53:23,458 DEBUG    root            Added [sqls/create_stage_1_v0.sql]
+2025-01-24 17:53:23,459 DEBUG    root            Added [sqls/create_stage_1_v1.sql]
+2025-01-24 17:53:23,460 DEBUG    root            Added [sqls/pcausal_model_data.sql]
+2025-01-24 17:53:23,460 DEBUG    root            Added [sqls/fc_faults__returns.sql]
+2025-01-24 17:53:23,461 DEBUG    root            Added [sqls/create_interface_jobs_quality_data.sql]
+2025-01-24 17:53:23,461 DEBUG    root            Added [sqls/quality__returns_dataset_detail.sql]
+2025-01-24 17:53:23,462 DEBUG    root            Added [sqls/bdp_app_interactions.sql]
+2025-01-24 17:53:23,462 DEBUG    root            Added [sqls/create_web_interactions.sql]
+2025-01-24 17:53:23,463 DEBUG    root            Added [sqls/sales_transactions.sql]
+2025-01-24 17:53:23,463 DEBUG    root            Added [tests/test_data_prep.py]
+2025-01-24 17:53:23,464 DEBUG    root            Added [tests/__init__.py]
+2025-01-24 17:53:23,466 DEBUG    root            Added [.vscode/settings.json]
+2025-01-24 17:53:23,503 DEBUG    root            Added [notebooks/ORB-202 retailer_registrations_and_returns.ipynb]
+2025-01-24 17:53:23,530 DEBUG    root            Added [notebooks/ec_returns_analysis_v1.ipynb]
+2025-01-24 17:53:23,533 DEBUG    root            Added [notebooks/survey_comments_analysis.ipynb]
+2025-01-24 17:53:23,556 DEBUG    root            Added [notebooks/returns_exploration_jun11.ipynb]
+2025-01-24 17:53:23,596 DEBUG    root            Added [notebooks/ORB-151 and 163: ec_returns_analysis_v1__001_data_reqs.ipynb]
+2025-01-24 17:53:23,776 DEBUG    root            Added [notebooks/interface_jobs_exploration.ipynb]
+2025-01-24 17:53:23,779 DEBUG    root            Added [notebooks/lg_test.ipynb]
+2025-01-24 17:53:23,782 DEBUG    root            Added [notebooks/return_reasons.ipynb]
+2025-01-24 17:53:23,791 DEBUG    root            Added [notebooks/pcausal_model_scratchpad.ipynb]
+2025-01-24 17:53:23,808 DEBUG    root            Added [notebooks/robot_returns_analysis_v0.ipynb]
+2025-01-24 17:53:23,822 DEBUG    root            Added [notebooks/nps_survey_delivery_issues_analysis.ipynb]
+2025-01-24 17:53:23,822 DEBUG    root            Added [notebooks/starter.py]
+2025-01-24 17:53:23,823 DEBUG    root            Added [src/__init__.py]
+2025-01-24 17:53:23,824 DEBUG    root            Added [src/syn_data_generator_v1.py]
+2025-01-24 17:53:23,824 DEBUG    root            Added [src/copilot/Dockerfile]
+2025-01-24 17:53:23,825 DEBUG    root            Added [src/copilot/pyproject.toml]
+2025-01-24 17:53:23,826 DEBUG    root            Added [src/copilot/__init__.py]
+2025-01-24 17:53:23,826 DEBUG    root            Added [src/copilot/README.md]
+2025-01-24 17:53:23,827 DEBUG    root            Added [src/copilot/Dockerfile.dev]
+2025-01-24 17:53:23,829 DEBUG    root            Added [src/copilot/research_agent.py]
+2025-01-24 17:53:23,830 DEBUG    root            Added [src/copilot/app.py]
+2025-01-24 17:53:23,840 DEBUG    root            Added [src/copilot/poetry.lock]
+2025-01-24 17:53:23,842 DEBUG    root            Added [src/copilot/image.png]
+2025-01-24 17:53:23,843 DEBUG    root            Added [src/copilot/scripts/generate_fake_sales_data.py]
+2025-01-24 17:53:23,844 DEBUG    root            Added [src/copilot/scripts/generate_fake_returns_data.py]
+2025-01-24 17:53:23,844 DEBUG    root            Added [src/lyra_v0/services_app.py]
+2025-01-24 17:53:23,845 DEBUG    root            Added [src/lyra_v0/Dockerfile]
+2025-01-24 17:53:23,845 DEBUG    root            Added [src/lyra_v0/generate_synthetic_data.py]
+2025-01-24 17:53:23,846 DEBUG    root            Added [src/lyra_v0/pyproject.toml]
+2025-01-24 17:53:23,847 DEBUG    root            Added [src/lyra_v0/llm_text_utils.py]
+2025-01-24 17:53:23,847 DEBUG    root            Added [src/lyra_v0/llm_openai.py]
+2025-01-24 17:53:23,848 DEBUG    root            Added [src/lyra_v0/__init__.py]
+2025-01-24 17:53:23,848 DEBUG    root            Added [src/lyra_v0/README.md]
+2025-01-24 17:53:23,848 DEBUG    root            Added [src/lyra_v0/.dockerignore]
+2025-01-24 17:53:23,849 DEBUG    root            Added [src/lyra_v0/app.py]
+2025-01-24 17:53:23,850 DEBUG    root            Added [src/lyra_v0/insights_app.py]
+2025-01-24 17:53:23,851 DEBUG    root            Added [src/lyra_v0/lyra_service.py]
+2025-01-24 17:53:23,861 DEBUG    root            Added [src/lyra_v0/poetry.lock]
+2025-01-24 17:53:23,862 DEBUG    root            Added [src/lyra_v0/test_gemini_access.py]
+2025-01-24 17:53:23,862 DEBUG    root            Added [src/lyra_v0/.streamlit/config.toml]
+2025-01-24 17:53:23,863 DEBUG    root            Added [src/lyra_v0/tests/test_lyra_service.py]
+2025-01-24 17:53:23,863 DEBUG    root            Added [src/lyra_v0/tests/test_llm_text_utils.py]
+2025-01-24 17:53:23,865 DEBUG    root            Added [src/lyra_v0/.vscode/settings.json]
+2025-01-24 17:53:23,865 DEBUG    root            Added [src/common/__init__.py]
+2025-01-24 17:53:23,866 DEBUG    root            Added [src/common/utils/feature_impact.py]
+2025-01-24 17:53:23,866 DEBUG    root            Added [src/common/utils/__init__.py]
+2025-01-24 17:53:23,867 DEBUG    root            Added [src/common/utils/logger.py]
+2025-01-24 17:53:23,867 DEBUG    root            Added [src/common/utils/data_prep.py]
+2025-01-24 17:53:23,868 DEBUG    root            Added [src/common/utils/regression_impact.py]
+2025-01-24 17:53:23,868 DEBUG    root            Added [src/lyra/cloudbuild.yaml]
+2025-01-24 17:53:23,868 DEBUG    root            Added [src/lyra/Dockerfile.backend]
+2025-01-24 17:53:23,869 DEBUG    root            Added [src/lyra/README.md]
+2025-01-24 17:53:23,869 DEBUG    root            Added [src/lyra/.dockerignore]
+2025-01-24 17:53:23,870 DEBUG    root            Added [src/lyra/docker-compose.yml]
+2025-01-24 17:53:23,870 DEBUG    root            Added [src/lyra/Dockerfile.frontend]
+2025-01-24 17:53:23,871 DEBUG    root            Added [src/lyra/Dockerfile.ollama]
+2025-01-24 17:53:23,871 DEBUG    root            Added [src/lyra/frontend/.env.local.example]
+2025-01-24 17:53:23,872 DEBUG    root            Added [src/lyra/frontend/tailwind.config.js]
+2025-01-24 17:53:23,872 DEBUG    root            Added [src/lyra/frontend/next.config.js]
+2025-01-24 17:53:23,880 DEBUG    root            Added [src/lyra/frontend/package-lock.json]
+2025-01-24 17:53:23,881 DEBUG    root            Added [src/lyra/frontend/package.json]
+2025-01-24 17:53:23,881 DEBUG    root            Added [src/lyra/frontend/tsconfig.json]
+2025-01-24 17:53:23,882 DEBUG    root            Added [src/lyra/frontend/postcss.config.js]
+2025-01-24 17:53:23,882 DEBUG    root            Added [src/lyra/frontend/public/sample_summary_result.json]
+2025-01-24 17:53:23,892 DEBUG    root            Added [src/lyra/frontend/public/lyra_requirements.png]
+2025-01-24 17:53:23,906 DEBUG    root            Added [src/lyra/frontend/public/lyra_volume_estimates_sources.png]
+2025-01-24 17:53:23,916 DEBUG    root            Added [src/lyra/frontend/public/lyra_stage_2_3.png]
+2025-01-24 17:53:23,917 DEBUG    root            Added [src/lyra/frontend/public/lyra-constellation.png]
+2025-01-24 17:53:23,917 DEBUG    root            Added [src/lyra/frontend/public/dyson-logo.png]
+2025-01-24 17:53:23,929 DEBUG    root            Added [src/lyra/frontend/public/lyra_stage_1.png]
+2025-01-24 17:53:23,930 DEBUG    root            Added [src/lyra/frontend/src/types/global.d.ts]
+2025-01-24 17:53:23,930 DEBUG    root            Added [src/lyra/frontend/src/utils/api.ts]
+2025-01-24 17:53:23,931 DEBUG    root            Added [src/lyra/frontend/src/styles/DataFlowVisualization.module.css]
+2025-01-24 17:53:23,931 DEBUG    root            Added [src/lyra/frontend/src/styles/globals.css]
+2025-01-24 17:53:23,932 DEBUG    root            Added [src/lyra/frontend/src/components/SubmitButton.tsx]
+2025-01-24 17:53:23,932 DEBUG    root            Added [src/lyra/frontend/src/components/Tabs.tsx]
+2025-01-24 17:53:23,933 DEBUG    root            Added [src/lyra/frontend/src/components/SummaryComponent.tsx]
+2025-01-24 17:53:23,933 DEBUG    root            Added [src/lyra/frontend/src/components/TextInput.tsx]
+2025-01-24 17:53:23,934 DEBUG    root            Added [src/lyra/frontend/src/components/CostCalculator.tsx]
+2025-01-24 17:53:23,934 DEBUG    root            Added [src/lyra/frontend/src/components/VerbatimReasons.tsx]
+2025-01-24 17:53:23,936 DEBUG    root            Added [src/lyra/frontend/src/components/ImportantReasons.tsx]
+2025-01-24 17:53:23,936 DEBUG    root            Added [src/lyra/frontend/src/components/LyraDataFlowVisualization.tsx]
+2025-01-24 17:53:23,937 DEBUG    root            Added [src/lyra/frontend/src/components/ResultDisplay.tsx]
+2025-01-24 17:53:23,938 DEBUG    root            Added [src/lyra/frontend/src/components/SankeyChart.tsx]
+2025-01-24 17:53:23,939 DEBUG    root            Added [src/lyra/frontend/src/components/ModelSelector.tsx]
+2025-01-24 17:53:23,939 DEBUG    root            Added [src/lyra/frontend/src/components/FileUpload.tsx]
+2025-01-24 17:53:23,940 DEBUG    root            Added [src/lyra/frontend/src/components/SampleLyraTransformation.tsx]
+2025-01-24 17:53:23,940 DEBUG    root            Added [src/lyra/frontend/src/components/DataFlowVisualization.tsx]
+2025-01-24 17:53:23,941 DEBUG    root            Added [src/lyra/frontend/src/components/MenuBar.tsx]
+2025-01-24 17:53:23,942 DEBUG    root            Added [src/lyra/frontend/src/components/ReturnReasonsInsights.tsx]
+2025-01-24 17:53:23,943 DEBUG    root            Added [src/lyra/frontend/src/components/Layout.tsx]
+2025-01-24 17:53:23,943 DEBUG    root            Added [src/lyra/frontend/src/components/Header.tsx]
+2025-01-24 17:53:23,944 DEBUG    root            Added [src/lyra/frontend/src/components/CSVUploader.tsx]
+2025-01-24 17:53:23,944 DEBUG    root            Added [src/lyra/frontend/src/components/InsightsTimeline.tsx]
+2025-01-24 17:53:23,944 DEBUG    root            Added [src/lyra/frontend/src/components/Toggle.tsx]
+2025-01-24 17:53:23,945 DEBUG    root            Added [src/lyra/frontend/src/components/ProcessingIndicator.tsx]
+2025-01-24 17:53:23,946 DEBUG    root            Added [src/lyra/frontend/src/components/ParetoAnalysis.tsx]
+2025-01-24 17:53:23,947 DEBUG    root            Added [src/lyra/frontend/src/components/ColumnNameInput.tsx]
+2025-01-24 17:53:23,947 DEBUG    root            Added [src/lyra/frontend/src/components/ReturnReasonsTrends.tsx]
+2025-01-24 17:53:23,949 DEBUG    root            Added [src/lyra/frontend/src/pages/index.tsx]
+2025-01-24 17:53:23,949 DEBUG    root            Added [src/lyra/frontend/src/pages/system-design.tsx]
+2025-01-24 17:53:23,950 DEBUG    root            Added [src/lyra/frontend/src/pages/cost-comparison.tsx]
+2025-01-24 17:53:23,950 DEBUG    root            Added [src/lyra/frontend/src/pages/scheduled-jobs.tsx]
+2025-01-24 17:53:23,951 DEBUG    root            Added [src/lyra/frontend/src/pages/_document.tsx]
+2025-01-24 17:53:23,952 DEBUG    root            Added [src/lyra/frontend/src/pages/return-reasons-report.tsx]
+2025-01-24 17:53:23,953 DEBUG    root            Added [src/lyra/frontend/src/pages/sample-insights.tsx]
+2025-01-24 17:53:23,953 DEBUG    root            Added [src/lyra/frontend/src/pages/_app.tsx]
+2025-01-24 17:53:23,954 DEBUG    root            Added [src/lyra/backend/config.py]
+2025-01-24 17:53:23,954 DEBUG    root            Added [src/lyra/backend/pyproject.toml]
+2025-01-24 17:53:23,955 DEBUG    root            Added [src/lyra/backend/README.md]
+2025-01-24 17:53:23,956 DEBUG    root            Added [src/lyra/backend/.env.example]
+2025-01-24 17:53:23,968 DEBUG    root            Added [src/lyra/backend/poetry.lock]
+2025-01-24 17:53:23,969 DEBUG    root            Added [src/lyra/backend/dags/nlp_pipeline_dag.py]
+2025-01-24 17:53:23,969 DEBUG    root            Added [src/lyra/backend/tests/test_utils.py]
+2025-01-24 17:53:23,970 DEBUG    root            Added [src/lyra/backend/tests/test_services.py]
+2025-01-24 17:53:23,970 DEBUG    root            Added [src/lyra/backend/tests/test_api.py]
+2025-01-24 17:53:23,972 DEBUG    root            Added [src/lyra/backend/utils/llm.py]
+2025-01-24 17:53:23,972 DEBUG    root            Added [src/lyra/backend/utils/common.py]
+2025-01-24 17:53:23,974 DEBUG    root            Added [src/lyra/backend/utils/llm_utils.py]
+2025-01-24 17:53:23,974 DEBUG    root            Added [src/lyra/backend/utils/bigquery_utils.py]
+2025-01-24 17:53:23,976 DEBUG    root            Added [src/lyra/backend/api/main.py]
+2025-01-24 17:53:23,978 DEBUG    root            Added [src/lyra/backend/notebooks/02_quality_survey_data_eda.ipynb]
+2025-01-24 17:53:23,988 DEBUG    root            Added [src/lyra/backend/notebooks/01_aftership_rr_labels_eda.ipynb]
+2025-01-24 17:53:23,990 DEBUG    root            Added [src/lyra/backend/notebooks/evaluate_gen5_return_reasons.ipynb]
+2025-01-24 17:53:23,994 DEBUG    root            Added [src/lyra/backend/notebooks/return_reasons_slides.ipynb]
+2025-01-24 17:53:24,014 DEBUG    root            Added [src/lyra/backend/notebooks/return_reasons_w_Lyra_v1.ipynb]
+2025-01-24 17:53:24,024 DEBUG    root            Added [src/lyra/backend/notebooks/scratchpad.ipynb]
+2025-01-24 17:53:24,184 DEBUG    root            Added [src/lyra/backend/notebooks/aftership_return_reasons_w_Lyra_v1.ipynb]
+2025-01-24 17:53:24,198 DEBUG    root            Added [src/lyra/backend/notebooks/return_reasons_w_local2.ipynb]
+2025-01-24 17:53:24,203 DEBUG    root            Added [src/lyra/backend/notebooks/return_reasons_w_local.ipynb]
+2025-01-24 17:53:24,208 DEBUG    root            Added [src/lyra/backend/notebooks/training_data_prep_gen5_labels.ipynb]
+2025-01-24 17:53:24,211 DEBUG    root            Added [src/lyra/backend/notebooks/return_reason_labelling_dataset_gen.ipynb]
+2025-01-24 17:53:24,213 DEBUG    root            Added [src/lyra/backend/notebooks/03_quality_survey_data_eda__report.ipynb]
+2025-01-24 17:53:24,218 DEBUG    root            Added [src/lyra/backend/notebooks/evaluations/004_return_reasons_llama3_1_base.ipynb]
+2025-01-24 17:53:24,224 DEBUG    root            Added [src/lyra/backend/notebooks/evaluations/005_return_reasons_llama3_1_ft_v1.ipynb]
+2025-01-24 17:53:24,226 DEBUG    root            Added [src/lyra/backend/notebooks/evaluations/002_translation_llama3_1_base.ipynb]
+2025-01-24 17:53:24,227 DEBUG    root            Added [src/lyra/backend/notebooks/evaluations/001_translation_gemini_1_5_flash.ipynb]
+2025-01-24 17:53:24,229 DEBUG    root            Added [src/lyra/backend/notebooks/evaluations/003_return_reasons_gemini_1_5_flash.ipynb]
+2025-01-24 17:53:24,236 DEBUG    root            Added [src/lyra/backend/notebooks/report_outputs/Quality Pilot Survey Report - V15.html]
+2025-01-24 17:53:24,238 DEBUG    root            Added [src/lyra/backend/notebooks/scripts/survey_report_generator.py]
+2025-01-24 17:53:24,239 DEBUG    root            Added [src/lyra/backend/services/__init__.py]
+2025-01-24 17:53:24,240 DEBUG    root            Added [src/lyra/backend/services/topic_modeling/models.py]
+2025-01-24 17:53:24,243 DEBUG    root            Added [src/lyra/backend/services/topic_modeling/evaluation.py]
+2025-01-24 17:53:24,244 DEBUG    root            Added [src/lyra/backend/services/topic_modeling/llm_model.py]
+2025-01-24 17:53:24,245 DEBUG    root            Added [src/lyra/backend/services/topic_modeling/inference.py]
+2025-01-24 17:53:24,245 DEBUG    root            Added [src/lyra/backend/services/topic_modeling/base.py]
+2025-01-24 17:53:24,246 DEBUG    root            Added [src/lyra/backend/services/topic_modeling/prompts/survey_topics_v1.txt]
+2025-01-24 17:53:24,247 DEBUG    root            Added [src/lyra/backend/services/topic_modeling/prompts/return_reasons_model_v1.txt]
+2025-01-24 17:53:24,247 DEBUG    root            Added [src/lyra/backend/services/topic_modeling/prompts/topic_modelling_v1.txt]
+2025-01-24 17:53:24,248 DEBUG    root            Added [src/lyra/backend/services/topic_modeling/prompts/topic_modelling_w_highlights_v1.txt]
+2025-01-24 17:53:24,248 DEBUG    root            Added [src/lyra/backend/services/translation/models.py]
+2025-01-24 17:53:24,249 DEBUG    root            Added [src/lyra/backend/services/translation/evaluation.py]
+2025-01-24 17:53:24,249 DEBUG    root            Added [src/lyra/backend/services/translation/llm_model.py]
+2025-01-24 17:53:24,250 DEBUG    root            Added [src/lyra/backend/services/translation/inference.py]
+2025-01-24 17:53:24,250 DEBUG    root            Added [src/lyra/backend/services/translation/base.py]
+2025-01-24 17:53:24,251 DEBUG    root            Added [src/lyra/backend/services/summarization/models.py]
+2025-01-24 17:53:24,252 DEBUG    root            Added [src/lyra/backend/services/summarization/evaluation.py]
+2025-01-24 17:53:24,253 DEBUG    root            Added [src/lyra/backend/services/summarization/inference.py]
+2025-01-24 17:53:24,253 DEBUG    root            Added [src/lyra/backend/services/summarization/base.py]
+2025-01-24 17:53:24,254 DEBUG    root            Added [src/lyra/backend/services/sentiment_analysis/models.py]
+2025-01-24 17:53:24,254 DEBUG    root            Added [src/lyra/backend/services/sentiment_analysis/llm_model.py]
+2025-01-24 17:53:24,257 DEBUG    root            Added [src/lyra/backend/services/sentiment_analysis/inference.py]
+2025-01-24 17:53:24,258 DEBUG    root            Added [src/lyra/backend/services/sentiment_analysis/base.py]
+2025-01-24 17:53:24,259 DEBUG    root            Added [src/lyra/backend/services/sentiment_analysis/prompts/absa_v1.txt]
+2025-01-24 17:53:24,263 DEBUG    root            Added [src/lyra/backend/services/sentiment_analysis/prompts/absa_w_phrase_v1.txt]
+2025-01-24 17:53:24,263 DEBUG    root            Added [src/lyra/ollama/entrypoint.sh]
+2025-01-24 17:53:24,264 INFO     ___FILE_ONLY___ Some files were not included in the source upload.
+
+Check the gcloud log [/Users/daniel.low/.config/gcloud/logs/2025.01.24/17.53.20.379856.log] to see which files and the contents of the
+default gcloudignore file used (see `$ gcloud topic gcloudignore` to learn
+more).
+
+
+2025-01-24 17:53:24,264 INFO     ___FILE_ONLY___ Uploading tarball of [.] to [gs://dde-prj-orbit-d001_cloudbuild/lyra/1737712401.032532-00313c9c318e4a1c98cd28f2d1967e6b.tgz]
+
+2025-01-24 17:53:24,285 INFO     root            Uploading [/var/folders/cs/p5_dzp410hlgfg_ljwj0jyg00000gp/T/tmpd6h8poxp/file.tgz] to [dde-prj-orbit-d001_cloudbuild/lyra/1737712401.032532-00313c9c318e4a1c98cd28f2d1967e6b.tgz]
+2025-01-24 17:53:24,287 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-01-24 17:53:26,376 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "POST /resumable/upload/storage/v1/b/dde-prj-orbit-d001_cloudbuild/o?alt=json&name=lyra%2F1737712401.032532-00313c9c318e4a1c98cd28f2d1967e6b.tgz&uploadType=resumable HTTP/1.1" 200 0
+2025-01-24 17:53:26,384 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-01-24 17:53:32,017 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "PUT /resumable/upload/storage/v1/b/dde-prj-orbit-d001_cloudbuild/o?alt=json&name=lyra%2F1737712401.032532-00313c9c318e4a1c98cd28f2d1967e6b.tgz&uploadType=resumable&upload_id=AFIdbgT7BhP8Kz47r0RP4LtbK4iLdaQaI4W7bbCoXTDaKalM3rbP1lYkxXdFjQTSpAZ0QlAy-5yUIVUDaEuftODH0jNDJ0UflWQNXroEL_69n1sD HTTP/1.1" 200 1057
+2025-01-24 17:53:32,021 DEBUG    root            submitting build: <Build
+ images: []
+ options: <BuildOptions
+ dynamicSubstitutions: True
+ env: []
+ logging: LoggingValueValuesEnum(CLOUD_LOGGING_ONLY, 4)
+ secretEnv: []
+ sourceProvenanceHash: []
+ volumes: []>
+ secrets: []
+ serviceAccount: 'projects/dde-prj-orbit-d001/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com'
+ source: <Source
+ storageSource: <StorageSource
+ bucket: 'dde-prj-orbit-d001_cloudbuild'
+ generation: 1737712411909238
+ object: 'lyra/1737712401.032532-00313c9c318e4a1c98cd28f2d1967e6b.tgz'>>
+ steps: [<BuildStep
+ allowExitCodes: []
+ args: ['-c', 'docker build --network=cloudbuild -t $_ARTIFACT_REGISTRY/$_IMAGE_NAME:${_IMAGE_VERSION} -f ${_DOCKERFILE_NAME} .']
+ dir: './src/lyra'
+ entrypoint: 'bash'
+ env: []
+ id: 'Building Docker Image'
+ name: 'gcr.io/cloud-builders/docker'
+ secretEnv: []
+ volumes: []
+ waitFor: []>, <BuildStep
+ allowExitCodes: []
+ args: ['-c', 'docker push --network=cloudbuild $_ARTIFACT_REGISTRY/$_IMAGE_NAME:$_IMAGE_VERSION']
+ dir: './src/lyra'
+ entrypoint: 'bash'
+ env: []
+ id: 'Pushing the Image'
+ name: 'gcr.io/cloud-builders/docker'
+ secretEnv: []
+ volumes: []
+ waitFor: []>]
+ substitutions: <SubstitutionsValue
+ additionalProperties: [<AdditionalProperty
+ key: '_ARTIFACT_REGISTRY'
+ value: '${LOCATION}-docker.pkg.dev/${PROJECT_ID}/lyra'>, <AdditionalProperty
+ key: '_DOCKERFILE_NAME'
+ value: 'Dockerfile.backend'>, <AdditionalProperty
+ key: '_IMAGE_NAME'
+ value: 'backend'>, <AdditionalProperty
+ key: '_IMAGE_VERSION'
+ value: '0.0.1'>]>
+ tags: []
+ timeout: '3600s'
+ warnings: []>
+2025-01-24 17:53:32,022 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com].
+2025-01-24 17:53:32,024 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-01-24 17:53:32,025 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-01-24 17:53:32,127 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-01-24 17:53:32,130 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken
+2025-01-24 17:53:32,132 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-01-24 17:53:32,256 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken HTTP/1.1" 200 None
+2025-01-24 17:53:32,264 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com].
+2025-01-24 17:53:32,274 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-01-24 17:53:32,276 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-01-24 17:53:32,376 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-01-24 17:53:32,380 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken
+2025-01-24 17:53:32,381 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-01-24 17:53:32,500 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken HTTP/1.1" 200 None
+2025-01-24 17:53:32,519 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2025-01-24 17:53:34,577 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "POST /v1/projects/dde-prj-orbit-d001/locations/europe-west2/builds?alt=json HTTP/1.1" 403 None
+2025-01-24 17:53:34,584 DEBUG    root            (gcloud.builds.submit) PERMISSION_DENIED: generic::permission_denied: caller does not have permission to act as service account projects/dde-prj-orbit-d001/serviceAccounts/112891494450262301454. This command is authenticated as daniel.low@dyson.com which is the active account specified by the [core/account] property. Impersonation is used to impersonate cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/surface/builds/submit.py", line 265, in Run
+    build, _ = submit_util.Build(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/submit_util.py", line 827, in Build
+    op = client.projects_locations_builds.Create(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/cloudbuild/v1/cloudbuild_v1_client.py", line 1310, in Create
+    return self._RunMethod(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://cloudbuild.googleapis.com/v1/projects/dde-prj-orbit-d001/locations/europe-west2/builds?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Fri, 24 Jan 2025 09:53:34 GMT', 'server': 'ESF', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "generic::permission_denied: caller does not have permission to act as service account projects/dde-prj-orbit-d001/serviceAccounts/112891494450262301454",
+    "status": "PERMISSION_DENIED"
+  }
+}
+>
+2025-01-24 17:53:34,599 ERROR    root            (gcloud.builds.submit) PERMISSION_DENIED: generic::permission_denied: caller does not have permission to act as service account projects/dde-prj-orbit-d001/serviceAccounts/112891494450262301454. This command is authenticated as daniel.low@dyson.com which is the active account specified by the [core/account] property. Impersonation is used to impersonate cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com
+2025-01-24 17:53:34,624 DEBUG    root            Metrics reporting process started...

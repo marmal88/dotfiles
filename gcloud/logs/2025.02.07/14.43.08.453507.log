@@ -1,0 +1,8 @@
+2025-02-07 14:43:08,458 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-02-07 14:43:08,846 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2025-02-07 14:43:08,848 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "auth/impersonate_service_account", VALUE: "bnt-battery-engineer-sa@dde-prj-buildandtest-p001.iam.gserviceaccount.com"]
+2025-02-07 14:43:08,857 INFO     ___FILE_ONLY___ Updated property [auth/impersonate_service_account].
+
+2025-02-07 14:43:08,868 DEBUG    root            Chosen display Format:default
+2025-02-07 14:43:08,869 INFO     root            Display format: "default"
+2025-02-07 14:43:08,905 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,18 @@
+2025-02-13 09:38:49,378 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2025-02-13 09:38:49,380 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'configure_docker']
+2025-02-13 09:38:49,381 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'activate_service_account']
+2025-02-13 09:38:49,382 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'activate_refresh_token']
+2025-02-13 09:38:49,383 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2025-02-13 09:38:49,397 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_identity_token']
+2025-02-13 09:38:49,398 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'docker_helper']
+2025-02-13 09:38:49,398 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'enterprise_certificate_config']
+2025-02-13 09:38:49,399 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'git_helper']
+2025-02-13 09:38:49,400 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'list']
+2025-02-13 09:38:49,401 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'describe']
+2025-02-13 09:38:49,402 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'revoke']
+2025-02-13 09:38:49,402 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_refresh_token']
+2025-02-13 09:38:49,403 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
+2025-02-13 09:38:49,404 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_access_token']
+2025-02-13 09:38:49,404 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'auth']
+2025-02-13 09:38:49,405 ERROR    root            (gcloud.auth) Invalid choice: 'print--token'.
+2025-02-13 09:38:49,496 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,7 @@
+[core]
+account = daniel.low@dyson.com
+project = dde-prj-buildandtest-p001
+disable_usage_reporting = False
+
+[auth]
+

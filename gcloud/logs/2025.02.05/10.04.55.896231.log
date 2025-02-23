@@ -1,0 +1,15 @@
+2025-02-05 10:04:55,912 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2025-02-05 10:04:55,919 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2025-02-05 10:04:55,920 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "daniel.low@dyson.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "dde-ops-data-science-d001"]
+2025-02-05 10:04:55,951 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-02-05 10:04:57,062 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/dde-ops-data-science-d001?alt=json HTTP/1.1" 200 None
+2025-02-05 10:04:57,068 DEBUG    root            Chosen display Format:default value(name)
+2025-02-05 10:04:57,069 INFO     root            Display format: "default value(name)"
+2025-02-05 10:04:57,120 INFO     ___FILE_ONLY___ dde-ops-data-science-d001
+
+2025-02-05 10:04:57,122 DEBUG    root            Checking for updates...
+2025-02-05 10:04:57,125 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-02-05 10:04:57,187 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 227832
+2025-02-05 10:04:57,327 DEBUG    root            Updating notification cache...
+2025-02-05 10:04:57,327 DEBUG    root            Activating notification: [default]
+2025-02-05 10:04:57,336 DEBUG    root            Metrics reporting process started...

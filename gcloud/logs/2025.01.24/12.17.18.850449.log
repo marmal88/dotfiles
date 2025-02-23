@@ -1,0 +1,1812 @@
+2025-01-24 12:17:18,861 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2025-01-24 12:17:18,883 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'update']
+2025-01-24 12:17:18,885 DEBUG    root            Running [gcloud.components.update] with arguments: []
+2025-01-24 12:17:18,885 INFO     ___FILE_ONLY___ Beginning update. This process may take several minutes.
+
+2025-01-24 12:17:18,934 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-01-24 12:17:19,008 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 227832
+2025-01-24 12:17:19,120 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,121 INFO     ___FILE_ONLY___ 
+Your current Google Cloud CLI version is: 506.0.0
+
+2025-01-24 12:17:19,122 INFO     ___FILE_ONLY___ You will be upgraded to version: 507.0.0
+
+2025-01-24 12:17:19,122 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,122 DEBUG    root            Chosen display Format:table[box,title="These components will be removed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2025-01-24 12:17:19,122 DEBUG    root            Chosen display Format:table[box,title="These components will be updated."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2025-01-24 12:17:19,146 INFO     ___FILE_ONLY___ ┌─────────────────────────────────────────────────────────┐
+2025-01-24 12:17:19,146 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,146 INFO     ___FILE_ONLY___ │            These components will be updated.            │
+2025-01-24 12:17:19,146 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,146 INFO     ___FILE_ONLY___ ├─────────────────────────────────┬────────────┬──────────┤
+2025-01-24 12:17:19,146 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,146 INFO     ___FILE_ONLY___ │               Name              │  Version   │   Size   │
+2025-01-24 12:17:19,146 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,146 INFO     ___FILE_ONLY___ ├─────────────────────────────────┼────────────┼──────────┤
+2025-01-24 12:17:19,146 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ │ 
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ BigQuery Command Line Tool     
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ │ 
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___     2.1.12
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ │ 
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___  1.8 MiB
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ │
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ │ 
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ Google Cloud CLI Core Libraries
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ │ 
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ 2025.01.17
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ │ 
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ 20.7 MiB
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ │
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ │ 
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ gcloud cli dependencies        
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ │ 
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ 2025.01.17
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ │ 
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___ 16.7 MiB
+2025-01-24 12:17:19,147 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,148 INFO     ___FILE_ONLY___ │
+2025-01-24 12:17:19,148 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,148 INFO     ___FILE_ONLY___ └─────────────────────────────────┴────────────┴──────────┘
+2025-01-24 12:17:19,148 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,148 DEBUG    root            Chosen display Format:table[box,title="These components will be installed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2025-01-24 12:17:19,148 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,150 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-01-24 12:17:19,210 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/RELEASE_NOTES HTTP/1.1" 200 1343836
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___ The following release notes are new in this upgrade.
+Please read carefully for information about new features, breaking changes,
+and bugs fixed.  The latest full release notes can be viewed at:
+  https://cloud.google.com/sdk/release_notes
+
+
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___ [1m507.0.0 (2025-01-22)[m
+
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___   
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___ [1mBreaking Changes[m
+
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___ **(Cloud
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___ Run)**
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___ Removed
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___ run
+2025-01-24 12:17:19,332 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ integrations[m
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ command
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ group.
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___   
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ [1mAnthos Multi-Cloud[m
+
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ Added
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ [1m--disable-cloud-monitoring[m
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ flag
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,333 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ attached
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ clusters
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ register[m
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ attached
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ clusters
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ update[m
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ for
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ disabling
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ cloud
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ monitoring.
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,334 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ Added
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ [1m--enable-cloud-monitoring[m
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ flag
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ attached
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ clusters
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ register[m
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ attached
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ clusters
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ update[m
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ for
+2025-01-24 12:17:19,335 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ enabling
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ cloud
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ monitoring.
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___   
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ [1mBigQuery[m
+
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ Updated
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ certain
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ authentication
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ error
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ messages
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,336 INFO     ___FILE_ONLY___ mention
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ running
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ auth
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ login
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ --enable-gdrive-access[m
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ instead
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ of
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ auth
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ login[m
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ when
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ Drive
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,337 INFO     ___FILE_ONLY___ access
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ is
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ required.
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ Added
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ support
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ for
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ loading
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ the
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ Cloud
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ CLI
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ [1mapi_endpoint_overrides/bigquery[m
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ config
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ value
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,338 INFO     ___FILE_ONLY___ into
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ [1mapi[m
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ if
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ the
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ flag
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ was
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ not
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ set.
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ Added
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ support
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ for
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ loading
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ the
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ Cloud
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,339 INFO     ___FILE_ONLY___ CLI
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ [1mcore/api_key[m
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ config
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ value
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ into
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ [1mbigquery_discovery_api_key[m
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ if
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ the
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ flag
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ was
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ not
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ set.
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ Added
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ retrieval
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ of
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,340 INFO     ___FILE_ONLY___ the
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ user's
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ active
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ Cloud
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ CLI
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ account
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ name
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ when
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ authenticating
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ using
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ Cloud
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ CLI
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ credentials.
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ Fixed
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,341 INFO     ___FILE_ONLY___ the
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ bug
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ where
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ users
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ authenticating
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ with
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ Google
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ Auth
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ using
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ a
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ service
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ account
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ were
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ unable
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ query
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ external
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___ tables
+2025-01-24 12:17:19,342 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ on
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ Google
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ Drive.
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ Updated
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ [1m--enable_gdrive[m
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ flag
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ description
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ mention
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ its
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ interaction
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ with
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ [1m--use_google_auth[m.
+2025-01-24 12:17:19,343 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ Handled
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ crash
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ when
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ the
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ server
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ returns
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ out
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ of
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ bounds
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ timestamps.
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ Bundled
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ a
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ reservation
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ discovery
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,344 INFO     ___FILE_ONLY___ doc
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ be
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ loaded
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ locally
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ instead
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ of
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ always
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ making
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ a
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ server
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ request
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ retrieve
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ one.
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___   
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___ [1mCloud Bigtable[m
+
+2025-01-24 12:17:19,345 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ Rebuilt
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ cbt
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ cli
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ with
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ golang.org/x/net
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ version
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ 0.33.0
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ which
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ fixed
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ CVE-2024-45338.
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___   
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ [1mCloud Bigtable Emulator[m
+
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ Rebuilding
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___ cbt
+2025-01-24 12:17:19,346 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ emulator
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ with
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ golang.org/x/net
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ version
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ 0.33.0
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ which
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ fixed
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ CVE-2024-45338.
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___   
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ [1mCloud NetApp[m
+
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ Added
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ netapp
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ storage-pools
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ validate-directory-service[m.
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,347 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___   
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ [1mCloud Spanner[m
+
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ Update
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ [1medition[m
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ flag
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ help
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ text
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ for
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ spanner
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ instances
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ update[m
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ saying
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ downgrade
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ is
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ supported.
+2025-01-24 12:17:19,348 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___   
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ [1mCloud Workstations[m
+
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ Promoted
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ [1m--source-workstation[m
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ flag
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ of
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ workstations
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ create[m
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ GA.
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___   
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ [1mCompute Engine[m
+
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,349 INFO     ___FILE_ONLY___ Promoted
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ Tls
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ Early
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ Data
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ UNRESTRICTED
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ enum
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ value
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ GA
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ in
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ compute
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ target-https-proxies
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ import[m
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ compute
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,350 INFO     ___FILE_ONLY___ target-https-proxies
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ export[m.
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___   
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ [1mDatabase Migration[m
+
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ Added
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ [1m--cloudsql-project-id[m
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ flag
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ database-migration
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ connection-profiles
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ create
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ sqlserver[m
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ command.
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___   
+2025-01-24 12:17:19,351 INFO     ___FILE_ONLY___ [1mDeveloper Connect[m
+
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ Hid
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ the
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ Bitbucket
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ Data
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ Center
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ Bitbucket
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ Cloud
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ connection
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ types.
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___   
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ [1mKubernetes Engine[m
+
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ Added
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ kubelet
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ config
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,352 INFO     ___FILE_ONLY___ options
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ [1mallowedUnsafeSysctls[m
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ clusters
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ create[m,
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ node-pools
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ create[m,
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___ node-pools
+2025-01-24 12:17:19,353 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ update[m
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ command
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ which
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ allows
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ unsafe
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ sysctls
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ be
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ set
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ on
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ Pods.
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ Added
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ kubelet
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,354 INFO     ___FILE_ONLY___ config
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ options
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ [1mcontainerLogMaxSize[m
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ [1mcontainerLogMaxFiles[m
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ clusters
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ create[m,
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ node-pools
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ create[m,
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ node-pools
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ update[m
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,355 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ command
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ which
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ controls
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ maximum
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ size
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ of
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ logs
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ before
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ rotation
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ maximum
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ number
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ of
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ log
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ files
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ for
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ a
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ container.
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,356 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ Added
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ kubelet
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ config
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ options
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ [1mimageGcLowThresholdPercent[m
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ [1mimageGcHighThresholdPercent[m
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ clusters
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ create[m,
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ node-pools
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___ create[m,
+2025-01-24 12:17:19,357 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ node-pools
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ update[m
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ command
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ which
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ controls
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ disk
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ usage
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ percentage
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ triggering
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ image
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ garbage
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ collection.
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___ Added
+2025-01-24 12:17:19,358 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ kubelet
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ config
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ options
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ [1mimageMinimumGcAge[m
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ [1mimageMaximumGcAge[m
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ clusters
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ create[m,
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ node-pools
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ create[m,
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ node-pools
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,359 INFO     ___FILE_ONLY___ update[m
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ command
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ which
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ controls
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ the
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ minimum
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ maximum
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ age
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ an
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ image
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ can
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ be
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ unused
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ before
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ it
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ is
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ garbage
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ collected.
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,360 INFO     ___FILE_ONLY___       ▪
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ Added
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ [1m--max-run-duration[m
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ flag
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ node-pools
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ create[m
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ and
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ [1mgcloud
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ container
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ node-pools
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ update[m
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ limit
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ the
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ runtime
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ of
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___ nodes
+2025-01-24 12:17:19,361 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ in
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___         
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ a
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ node
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ pool.
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___    
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ Subscribe
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ to
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ these
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ release
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ notes
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___  
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ at
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___     
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ https://groups.google.com/forum/#!forum/google-cloud-sdk-announce
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___     
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ (https://groups.google.com/forum/#!forum/google-cloud-sdk-announce).
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ [m
+2025-01-24 12:17:19,362 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:17:42,293 INFO     ___FILE_ONLY___ Performing in place update...
+
+
+2025-01-24 12:17:42,293 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2025-01-24 12:17:42,294 INFO     ___FILE_ONLY___ ╠═ Downloading: BigQuery Command Line Tool                  ═╣
+
+2025-01-24 12:17:42,294 INFO     ___FILE_ONLY___ ╚
+2025-01-24 12:17:42,303 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-01-24 12:17:42,427 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-bq-20250117151628.tar.gz HTTP/1.1" 200 1853621
+2025-01-24 12:17:42,576 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,576 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,576 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,576 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,577 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,577 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,577 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,577 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,577 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,577 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,577 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,577 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,578 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,578 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,578 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,578 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,578 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,578 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,578 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,578 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,578 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,578 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,579 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,579 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,579 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,579 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,579 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,579 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,579 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,579 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,579 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,580 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,580 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,580 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,580 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,580 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,580 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,580 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,580 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,580 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,581 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,581 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,581 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,581 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,581 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,581 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,581 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,581 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,582 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,582 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,582 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,582 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,582 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,582 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,582 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,582 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,582 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,582 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,583 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,583 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:42,583 INFO     ___FILE_ONLY___ ╝
+2025-01-24 12:17:42,585 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2025-01-24 12:17:42,586 INFO     ___FILE_ONLY___ ╠═ Downloading: Google Cloud CLI Core Libraries             ═╣
+
+2025-01-24 12:17:42,586 INFO     ___FILE_ONLY___ ╚
+2025-01-24 12:17:42,591 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-01-24 12:17:42,691 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-core-20250117151628.tar.gz HTTP/1.1" 200 21695812
+2025-01-24 12:17:43,996 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:43,996 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:43,997 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:43,997 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:43,998 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:43,998 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:43,999 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:43,999 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,000 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,000 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,000 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,001 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,001 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,002 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,002 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,003 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,003 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,004 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,004 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,005 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,005 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,006 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,006 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,008 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,009 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,010 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,010 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,010 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,011 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,011 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,012 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,012 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,012 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,013 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,013 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,013 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,014 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,014 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,014 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,014 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,015 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,015 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,015 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,016 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,016 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,016 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,017 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,017 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,018 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,018 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,018 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,018 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,019 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,019 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,019 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,020 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,020 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,020 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,021 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,021 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:44,021 INFO     ___FILE_ONLY___ ╝
+2025-01-24 12:17:44,022 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2025-01-24 12:17:44,022 INFO     ___FILE_ONLY___ ╠═ Downloading: gcloud cli dependencies                     ═╣
+
+2025-01-24 12:17:44,022 INFO     ___FILE_ONLY___ ╚
+2025-01-24 12:17:44,025 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-01-24 12:17:44,131 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-gcloud-deps-20250117151628.tar.gz HTTP/1.1" 200 17482802
+2025-01-24 12:17:45,290 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,291 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,291 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,291 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,291 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,291 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,291 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,292 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,292 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,292 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,292 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,292 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,292 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,292 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,293 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,293 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,293 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,293 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,293 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,293 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,294 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,294 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,294 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,294 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,294 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,294 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,294 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,295 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,296 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,297 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,297 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,297 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,297 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,298 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,298 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,298 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,298 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,298 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,298 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,298 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,299 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,299 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,299 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,299 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,299 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,299 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,300 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,300 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,300 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,301 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,301 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,301 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,301 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,301 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,302 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,302 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,302 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,303 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,303 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,303 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,303 INFO     ___FILE_ONLY___ ╝
+2025-01-24 12:17:45,304 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2025-01-24 12:17:45,304 INFO     ___FILE_ONLY___ ╠═ Uninstalling: BigQuery Command Line Tool                 ═╣
+
+2025-01-24 12:17:45,304 INFO     ___FILE_ONLY___ ╚
+2025-01-24 12:17:45,314 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,322 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,324 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,327 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,329 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,331 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,333 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,337 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,339 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,342 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,345 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,348 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,350 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,352 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,355 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,357 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,365 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,369 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,371 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,373 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,375 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,377 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,379 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,381 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,383 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,385 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,386 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,396 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,402 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,405 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,407 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,411 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,413 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,416 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,419 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,422 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,424 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,426 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,428 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,429 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,432 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,438 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,440 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,444 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,445 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,447 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,449 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,451 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,453 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,455 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,457 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,459 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,461 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,462 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,465 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,473 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,475 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,477 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,480 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,482 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,482 INFO     ___FILE_ONLY___ ╝
+2025-01-24 12:17:45,625 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2025-01-24 12:17:45,625 INFO     ___FILE_ONLY___ ╠═ Uninstalling: Google Cloud CLI Core Libraries            ═╣
+
+2025-01-24 12:17:45,625 INFO     ___FILE_ONLY___ ╚
+2025-01-24 12:17:45,669 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,758 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,846 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:45,927 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:46,009 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:46,061 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:46,136 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:46,257 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:46,399 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:46,472 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:46,554 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:46,658 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:46,735 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:46,803 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:46,872 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:46,975 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:47,062 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:47,158 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:47,253 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:47,346 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:47,488 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:47,653 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:47,737 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:47,805 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:47,868 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:47,959 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:48,021 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:48,116 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:48,216 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:48,309 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:48,416 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:48,512 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:48,593 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:48,673 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:48,762 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:48,861 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:49,071 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:49,140 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:49,219 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:49,284 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:49,360 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:49,443 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:49,523 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:49,593 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:49,730 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:49,887 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:49,975 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:50,042 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:50,108 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:50,187 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:50,246 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:50,308 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:50,389 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:50,485 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:50,590 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:50,690 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:50,776 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:50,866 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:50,952 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:51,046 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:51,047 INFO     ___FILE_ONLY___ ╝
+2025-01-24 12:17:57,612 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2025-01-24 12:17:57,612 INFO     ___FILE_ONLY___ ╠═ Uninstalling: gcloud cli dependencies                    ═╣
+
+2025-01-24 12:17:57,612 INFO     ___FILE_ONLY___ ╚
+2025-01-24 12:17:57,634 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,648 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,678 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,693 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,719 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,745 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,778 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,805 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,828 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,851 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,892 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,911 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,931 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,958 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:57,981 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,029 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,053 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,085 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,139 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,171 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,210 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,265 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,302 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,339 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,389 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,409 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,437 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,478 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,500 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,552 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,597 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,686 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,745 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,780 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,802 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,838 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,860 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,879 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,915 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,934 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,954 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:58,996 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,020 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,047 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,121 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,142 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,179 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,211 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,238 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,279 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,305 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,323 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,356 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,384 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,403 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,439 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,465 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,483 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,529 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,557 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:17:59,557 INFO     ___FILE_ONLY___ ╝
+2025-01-24 12:18:01,397 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2025-01-24 12:18:01,397 INFO     ___FILE_ONLY___ ╠═ Installing: BigQuery Command Line Tool                   ═╣
+
+2025-01-24 12:18:01,397 INFO     ___FILE_ONLY___ ╚
+2025-01-24 12:18:01,445 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,451 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,460 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,469 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,478 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,488 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,497 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,509 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,526 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,566 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,574 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,582 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,592 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,622 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,652 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,663 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,674 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,682 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,690 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,699 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,709 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,718 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,727 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,736 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,746 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,756 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,763 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,772 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,782 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,792 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,802 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,812 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,823 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,837 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,850 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,857 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,866 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,882 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,897 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,906 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,913 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,924 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,932 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,945 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,955 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,962 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,972 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,981 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:01,993 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:02,002 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:02,033 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:02,050 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:02,071 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:02,082 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:02,092 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:02,099 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:02,105 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:02,114 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:02,122 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:02,132 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:02,132 INFO     ___FILE_ONLY___ ╝
+2025-01-24 12:18:02,138 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2025-01-24 12:18:02,138 INFO     ___FILE_ONLY___ ╠═ Installing: Google Cloud CLI Core Libraries              ═╣
+
+2025-01-24 12:18:02,138 INFO     ___FILE_ONLY___ ╚
+2025-01-24 12:18:03,309 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:03,585 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:04,026 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:04,255 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:04,702 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:05,039 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:05,340 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:05,648 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:05,971 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:06,472 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:06,887 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:07,099 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:07,407 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:07,767 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:08,020 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:08,370 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:08,846 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:09,254 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:09,712 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:10,096 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:10,455 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:10,941 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:11,364 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:11,651 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:11,882 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:12,213 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:12,377 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:12,611 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:12,889 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:13,200 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:13,533 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:13,910 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:14,204 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:14,560 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:14,808 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:15,142 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:15,416 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:15,746 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:16,037 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:16,347 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:16,716 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:16,946 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:17,223 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:17,574 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:17,900 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:18,208 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:18,523 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:18,916 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:19,206 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:19,471 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:19,773 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:20,068 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:20,408 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:20,745 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:21,280 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:21,395 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:21,592 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:22,087 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:22,337 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:22,670 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:22,670 INFO     ___FILE_ONLY___ ╝
+2025-01-24 12:18:22,743 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2025-01-24 12:18:22,743 INFO     ___FILE_ONLY___ ╠═ Installing: gcloud cli dependencies                      ═╣
+
+2025-01-24 12:18:22,743 INFO     ___FILE_ONLY___ ╚
+2025-01-24 12:18:23,226 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:23,344 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:23,440 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:23,548 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:23,742 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:23,950 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:24,098 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:24,237 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:24,489 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:24,949 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:25,216 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:25,338 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:25,545 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:26,162 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:26,355 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:26,474 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:26,736 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:26,903 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:27,036 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:27,212 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:27,340 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:27,444 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:27,540 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:27,644 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:27,745 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:27,858 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:27,957 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:28,042 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:28,151 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:28,205 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:28,263 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:28,348 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:28,415 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:28,538 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:28,623 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:28,716 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:28,793 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:28,890 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,007 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,086 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,155 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,223 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,285 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,418 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,494 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,577 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,641 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,705 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,780 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,858 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:29,962 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:30,086 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:30,162 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:30,256 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:30,344 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:30,493 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:30,595 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:30,663 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:30,745 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:30,881 INFO     ___FILE_ONLY___ ═
+2025-01-24 12:18:30,881 INFO     ___FILE_ONLY___ ╝
+
+2025-01-24 12:18:30,938 DEBUG    root            Updating notification cache...
+2025-01-24 12:18:30,940 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:18:30,940 INFO     ___FILE_ONLY___ Performing post processing steps...
+2025-01-24 12:18:30,940 DEBUG    root            Executing command: ['/Users/daniel.low/Downloads/google-cloud-sdk/bin/gcloud', 'components', 'post-process']
+2025-01-24 12:19:12,251 DEBUG    ___FILE_ONLY___ 
+2025-01-24 12:19:12,252 DEBUG    ___FILE_ONLY___ 
+2025-01-24 12:19:12,492 INFO     ___FILE_ONLY___ 
+Update done!
+
+
+2025-01-24 12:19:12,492 INFO     ___FILE_ONLY___ To revert your CLI to the previously installed version, you may run:
+  $ gcloud components update --version 506.0.0
+
+
+2025-01-24 12:19:12,497 DEBUG    root            Chosen display Format:none
+2025-01-24 12:19:12,497 INFO     root            Display format: "none"
+2025-01-24 12:19:12,507 DEBUG    root            Metrics reporting process started...

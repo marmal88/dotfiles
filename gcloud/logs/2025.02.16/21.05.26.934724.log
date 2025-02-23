@@ -1,0 +1,12 @@
+2025-02-16 21:05:26,949 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-02-16 21:05:26,956 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2025-02-16 21:05:27,006 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'describe']
+2025-02-16 21:05:27,007 DEBUG    root            Running [gcloud.config.configurations.describe] with arguments: [--format: "value[separator=""](properties.core.account,properties.core.project)", CONFIGURATION_NAME: "default"]
+2025-02-16 21:05:27,032 DEBUG    root            Chosen display Format:default value[separator=""](properties.core.account,properties.core.project)
+2025-02-16 21:05:27,032 INFO     root            Display format: "default value[separator=""](properties.core.account,properties.core.project)"
+2025-02-16 21:05:27,603 INFO     ___FILE_ONLY___ daniel.low@dyson.comdde-prj-buildandtest-p001
+
+2025-02-16 21:05:27,610 DEBUG    root            Checking for updates...
+2025-02-16 21:05:27,675 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-02-16 21:05:27,926 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/11" 200 227832
+2025-02-16 21:05:28,077 DEBUG    root            Metrics reporting process started...

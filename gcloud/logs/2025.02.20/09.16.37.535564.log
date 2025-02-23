@@ -1,0 +1,18 @@
+2025-02-20 09:16:37,552 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2025-02-20 09:16:37,557 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2025-02-20 09:16:37,558 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "daniel.low@dyson.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "dde-prj-buildandtest-p001"]
+2025-02-20 09:16:37,579 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-02-20 09:16:37,583 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-02-20 09:16:37,681 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-02-20 09:16:37,690 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-02-20 09:16:38,790 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/dde-prj-buildandtest-p001?alt=json HTTP/11" 200 None
+2025-02-20 09:16:38,790 DEBUG    root            Chosen display Format:default value(name)
+2025-02-20 09:16:38,791 INFO     root            Display format: "default value(name)"
+2025-02-20 09:16:38,814 INFO     ___FILE_ONLY___ dde-prj-buildandtest-p001
+
+2025-02-20 09:16:38,815 DEBUG    root            Checking for updates...
+2025-02-20 09:16:38,817 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-02-20 09:16:38,876 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/11" 200 227832
+2025-02-20 09:16:38,961 DEBUG    root            Updating notification cache...
+2025-02-20 09:16:38,961 DEBUG    root            Activating notification: [default]
+2025-02-20 09:16:38,971 DEBUG    root            Metrics reporting process started...

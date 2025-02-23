@@ -1,0 +1,575 @@
+2025-01-24 12:57:05,016 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2025-01-24 12:57:05,027 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_iam_policy']
+2025-01-24 12:57:05,028 DEBUG    root            Running [gcloud.projects.get-iam-policy] with arguments: [--format: "json", PROJECT_ID_OR_NUMBER: "dde-prj-orbit-d001"]
+2025-01-24 12:57:05,056 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-01-24 12:57:06,282 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/dde-prj-orbit-d001:getIamPolicy?alt=json HTTP/1.1" 200 None
+2025-01-24 12:57:06,290 DEBUG    root            Chosen display Format:default json
+2025-01-24 12:57:06,291 INFO     root            Display format: "default json"
+2025-01-24 12:57:06,333 INFO     ___FILE_ONLY___ {
+  "bindings": [
+    {
+      "members": [
+        "serviceAccount:bbi-dds-notebook@dde-ops-data-science-p001.iam.gserviceaccount.com",
+        "serviceAccount:orbit-dds-notebook@dde-ops-data-science-p001.iam.gserviceaccount.com"
+      ],
+      "role": "organizations/1096200804240/roles/DysonDDSSaViewer"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.artifactRegistry.user"
+    },
+    {
+      "members": [
+        "serviceAccount:looker@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.bigquery.Looker"
+    },
+    {
+      "members": [
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com",
+        "serviceAccount:dde-composer-001@dde-prj-orbit-d001.iam.gserviceaccount.com",
+        "serviceAccount:dde-jenkins-001@dde-ops-engineering-p001.iam.gserviceaccount.com",
+        "serviceAccount:ops-orbit-dbt-ci-pipeline@dde-sec-platform-d001.iam.gserviceaccount.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.bigquery.admin"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.bigquery.dataset.get"
+    },
+    {
+      "members": [
+        "deleted:serviceAccount:lyra-tf@dde-prj-orbit-d001.iam.gserviceaccount.com?uid=115744317251578716520",
+        "serviceAccount:orbit-dds-notebook@dde-ops-data-science-p001.iam.gserviceaccount.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.bigquery.user"
+    },
+    {
+      "members": [
+        "group:azure-dyson_orbit_gcp_data-user@groups.dyson.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.bigquery.viewer"
+    },
+    {
+      "members": [
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com",
+        "group:dyson_orbit_gcp_data-lead@groups.dyson.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.billingProject.viewer"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.cloud.build.connection.admin"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.compute.user"
+    },
+    {
+      "members": [
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.iam.viewer"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.load.balancer.user"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.network.management.user"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.notebooks.user"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.secretManager.user"
+    },
+    {
+      "members": [
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.serviceAccount.user"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.serviceuseage.user"
+    },
+    {
+      "members": [
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com",
+        "serviceAccount:dde-composer-001@dde-prj-orbit-d001.iam.gserviceaccount.com",
+        "serviceAccount:dde-jenkins-001@dde-ops-engineering-p001.iam.gserviceaccount.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.storage.admin"
+    },
+    {
+      "members": [
+        "serviceAccount:orbit-dds-notebook@dde-ops-data-science-p001.iam.gserviceaccount.com"
+      ],
+      "role": "organizations/1096200804240/roles/dyson.storage.user"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/aiplatform.notebookRuntimeUser"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-aiplatform.iam.gserviceaccount.com"
+      ],
+      "role": "roles/aiplatform.serviceAgent"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "serviceAccount:bqcx-1096602096616-kt9m@gcp-sa-bigquery-condel.iam.gserviceaccount.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/aiplatform.user"
+    },
+    {
+      "members": [
+        "deleted:serviceAccount:lyra-tf@dde-prj-orbit-d001.iam.gserviceaccount.com?uid=115744317251578716520",
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com",
+        "serviceAccount:1096602096616-compute@developer.gserviceaccount.com"
+      ],
+      "role": "roles/artifactregistry.admin"
+    },
+    {
+      "members": [
+        "serviceAccount:1096602096616-compute@developer.gserviceaccount.com"
+      ],
+      "role": "roles/artifactregistry.reader"
+    },
+    {
+      "members": [
+        "serviceAccount:1096602096616-compute@developer.gserviceaccount.com"
+      ],
+      "role": "roles/artifactregistry.repoAdmin"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-artifactregistry.iam.gserviceaccount.com"
+      ],
+      "role": "roles/artifactregistry.serviceAgent"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/artifactregistry.writer"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/bigquery.connectionUser"
+    },
+    {
+      "members": [
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com",
+        "serviceAccount:orbit-scc-machine-journey-shaw@dde-prj-orbit-d001.iam.gserviceaccount.com",
+        "serviceAccount:scc-stock-replenishment-app@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/bigquery.dataViewer"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/bigquery.jobUser"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/bigquery.readSessionUser"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/bigquery.resourceViewer"
+    },
+    {
+      "members": [
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com",
+        "serviceAccount:orbit-scc-machine-journey-shaw@dde-prj-orbit-d001.iam.gserviceaccount.com",
+        "serviceAccount:scc-stock-replenishment-app@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/bigquery.user"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-bigquerydatatransfer.iam.gserviceaccount.com"
+      ],
+      "role": "roles/bigquerydatatransfer.serviceAgent"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "group:dyson_gdf_gcp_administrator@groups.dyson.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/browser"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com",
+        "group:dyson_orbit_gcp_data-lead@groups.dyson.com"
+      ],
+      "role": "roles/cloudaicompanion.user"
+    },
+    {
+      "members": [
+        "serviceAccount:1096602096616@cloudbuild.gserviceaccount.com"
+      ],
+      "role": "roles/cloudbuild.builds.builder"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/cloudbuild.builds.editor"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-cloudbuild.iam.gserviceaccount.com"
+      ],
+      "role": "roles/cloudbuild.serviceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/clouddeploy.developer"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-cloudscheduler.iam.gserviceaccount.com"
+      ],
+      "role": "roles/cloudscheduler.serviceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:dde-terraform@dde-adm-platform-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/cloudsql.admin"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/cloudsql.editor"
+    },
+    {
+      "members": [
+        "deleted:serviceAccount:lyra-tf@dde-prj-orbit-d001.iam.gserviceaccount.com?uid=115744317251578716520",
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com"
+      ],
+      "role": "roles/compute.admin"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/compute.loadBalancerServiceUser"
+    },
+    {
+      "members": [
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com"
+      ],
+      "role": "roles/compute.networkAdmin"
+    },
+    {
+      "members": [
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com"
+      ],
+      "role": "roles/compute.networkUser"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/compute.osLogin"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@compute-system.iam.gserviceaccount.com"
+      ],
+      "role": "roles/compute.serviceAgent"
+    },
+    {
+      "members": [
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com"
+      ],
+      "role": "roles/compute.viewer"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@container-engine-robot.iam.gserviceaccount.com"
+      ],
+      "role": "roles/container.serviceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@containerregistry.iam.gserviceaccount.com"
+      ],
+      "role": "roles/containerregistry.ServiceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@dataflow-service-producer-prod.iam.gserviceaccount.com"
+      ],
+      "role": "roles/dataflow.serviceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-dataform.iam.gserviceaccount.com"
+      ],
+      "role": "roles/dataform.serviceAgent"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/dataplex.dataScanEditor"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/discoveryengine.viewer"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/documentai.viewer"
+    },
+    {
+      "members": [
+        "deleted:serviceAccount:lyra-tf@dde-prj-orbit-d001.iam.gserviceaccount.com?uid=115744317251578716520",
+        "serviceAccount:1096602096616-compute@developer.gserviceaccount.com",
+        "serviceAccount:1096602096616@cloudservices.gserviceaccount.com",
+        "serviceAccount:demo-rdd-techdev@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/editor"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/firebase.admin"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/firebase.developViewer"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@firebase-rules.iam.gserviceaccount.com"
+      ],
+      "role": "roles/firebaserules.system"
+    },
+    {
+      "members": [
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com"
+      ],
+      "role": "roles/iam.serviceAccountKeyAdmin"
+    },
+    {
+      "members": [
+        "serviceAccount:dde-composer-001@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/iam.serviceAccountTokenCreator"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com",
+        "serviceAccount:dde-composer-001@dde-prj-orbit-d001.iam.gserviceaccount.com",
+        "serviceAccount:dde-jenkins-001@dde-ops-engineering-p001.iam.gserviceaccount.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/iam.serviceAccountUser"
+    },
+    {
+      "members": [
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com"
+      ],
+      "role": "roles/iap.httpsResourceAccessor"
+    },
+    {
+      "members": [
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com"
+      ],
+      "role": "roles/iap.tunnelResourceAccessor"
+    },
+    {
+      "members": [
+        "serviceAccount:dde-composer-001@dde-prj-orbit-d001.iam.gserviceaccount.com",
+        "serviceAccount:dde-jenkins-001@dde-ops-engineering-p001.iam.gserviceaccount.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/logging.logWriter"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-logging.iam.gserviceaccount.com"
+      ],
+      "role": "roles/logging.serviceAgent"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/networkmanagement.viewer"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/notebooks.runner"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-notebooks.iam.gserviceaccount.com"
+      ],
+      "role": "roles/notebooks.serviceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:dde-terraform@dde-adm-platform-d001.iam.gserviceaccount.com",
+        "user:vishal.j@dyson.com"
+      ],
+      "role": "roles/owner"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-pubsub.iam.gserviceaccount.com"
+      ],
+      "role": "roles/pubsub.serviceAgent"
+    },
+    {
+      "members": [
+        "group:dyson_orbit_gcp_data-engineer@groups.dyson.com",
+        "group:dyson_orbit_gcp_data-lead@groups.dyson.com"
+      ],
+      "role": "roles/resourcemanager.projectIamAdmin"
+    },
+    {
+      "members": [
+        "deleted:serviceAccount:lyra-tf@dde-prj-orbit-d001.iam.gserviceaccount.com?uid=115744317251578716520",
+        "user:gaurav.mathur@dyson.com"
+      ],
+      "role": "roles/run.admin"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com",
+        "serviceAccount:dde-prj-orbit-d001-rct-gen-ai@dde-prj-orbit-d001.iam.gserviceaccount.com"
+      ],
+      "role": "roles/run.developer"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-iap.iam.gserviceaccount.com"
+      ],
+      "role": "roles/run.invoker"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@serverless-robot-prod.iam.gserviceaccount.com"
+      ],
+      "role": "roles/run.serviceAgent"
+    },
+    {
+      "condition": {
+        "expression": "request.time < timestamp(\"2024-08-26T08:33:15.330Z\")",
+        "title": "cloudbuild-connection-setup"
+      },
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-cloudbuild.iam.gserviceaccount.com"
+      ],
+      "role": "roles/secretmanager.admin"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/serviceusage.serviceUsageConsumer"
+    },
+    {
+      "members": [
+        "group:dyson_commercial_gcp_rct_gen-ai@dyson.com"
+      ],
+      "role": "roles/source.reader"
+    },
+    {
+      "members": [
+        "deleted:serviceAccount:lyra-tf@dde-prj-orbit-d001.iam.gserviceaccount.com?uid=115744317251578716520"
+      ],
+      "role": "roles/storage.admin"
+    },
+    {
+      "members": [
+        "serviceAccount:euw2-stage1-prd-infra-sa-01@btr-seed-infra-prd-01-a9e0.iam.gserviceaccount.com"
+      ],
+      "role": "roles/vpcaccess.admin"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-vpcaccess.iam.gserviceaccount.com"
+      ],
+      "role": "roles/vpcaccess.serviceAgent"
+    },
+    {
+      "members": [
+        "serviceAccount:service-1096602096616@gcp-sa-websecurityscanner.iam.gserviceaccount.com"
+      ],
+      "role": "roles/websecurityscanner.serviceAgent"
+    }
+  ],
+  "etag": "BwYsNDFzg1g=",
+  "version": 3
+}
+2025-01-24 12:57:06,334 INFO     ___FILE_ONLY___ 
+
+2025-01-24 12:57:06,344 DEBUG    root            Metrics reporting process started...

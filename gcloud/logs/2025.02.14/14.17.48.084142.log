@@ -1,0 +1,9 @@
+2025-02-14 14:17:48,093 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-02-14 14:17:48,098 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2025-02-14 14:17:48,142 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'describe']
+2025-02-14 14:17:48,143 DEBUG    root            Running [gcloud.config.configurations.describe] with arguments: [--format: "value[separator=""](properties.core.account,properties.core.project)", CONFIGURATION_NAME: "default"]
+2025-02-14 14:17:48,145 DEBUG    root            Chosen display Format:default value[separator=""](properties.core.account,properties.core.project)
+2025-02-14 14:17:48,145 INFO     root            Display format: "default value[separator=""](properties.core.account,properties.core.project)"
+2025-02-14 14:17:48,167 INFO     ___FILE_ONLY___ daniel.low@dyson.comdde-prj-buildandtest-p001
+
+2025-02-14 14:17:48,183 DEBUG    root            Metrics reporting process started...

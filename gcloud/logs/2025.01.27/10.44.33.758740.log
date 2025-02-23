@@ -1,0 +1,13 @@
+2025-01-27 10:44:33,760 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-01-27 10:44:34,053 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2025-01-27 10:44:34,055 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "dde-prj-buildandtest-d001"]
+2025-01-27 10:44:34,062 WARNING  root            Your active project does not match the quota project in your local Application Default Credentials file. This might result in unexpected quota issues.
+
+To update your Application Default Credentials quota project, use the `gcloud auth application-default set-quota-project` command.
+2025-01-27 10:44:34,087 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-01-27 10:44:35,164 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/dde-prj-buildandtest-d001?alt=json HTTP/1.1" 200 None
+2025-01-27 10:44:35,172 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2025-01-27 10:44:35,189 DEBUG    root            Chosen display Format:default
+2025-01-27 10:44:35,191 INFO     root            Display format: "default"
+2025-01-27 10:44:35,212 DEBUG    root            Metrics reporting process started...

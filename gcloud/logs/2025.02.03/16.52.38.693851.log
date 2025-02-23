@@ -1,0 +1,17 @@
+2025-02-03 16:52:38,761 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2025-02-03 16:52:38,775 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'managed_folders']
+2025-02-03 16:52:40,697 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'managed-folders', 'list']
+2025-02-03 16:52:40,704 DEBUG    root            Running [gcloud.storage.managed-folders.list] with arguments: [URL:1: "['gs://cvat-dde-ops-data-science-d001-europe-west4']"]
+2025-02-03 16:52:40,704 DEBUG    root            Chosen display Format:default
+2025-02-03 16:52:40,708 INFO     root            Display format: "default"
+2025-02-03 16:52:40,917 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-02-03 16:52:43,213 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/cvat-dde-ops-data-science-d001-europe-west4/managedFolders?alt=json&pageSize=1000 HTTP/1.1" 200 39
+2025-02-03 16:52:43,220 INFO     ___FILE_ONLY___ Listed 0 items.
+
+2025-02-03 16:52:43,262 INFO     ___FILE_ONLY___ 
+
+To take a quick anonymous survey, run:
+  $ gcloud survey
+
+
+2025-02-03 16:52:43,279 DEBUG    root            Metrics reporting process started...

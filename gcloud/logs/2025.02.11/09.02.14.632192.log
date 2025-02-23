@@ -1,0 +1,13 @@
+2025-02-11 09:02:14,633 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-02-11 09:02:14,638 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2025-02-11 09:02:14,648 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'virtualenv']
+2025-02-11 09:02:14,868 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2025-02-11 09:02:14,878 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2025-02-11 09:02:14,881 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'unset']
+2025-02-11 09:02:14,890 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get_value']
+2025-02-11 09:02:14,892 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'list']
+2025-02-11 09:02:14,893 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get']
+2025-02-11 09:02:14,895 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'universe_descriptors']
+2025-02-11 09:02:14,897 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'config']
+2025-02-11 09:02:14,898 ERROR    root            (gcloud.config) Invalid choice: 'lis'.
+2025-02-11 09:02:14,969 DEBUG    root            Metrics reporting process started...

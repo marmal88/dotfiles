@@ -1,0 +1,317 @@
+2025-02-19 14:50:39,478 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2025-02-19 14:50:39,522 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'submit']
+2025-02-19 14:50:39,532 DEBUG    root            Running [gcloud.builds.submit] with arguments: [--async: "True", --config: "src/lyra/cloudbuild.yaml", --gcs-source-staging-dir: "gs://dde-prj-orbit-d001_cloudbuild/lyra", --impersonate-service-account: "cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com", --project: "dde-prj-orbit-d001", --region: "europe-west2", --substitutions: "OrderedDict([('_IMAGE_NAME', 'backend'), ('_DOCKERFILE_NAME', 'Dockerfile.backend')])", SOURCE: "src/lyra"]
+2025-02-19 14:50:39,538 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com].
+2025-02-19 14:50:39,548 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-02-19 14:50:39,553 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-02-19 14:50:39,628 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-02-19 14:50:39,631 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken
+2025-02-19 14:50:39,632 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-02-19 14:50:39,741 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken HTTP/11" 200 None
+2025-02-19 14:50:39,742 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com].
+2025-02-19 14:50:39,744 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-02-19 14:50:39,745 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-02-19 14:50:39,811 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-02-19 14:50:39,816 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken
+2025-02-19 14:50:39,817 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-02-19 14:50:39,912 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken HTTP/11" 200 None
+2025-02-19 14:50:39,948 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-02-19 14:50:42,003 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/dde-prj-orbit-d001_cloudbuild?alt=json HTTP/11" 200 1182
+2025-02-19 14:50:42,010 INFO     root            Using ignore file at [src/lyra/.gcloudignore].
+2025-02-19 14:50:42,011 DEBUG    root            Skipping file [docs]
+2025-02-19 14:50:42,011 DEBUG    root            Skipping file [.vscode]
+2025-02-19 14:50:42,011 DEBUG    root            Skipping file [ollama]
+2025-02-19 14:50:42,027 DEBUG    root            Skipping file [backend/.venv]
+2025-02-19 14:50:42,028 DEBUG    root            Skipping file [backend/tests/test_services.py]
+2025-02-19 14:50:42,028 DEBUG    root            Skipping file [backend/tests/test_evaluator.py]
+2025-02-19 14:50:42,028 DEBUG    root            Skipping file [backend/tests/test_rate_limiter.py]
+2025-02-19 14:50:42,028 DEBUG    root            Skipping file [backend/tests/test_api.py]
+2025-02-19 14:50:42,028 DEBUG    root            Skipping file [backend/tests/test_request_cache.py]
+2025-02-19 14:50:42,033 DEBUG    root            Skipping file [backend/notebooks/02_quality_survey_data_eda.ipynb]
+2025-02-19 14:50:42,033 DEBUG    root            Skipping file [backend/notebooks/01_aftership_rr_labels_eda.ipynb]
+2025-02-19 14:50:42,033 DEBUG    root            Skipping file [backend/notebooks/evaluate_gen5_return_reasons.ipynb]
+2025-02-19 14:50:42,034 DEBUG    root            Skipping file [backend/notebooks/return_reasons_slides.ipynb]
+2025-02-19 14:50:42,034 DEBUG    root            Skipping file [backend/notebooks/return_reasons_w_Lyra_v1.ipynb]
+2025-02-19 14:50:42,034 DEBUG    root            Skipping file [backend/notebooks/scratchpad.ipynb]
+2025-02-19 14:50:42,034 DEBUG    root            Skipping file [backend/notebooks/aftership_return_reasons_w_Lyra_v1.ipynb]
+2025-02-19 14:50:42,034 DEBUG    root            Skipping file [backend/notebooks/return_reasons_w_local2.ipynb]
+2025-02-19 14:50:42,034 DEBUG    root            Skipping file [backend/notebooks/00_getting_started.ipynb]
+2025-02-19 14:50:42,034 DEBUG    root            Skipping file [backend/notebooks/return_reasons_w_local.ipynb]
+2025-02-19 14:50:42,034 DEBUG    root            Skipping file [backend/notebooks/training_data_prep_gen5_labels.ipynb]
+2025-02-19 14:50:42,034 DEBUG    root            Skipping file [backend/notebooks/return_reason_labelling_dataset_gen.ipynb]
+2025-02-19 14:50:42,035 DEBUG    root            Skipping file [backend/notebooks/03_quality_survey_data_eda__report.ipynb]
+2025-02-19 14:50:42,035 DEBUG    root            Skipping file [backend/notebooks/evaluations]
+2025-02-19 14:50:42,035 DEBUG    root            Skipping file [backend/notebooks/report_outputs]
+2025-02-19 14:50:42,035 DEBUG    root            Skipping file [backend/notebooks/scripts]
+2025-02-19 14:50:42,053 INFO     ___FILE_ONLY___ Creating temporary archive of 118 file(s) totalling 2.7 MiB before compression.
+
+2025-02-19 14:50:42,055 DEBUG    root            Added dir [frontend]
+2025-02-19 14:50:42,055 DEBUG    root            Added dir [backend]
+2025-02-19 14:50:42,055 DEBUG    root            Added dir [frontend/public]
+2025-02-19 14:50:42,055 DEBUG    root            Added dir [frontend/src]
+2025-02-19 14:50:42,055 DEBUG    root            Added dir [frontend/src/types]
+2025-02-19 14:50:42,055 DEBUG    root            Added dir [frontend/src/utils]
+2025-02-19 14:50:42,055 DEBUG    root            Added dir [frontend/src/styles]
+2025-02-19 14:50:42,056 DEBUG    root            Added dir [frontend/src/components]
+2025-02-19 14:50:42,056 DEBUG    root            Added dir [frontend/src/pages]
+2025-02-19 14:50:42,056 DEBUG    root            Added dir [backend/dags]
+2025-02-19 14:50:42,056 DEBUG    root            Added dir [backend/tests]
+2025-02-19 14:50:42,056 DEBUG    root            Added dir [backend/utils]
+2025-02-19 14:50:42,056 DEBUG    root            Added dir [backend/scripts]
+2025-02-19 14:50:42,056 DEBUG    root            Added dir [backend/api]
+2025-02-19 14:50:42,056 DEBUG    root            Added dir [backend/notebooks]
+2025-02-19 14:50:42,056 DEBUG    root            Added dir [backend/services]
+2025-02-19 14:50:42,057 DEBUG    root            Added dir [backend/scripts/sqls]
+2025-02-19 14:50:42,057 DEBUG    root            Added dir [backend/scripts/configs]
+2025-02-19 14:50:42,057 DEBUG    root            Added dir [backend/services/topic_modeling]
+2025-02-19 14:50:42,057 DEBUG    root            Added dir [backend/services/translation]
+2025-02-19 14:50:42,057 DEBUG    root            Added dir [backend/services/summarization]
+2025-02-19 14:50:42,057 DEBUG    root            Added dir [backend/services/sentiment_analysis]
+2025-02-19 14:50:42,057 DEBUG    root            Added dir [backend/services/topic_modeling/evaluators]
+2025-02-19 14:50:42,057 DEBUG    root            Added dir [backend/services/topic_modeling/prompts]
+2025-02-19 14:50:42,058 DEBUG    root            Added dir [backend/services/summarization/evaluators]
+2025-02-19 14:50:42,058 DEBUG    root            Added dir [backend/services/sentiment_analysis/evaluators]
+2025-02-19 14:50:42,058 DEBUG    root            Added dir [backend/services/sentiment_analysis/prompts]
+2025-02-19 14:50:42,058 DEBUG    root            Added [cloudbuild.yaml]
+2025-02-19 14:50:42,059 DEBUG    root            Added [Dockerfile.backend]
+2025-02-19 14:50:42,059 DEBUG    root            Added [README.md]
+2025-02-19 14:50:42,060 DEBUG    root            Added [.dockerignore]
+2025-02-19 14:50:42,061 DEBUG    root            Added [docker-compose.yml]
+2025-02-19 14:50:42,061 DEBUG    root            Added [.gcloudignore]
+2025-02-19 14:50:42,062 DEBUG    root            Added [Dockerfile.frontend]
+2025-02-19 14:50:42,062 DEBUG    root            Added [Dockerfile.ollama]
+2025-02-19 14:50:42,063 DEBUG    root            Added [frontend/.env.local.example]
+2025-02-19 14:50:42,064 DEBUG    root            Added [frontend/tailwind.config.js]
+2025-02-19 14:50:42,065 DEBUG    root            Added [frontend/next.config.js]
+2025-02-19 14:50:42,076 DEBUG    root            Added [frontend/package-lock.json]
+2025-02-19 14:50:42,077 DEBUG    root            Added [frontend/package.json]
+2025-02-19 14:50:42,078 DEBUG    root            Added [frontend/tsconfig.json]
+2025-02-19 14:50:42,078 DEBUG    root            Added [frontend/postcss.config.js]
+2025-02-19 14:50:42,079 DEBUG    root            Added [frontend/public/sample_summary_result.json]
+2025-02-19 14:50:42,090 DEBUG    root            Added [frontend/public/lyra_requirements.png]
+2025-02-19 14:50:42,091 DEBUG    root            Added [frontend/public/quality_survey_insights_run1.json]
+2025-02-19 14:50:42,107 DEBUG    root            Added [frontend/public/lyra_volume_estimates_sources.png]
+2025-02-19 14:50:42,117 DEBUG    root            Added [frontend/public/lyra_stage_2_3.png]
+2025-02-19 14:50:42,119 DEBUG    root            Added [frontend/public/lyra-constellation.png]
+2025-02-19 14:50:42,120 DEBUG    root            Added [frontend/public/dyson-logo.png]
+2025-02-19 14:50:42,133 DEBUG    root            Added [frontend/public/lyra_stage_1.png]
+2025-02-19 14:50:42,134 DEBUG    root            Added [frontend/src/types/global.d.ts]
+2025-02-19 14:50:42,135 DEBUG    root            Added [frontend/src/utils/api.ts]
+2025-02-19 14:50:42,136 DEBUG    root            Added [frontend/src/styles/DataFlowVisualization.module.css]
+2025-02-19 14:50:42,136 DEBUG    root            Added [frontend/src/styles/globals.css]
+2025-02-19 14:50:42,137 DEBUG    root            Added [frontend/src/components/SubmitButton.tsx]
+2025-02-19 14:50:42,137 DEBUG    root            Added [frontend/src/components/Tabs.tsx]
+2025-02-19 14:50:42,138 DEBUG    root            Added [frontend/src/components/SummaryComponent.tsx]
+2025-02-19 14:50:42,138 DEBUG    root            Added [frontend/src/components/TextInput.tsx]
+2025-02-19 14:50:42,139 DEBUG    root            Added [frontend/src/components/CostCalculator.tsx]
+2025-02-19 14:50:42,139 DEBUG    root            Added [frontend/src/components/VerbatimReasons.tsx]
+2025-02-19 14:50:42,140 DEBUG    root            Added [frontend/src/components/ImportantReasons.tsx]
+2025-02-19 14:50:42,141 DEBUG    root            Added [frontend/src/components/LyraDataFlowVisualization.tsx]
+2025-02-19 14:50:42,142 DEBUG    root            Added [frontend/src/components/ResultDisplay.tsx]
+2025-02-19 14:50:42,143 DEBUG    root            Added [frontend/src/components/SankeyChart.tsx]
+2025-02-19 14:50:42,144 DEBUG    root            Added [frontend/src/components/ModelSelector.tsx]
+2025-02-19 14:50:42,145 DEBUG    root            Added [frontend/src/components/FileUpload.tsx]
+2025-02-19 14:50:42,145 DEBUG    root            Added [frontend/src/components/ReturnReasonsInsightCache.tsx]
+2025-02-19 14:50:42,146 DEBUG    root            Added [frontend/src/components/SampleLyraTransformation.tsx]
+2025-02-19 14:50:42,147 DEBUG    root            Added [frontend/src/components/DataFlowVisualization.tsx]
+2025-02-19 14:50:42,147 DEBUG    root            Added [frontend/src/components/MenuBar.tsx]
+2025-02-19 14:50:42,148 DEBUG    root            Added [frontend/src/components/ReturnReasonsInsights.tsx]
+2025-02-19 14:50:42,149 DEBUG    root            Added [frontend/src/components/Layout.tsx]
+2025-02-19 14:50:42,149 DEBUG    root            Added [frontend/src/components/Header.tsx]
+2025-02-19 14:50:42,150 DEBUG    root            Added [frontend/src/components/CSVUploader.tsx]
+2025-02-19 14:50:42,150 DEBUG    root            Added [frontend/src/components/InsightsTimeline.tsx]
+2025-02-19 14:50:42,151 DEBUG    root            Added [frontend/src/components/Toggle.tsx]
+2025-02-19 14:50:42,151 DEBUG    root            Added [frontend/src/components/ProcessingIndicator.tsx]
+2025-02-19 14:50:42,152 DEBUG    root            Added [frontend/src/components/ParetoAnalysis.tsx]
+2025-02-19 14:50:42,152 DEBUG    root            Added [frontend/src/components/ColumnNameInput.tsx]
+2025-02-19 14:50:42,153 DEBUG    root            Added [frontend/src/components/ReturnReasonsTrends.tsx]
+2025-02-19 14:50:42,154 DEBUG    root            Added [frontend/src/pages/index.tsx]
+2025-02-19 14:50:42,154 DEBUG    root            Added [frontend/src/pages/system-design.tsx]
+2025-02-19 14:50:42,155 DEBUG    root            Added [frontend/src/pages/cost-comparison.tsx]
+2025-02-19 14:50:42,156 DEBUG    root            Added [frontend/src/pages/scheduled-jobs.tsx]
+2025-02-19 14:50:42,156 DEBUG    root            Added [frontend/src/pages/_document.tsx]
+2025-02-19 14:50:42,157 DEBUG    root            Added [frontend/src/pages/return-reasons-report.tsx]
+2025-02-19 14:50:42,157 DEBUG    root            Added [frontend/src/pages/sample-insights.tsx]
+2025-02-19 14:50:42,158 DEBUG    root            Added [frontend/src/pages/_app.tsx]
+2025-02-19 14:50:42,159 DEBUG    root            Added [backend/config.py]
+2025-02-19 14:50:42,159 DEBUG    root            Added [backend/pyproject.toml]
+2025-02-19 14:50:42,160 DEBUG    root            Added [backend/README.md]
+2025-02-19 14:50:42,160 DEBUG    root            Added [backend/.env.example]
+2025-02-19 14:50:42,174 DEBUG    root            Added [backend/poetry.lock]
+2025-02-19 14:50:42,174 DEBUG    root            Added [backend/dags/nlp_pipeline_dag.py]
+2025-02-19 14:50:42,176 DEBUG    root            Added [backend/utils/smart_rate_limiter.py]
+2025-02-19 14:50:42,180 DEBUG    root            Added [backend/utils/llm.py]
+2025-02-19 14:50:42,181 DEBUG    root            Added [backend/utils/common.py]
+2025-02-19 14:50:42,183 DEBUG    root            Added [backend/utils/llm_utils.py]
+2025-02-19 14:50:42,184 DEBUG    root            Added [backend/utils/bigquery_utils.py]
+2025-02-19 14:50:42,186 DEBUG    root            Added [backend/utils/evaluator.py]
+2025-02-19 14:50:42,188 DEBUG    root            Added [backend/scripts/return_reasons_inference.py]
+2025-02-19 14:50:42,190 DEBUG    root            Added [backend/scripts/benchmark_rate_limiter.py]
+2025-02-19 14:50:42,192 DEBUG    root            Added [backend/scripts/survey_data_inference.py]
+2025-02-19 14:50:42,192 DEBUG    root            Added [backend/scripts/sqls/aftership_de_returns.sql]
+2025-02-19 14:50:42,193 DEBUG    root            Added [backend/scripts/sqls/cielo_us_returns.sql]
+2025-02-19 14:50:42,193 DEBUG    root            Added [backend/scripts/configs/cielo_return_reasons_inference_config.yaml]
+2025-02-19 14:50:42,194 DEBUG    root            Added [backend/scripts/configs/survey_inference_config.yaml]
+2025-02-19 14:50:42,194 DEBUG    root            Added [backend/scripts/configs/aftership_return_reasons_inference_config.yaml]
+2025-02-19 14:50:42,196 DEBUG    root            Added [backend/api/main.py]
+2025-02-19 14:50:42,198 DEBUG    root            Added [backend/services/__init__.py]
+2025-02-19 14:50:42,201 DEBUG    root            Added [backend/services/topic_modeling/models.py]
+2025-02-19 14:50:42,204 DEBUG    root            Added [backend/services/topic_modeling/evaluation.py]
+2025-02-19 14:50:42,205 DEBUG    root            Added [backend/services/topic_modeling/llm_model.py]
+2025-02-19 14:50:42,206 DEBUG    root            Added [backend/services/topic_modeling/inference.py]
+2025-02-19 14:50:42,207 DEBUG    root            Added [backend/services/topic_modeling/base.py]
+2025-02-19 14:50:42,208 DEBUG    root            Added [backend/services/topic_modeling/evaluators/heuristics.py]
+2025-02-19 14:50:42,209 DEBUG    root            Added [backend/services/topic_modeling/evaluators/llm_judges.py]
+2025-02-19 14:50:42,209 DEBUG    root            Added [backend/services/topic_modeling/evaluators/base.py]
+2025-02-19 14:50:42,213 DEBUG    root            Added [backend/services/topic_modeling/prompts/survey_topics_v1.txt]
+2025-02-19 14:50:42,214 DEBUG    root            Added [backend/services/topic_modeling/prompts/return_reasons_model_v2.txt]
+2025-02-19 14:50:42,215 DEBUG    root            Added [backend/services/topic_modeling/prompts/survey_topics_v2.txt]
+2025-02-19 14:50:42,216 DEBUG    root            Added [backend/services/topic_modeling/prompts/return_reasons_model_v1.txt]
+2025-02-19 14:50:42,218 DEBUG    root            Added [backend/services/topic_modeling/prompts/topic_modelling_v1.txt]
+2025-02-19 14:50:42,218 DEBUG    root            Added [backend/services/topic_modeling/prompts/topic_modelling_w_highlights_v1.txt]
+2025-02-19 14:50:42,219 DEBUG    root            Added [backend/services/translation/models.py]
+2025-02-19 14:50:42,220 DEBUG    root            Added [backend/services/translation/evaluation.py]
+2025-02-19 14:50:42,221 DEBUG    root            Added [backend/services/translation/llm_model.py]
+2025-02-19 14:50:42,222 DEBUG    root            Added [backend/services/translation/inference.py]
+2025-02-19 14:50:42,222 DEBUG    root            Added [backend/services/translation/base.py]
+2025-02-19 14:50:42,224 DEBUG    root            Added [backend/services/summarization/models.py]
+2025-02-19 14:50:42,225 DEBUG    root            Added [backend/services/summarization/evaluation.py]
+2025-02-19 14:50:42,225 DEBUG    root            Added [backend/services/summarization/inference.py]
+2025-02-19 14:50:42,226 DEBUG    root            Added [backend/services/summarization/base.py]
+2025-02-19 14:50:42,226 DEBUG    root            Added [backend/services/summarization/evaluators/llm_judges.py]
+2025-02-19 14:50:42,227 DEBUG    root            Added [backend/services/sentiment_analysis/models.py]
+2025-02-19 14:50:42,228 DEBUG    root            Added [backend/services/sentiment_analysis/llm_model.py]
+2025-02-19 14:50:42,229 DEBUG    root            Added [backend/services/sentiment_analysis/inference.py]
+2025-02-19 14:50:42,230 DEBUG    root            Added [backend/services/sentiment_analysis/base.py]
+2025-02-19 14:50:42,231 DEBUG    root            Added [backend/services/sentiment_analysis/evaluators/heuristics.py]
+2025-02-19 14:50:42,232 DEBUG    root            Added [backend/services/sentiment_analysis/evaluators/llm_judges.py]
+2025-02-19 14:50:42,232 DEBUG    root            Added [backend/services/sentiment_analysis/evaluators/base.py]
+2025-02-19 14:50:42,233 DEBUG    root            Added [backend/services/sentiment_analysis/prompts/absa_v1.txt]
+2025-02-19 14:50:42,234 DEBUG    root            Added [backend/services/sentiment_analysis/prompts/survey_sentiment_analysis_v2.txt]
+2025-02-19 14:50:42,235 DEBUG    root            Added [backend/services/sentiment_analysis/prompts/survey_sentiment_analysis_v1.txt]
+2025-02-19 14:50:42,236 DEBUG    root            Added [backend/services/sentiment_analysis/prompts/absa_w_phrase_v1.txt]
+2025-02-19 14:50:42,236 INFO     ___FILE_ONLY___ Some files were not included in the source upload.
+
+Check the gcloud log [/Users/daniel.low/.config/gcloud/logs/2025.02.19/14.50.39.427809.log] to see which files and the contents of the
+default gcloudignore file used (see `$ gcloud topic gcloudignore` to learn
+more).
+
+
+2025-02-19 14:50:42,236 INFO     ___FILE_ONLY___ Uploading tarball of [src/lyra] to [gs://dde-prj-orbit-d001_cloudbuild/lyra/1739947839.946631-d9ea8cd915b940968d1c36286798a4ab.tgz]
+
+2025-02-19 14:50:42,239 INFO     root            Uploading [/var/folders/cs/p5_dzp410hlgfg_ljwj0jyg00000gp/T/tmpt2ioxk7b/file.tgz] to [dde-prj-orbit-d001_cloudbuild/lyra/1739947839.946631-d9ea8cd915b940968d1c36286798a4ab.tgz]
+2025-02-19 14:50:48,360 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "POST /upload/storage/v1/b/dde-prj-orbit-d001_cloudbuild/o?alt=json&name=lyra%2F1739947839.946631-d9ea8cd915b940968d1c36286798a4ab.tgz&uploadType=multipart HTTP/11" 200 1056
+2025-02-19 14:50:48,364 DEBUG    root            submitting build: <Build
+ images: []
+ options: <BuildOptions
+ dynamicSubstitutions: True
+ env: []
+ logging: LoggingValueValuesEnum(CLOUD_LOGGING_ONLY, 4)
+ secretEnv: []
+ sourceProvenanceHash: []
+ volumes: []>
+ secrets: []
+ source: <Source
+ storageSource: <StorageSource
+ bucket: 'dde-prj-orbit-d001_cloudbuild'
+ generation: 1739947848200539
+ object: 'lyra/1739947839.946631-d9ea8cd915b940968d1c36286798a4ab.tgz'>>
+ steps: [<BuildStep
+ allowExitCodes: []
+ args: ['-c', 'docker build --platform=linux/amd64 --network=cloudbuild -t $_ARTIFACT_REGISTRY/$_IMAGE_NAME:${_IMAGE_VERSION} --target production -f ${_DOCKERFILE_NAME} --no-cache .']
+ entrypoint: 'bash'
+ env: []
+ id: 'Building Docker Image'
+ name: 'gcr.io/cloud-builders/docker'
+ secretEnv: []
+ volumes: []
+ waitFor: []>, <BuildStep
+ allowExitCodes: []
+ args: ['-c', 'docker push $_ARTIFACT_REGISTRY/$_IMAGE_NAME:$_IMAGE_VERSION']
+ entrypoint: 'bash'
+ env: []
+ id: 'Pushing the Image'
+ name: 'gcr.io/cloud-builders/docker'
+ secretEnv: []
+ volumes: []
+ waitFor: []>]
+ substitutions: <SubstitutionsValue
+ additionalProperties: [<AdditionalProperty
+ key: '_ARTIFACT_REGISTRY'
+ value: '${LOCATION}-docker.pkg.dev/${PROJECT_ID}/lyra'>, <AdditionalProperty
+ key: '_DOCKERFILE_NAME'
+ value: 'Dockerfile.backend'>, <AdditionalProperty
+ key: '_IMAGE_NAME'
+ value: 'backend'>, <AdditionalProperty
+ key: '_IMAGE_VERSION'
+ value: '0.0.2'>]>
+ tags: []
+ timeout: '3600s'
+ warnings: []>
+2025-02-19 14:50:48,365 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com].
+2025-02-19 14:50:48,367 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-02-19 14:50:48,367 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-02-19 14:50:48,437 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-02-19 14:50:48,440 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken
+2025-02-19 14:50:48,442 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-02-19 14:50:48,533 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken HTTP/11" 200 None
+2025-02-19 14:50:48,536 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com].
+2025-02-19 14:50:48,548 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-02-19 14:50:48,550 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-02-19 14:50:48,633 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-02-19 14:50:48,640 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken
+2025-02-19 14:50:48,642 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-02-19 14:50:48,707 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken HTTP/11" 200 None
+2025-02-19 14:50:48,717 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2025-02-19 14:50:50,713 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "POST /v1/projects/dde-prj-orbit-d001/locations/europe-west2/builds?alt=json HTTP/11" 200 None
+2025-02-19 14:50:50,716 INFO     ___FILE_ONLY___ Created [https://cloudbuild.googleapis.com/v1/projects/dde-prj-orbit-d001/locations/europe-west2/builds/6887e951-8e02-4f0c-adf8-ebc17cd477ff].
+
+2025-02-19 14:50:50,716 INFO     ___FILE_ONLY___ Logs are available at [ https://console.cloud.google.com/cloud-build/builds;region=europe-west2/6887e951-8e02-4f0c-adf8-ebc17cd477ff?project=1096602096616 ].
+
+2025-02-19 14:50:50,716 DEBUG    root            Chosen display Format:
+        table(
+          id,
+          createTime.date('%Y-%m-%dT%H:%M:%S%Oz', undefined='-'),
+          duration(start=startTime,end=finishTime,precision=0,calendar=false,undefined="  -").slice(2:).join(""):label=DURATION,
+          build_source(undefined="-"):label=SOURCE,
+          build_images(undefined="-"):label=IMAGES,
+          status
+        )
+      
+2025-02-19 14:50:50,717 INFO     root            Display format: "
+        table(
+          id,
+          createTime.date('%Y-%m-%dT%H:%M:%S%Oz', undefined='-'),
+          duration(start=startTime,end=finishTime,precision=0,calendar=false,undefined="  -").slice(2:).join(""):label=DURATION,
+          build_source(undefined="-"):label=SOURCE,
+          build_images(undefined="-"):label=IMAGES,
+          status
+        )
+      "
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ ID
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___                                     
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ CREATE_TIME
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___                 
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ DURATION
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___   
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ SOURCE
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___                                                                                           
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ IMAGES
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___   
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ STATUS
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ 
+
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ 6887e951-8e02-4f0c-adf8-ebc17cd477ff
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___   
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ 2025-02-19T06:50:50+00:00
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___   
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ -
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___          
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ gs://dde-prj-orbit-d001_cloudbuild/lyra/1739947839.946631-d9ea8cd915b940968d1c36286798a4ab.tgz
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___   
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ -
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___        
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ QUEUED
+2025-02-19 14:50:50,750 INFO     ___FILE_ONLY___ 
+
+2025-02-19 14:50:50,767 DEBUG    root            Metrics reporting process started...

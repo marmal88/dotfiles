@@ -1,0 +1,18 @@
+2025-01-24 12:17:07,058 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2025-01-24 12:17:07,063 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service_accounts']
+2025-01-24 12:17:07,079 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service-accounts', 'create']
+2025-01-24 12:17:07,080 DEBUG    root            Running [gcloud.iam.service-accounts.create] with arguments: [--display-name: "Lyra Terraform Service Account", --project: "dde-prj-orbit-d001", NAME: "lyra-terraform"]
+2025-01-24 12:17:07,107 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2025-01-24 12:17:08,800 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/projects/dde-prj-orbit-d001/serviceAccounts?alt=json HTTP/1.1" 200 None
+2025-01-24 12:17:08,807 INFO     ___FILE_ONLY___ Created service account [lyra-terraform].
+
+2025-01-24 12:17:08,807 DEBUG    root            Chosen display Format:none
+2025-01-24 12:17:08,808 INFO     root            Display format: "none"
+2025-01-24 12:17:08,842 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+
+2025-01-24 12:17:08,865 DEBUG    root            Metrics reporting process started...

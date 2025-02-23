@@ -1,0 +1,62 @@
+2025-01-24 15:41:08,521 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2025-01-24 15:41:08,555 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'submit']
+2025-01-24 15:41:08,563 DEBUG    root            Running [gcloud.builds.submit] with arguments: [--async: "True", --config: "src/lyra/cloudbuild.yaml", --gcs-source-staging-dir: "gs://dde-prj-orbit-d001_cloudbuild/src/lyra", --impersonate-service-account: "cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com", --project: "dde-prj-orbit-d001", --region: "europe-west2", --service-account: "projects/dde-prj-orbit-d001/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com", SOURCE: "."]
+2025-01-24 15:41:08,569 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com].
+2025-01-24 15:41:08,575 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-01-24 15:41:08,579 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-01-24 15:41:08,669 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-01-24 15:41:08,672 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken
+2025-01-24 15:41:08,672 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-01-24 15:41:08,789 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken HTTP/1.1" 200 None
+2025-01-24 15:41:08,794 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com].
+2025-01-24 15:41:08,800 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-01-24 15:41:08,800 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-01-24 15:41:08,897 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-01-24 15:41:08,902 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken
+2025-01-24 15:41:08,903 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-01-24 15:41:09,031 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com:generateAccessToken HTTP/1.1" 200 None
+2025-01-24 15:41:09,045 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-01-24 15:41:11,462 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/dde-prj-orbit-d001_cloudbuild?alt=json HTTP/1.1" 403 592
+2025-01-24 15:41:11,470 DEBUG    root            (gcloud.builds.submit) The user is forbidden from accessing the bucket [dde-prj-orbit-d001_cloudbuild]. Please check your organization's policy or if the user has the "serviceusage.services.use" permission. Giving the user Owner, Editor, or Viewer roles may also fix this issue. Alternatively, use the --no-source option and access your source code via a different method.
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/submit_util.py", line 403, in SetSource
+    gcs_client.CreateBucketIfNotExists(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/storage_api.py", line 393, in CreateBucketIfNotExists
+    self.client.buckets.Get(self.messages.StorageBucketsGetRequest(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/storage/v1/storage_v1_client.py", line 461, in Get
+    return self._RunMethod(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://storage.googleapis.com/storage/v1/b/dde-prj-orbit-d001_cloudbuild?alt=json>: response: <{'x-guploader-uploadid': 'AFIdbgQj7wl2tegfZ-wx8dragP0zSaUmJ3NJs8UVUzyrlf_LarID0mYkoXZTh-4HfJblHKsn', 'content-type': 'application/json; charset=UTF-8', 'date': 'Fri, 24 Jan 2025 07:41:11 GMT', 'vary': 'Origin, X-Origin', 'cache-control': 'no-cache, no-store, max-age=0, must-revalidate', 'expires': 'Mon, 01 Jan 1990 00:00:00 GMT', 'pragma': 'no-cache', 'content-length': '592', 'server': 'UploadServer', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com does not have storage.buckets.get access to the Google Cloud Storage bucket. Permission 'storage.buckets.get' denied on resource (or it may not exist).",
+    "errors": [
+      {
+        "message": "cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com does not have storage.buckets.get access to the Google Cloud Storage bucket. Permission 'storage.buckets.get' denied on resource (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/surface/builds/submit.py", line 247, in Run
+    build_config = submit_util.SetSource(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/submit_util.py", line 414, in SetSource
+    raise BucketForbiddenError(
+googlecloudsdk.command_lib.builds.submit_util.BucketForbiddenError: The user is forbidden from accessing the bucket [dde-prj-orbit-d001_cloudbuild]. Please check your organization's policy or if the user has the "serviceusage.services.use" permission. Giving the user Owner, Editor, or Viewer roles may also fix this issue. Alternatively, use the --no-source option and access your source code via a different method.
+2025-01-24 15:41:11,478 ERROR    root            (gcloud.builds.submit) The user is forbidden from accessing the bucket [dde-prj-orbit-d001_cloudbuild]. Please check your organization's policy or if the user has the "serviceusage.services.use" permission. Giving the user Owner, Editor, or Viewer roles may also fix this issue. Alternatively, use the --no-source option and access your source code via a different method.
+2025-01-24 15:41:11,509 DEBUG    root            Metrics reporting process started...

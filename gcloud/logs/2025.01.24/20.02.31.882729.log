@@ -1,0 +1,10 @@
+2025-01-24 20:02:31,891 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-01-24 20:02:32,145 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2025-01-24 20:02:32,148 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "dde-prj-orbit-d001"]
+2025-01-24 20:02:32,198 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-01-24 20:02:33,267 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/dde-prj-orbit-d001?alt=json HTTP/1.1" 200 None
+2025-01-24 20:02:33,270 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2025-01-24 20:02:33,271 DEBUG    root            Chosen display Format:default
+2025-01-24 20:02:33,272 INFO     root            Display format: "default"
+2025-01-24 20:02:33,279 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,39 @@
+2025-02-12 15:46:47,019 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2025-02-12 15:46:47,020 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service_accounts']
+2025-02-12 15:46:47,042 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service-accounts', 'get_iam_policy']
+2025-02-12 15:46:47,043 DEBUG    root            Running [gcloud.iam.service-accounts.get-iam-policy] with arguments: [--filter: "bindings.role:roles/iam.serviceAccountTokenCreator", --flatten: "['bindings[].members']", --format: "table(bindings.role,bindings.members)", --project: "dde-ops-data-science-d001", SERVICE_ACCOUNT: "model-deployment-cloudbuild-sa@dde-ops-data-science-d001.iam.gserviceaccount.com"]
+2025-02-12 15:46:47,075 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2025-02-12 15:46:48,516 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/model-deployment-cloudbuild-sa@dde-ops-data-science-d001.iam.gserviceaccount.com:getIamPolicy?alt=json&options.requestedPolicyVersion=3 HTTP/11" 200 None
+2025-02-12 15:46:48,518 DEBUG    root            Chosen display Format:default table(bindings.role,bindings.members)
+2025-02-12 15:46:48,519 INFO     root            Display format: "default table(bindings.role,bindings.members)"
+2025-02-12 15:46:48,583 INFO     ___FILE_ONLY___ ROLE
+2025-02-12 15:46:48,583 INFO     ___FILE_ONLY___                                   
+2025-02-12 15:46:48,583 INFO     ___FILE_ONLY___ MEMBERS
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___ roles/iam.serviceAccountTokenCreator
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___   
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___ user:daniel.low@dyson.com
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___ roles/iam.serviceAccountTokenCreator
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___   
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___ user:edward.long@dyson.com
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___ roles/iam.serviceAccountTokenCreator
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___   
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___ user:frank.cao@dyson.com
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___ roles/iam.serviceAccountTokenCreator
+2025-02-12 15:46:48,584 INFO     ___FILE_ONLY___   
+2025-02-12 15:46:48,585 INFO     ___FILE_ONLY___ user:joshua.rodrigues@dyson.com
+2025-02-12 15:46:48,585 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:46:48,585 INFO     ___FILE_ONLY___ roles/iam.serviceAccountTokenCreator
+2025-02-12 15:46:48,585 INFO     ___FILE_ONLY___   
+2025-02-12 15:46:48,585 INFO     ___FILE_ONLY___ user:kahghi.lim@dyson.com
+2025-02-12 15:46:48,585 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:46:48,596 DEBUG    root            Metrics reporting process started...

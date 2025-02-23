@@ -1,0 +1,394 @@
+2025-02-19 14:40:26,800 DEBUG    root            Loaded Command Group: ['gcloud', 'meta']
+2025-02-19 14:40:26,803 DEBUG    root            Loaded Command Group: ['gcloud', 'meta', 'list_files_for_upload']
+2025-02-19 14:40:26,804 DEBUG    root            Running [gcloud.meta.list-files-for-upload] with arguments: []
+2025-02-19 14:40:26,806 INFO     root            Using ignore file at [./.gcloudignore].
+2025-02-19 14:40:26,806 DEBUG    root            Chosen display Format:value(.)
+2025-02-19 14:40:26,806 INFO     root            Display format: "value(.)"
+2025-02-19 14:40:26,807 INFO     ___FILE_ONLY___ pyproject.toml
+
+2025-02-19 14:40:26,807 INFO     ___FILE_ONLY___ build_ci.sh
+
+2025-02-19 14:40:26,807 INFO     ___FILE_ONLY___ README.md
+
+2025-02-19 14:40:26,807 INFO     ___FILE_ONLY___ .gitignore
+
+2025-02-19 14:40:26,807 INFO     ___FILE_ONLY___ poetry.lock
+
+2025-02-19 14:40:26,807 INFO     ___FILE_ONLY___ ini_3.code-workspace
+
+2025-02-19 14:40:26,807 INFO     ___FILE_ONLY___ .gcloudignore
+
+2025-02-19 14:40:26,807 DEBUG    root            Skipping file [.git]
+2025-02-19 14:40:26,807 DEBUG    root            Skipping file [.vscode]
+2025-02-19 14:40:26,808 DEBUG    root            Skipping file [infra/terragrunt.hcl]
+2025-02-19 14:40:26,808 DEBUG    root            Skipping file [infra/README.md]
+2025-02-19 14:40:26,808 DEBUG    root            Skipping file [infra/live]
+2025-02-19 14:40:26,808 DEBUG    root            Skipping file [infra/modules]
+2025-02-19 14:40:26,808 INFO     ___FILE_ONLY___ sqls/user_app_interactions_queries.sql
+
+2025-02-19 14:40:26,808 INFO     ___FILE_ONLY___ sqls/create_app_interactions.sql
+
+2025-02-19 14:40:26,808 INFO     ___FILE_ONLY___ sqls/create_stage_1_v0.sql
+
+2025-02-19 14:40:26,808 INFO     ___FILE_ONLY___ sqls/create_stage_1_v1.sql
+
+2025-02-19 14:40:26,809 INFO     ___FILE_ONLY___ sqls/pcausal_model_data.sql
+
+2025-02-19 14:40:26,809 INFO     ___FILE_ONLY___ sqls/fc_faults__returns.sql
+
+2025-02-19 14:40:26,809 INFO     ___FILE_ONLY___ sqls/create_interface_jobs_quality_data.sql
+
+2025-02-19 14:40:26,809 INFO     ___FILE_ONLY___ sqls/quality__returns_dataset_detail.sql
+
+2025-02-19 14:40:26,809 INFO     ___FILE_ONLY___ sqls/bdp_app_interactions.sql
+
+2025-02-19 14:40:26,809 INFO     ___FILE_ONLY___ sqls/create_web_interactions.sql
+
+2025-02-19 14:40:26,809 INFO     ___FILE_ONLY___ sqls/sales_transactions.sql
+
+2025-02-19 14:40:26,809 DEBUG    root            Skipping file [tests/test_data_prep.py]
+2025-02-19 14:40:26,809 DEBUG    root            Skipping file [tests/__init__.py]
+2025-02-19 14:40:26,810 DEBUG    root            Skipping file [notebooks/ORB-202 retailer_registrations_and_returns.ipynb]
+2025-02-19 14:40:26,810 DEBUG    root            Skipping file [notebooks/ec_returns_analysis_v1.ipynb]
+2025-02-19 14:40:26,810 DEBUG    root            Skipping file [notebooks/survey_comments_analysis.ipynb]
+2025-02-19 14:40:26,810 DEBUG    root            Skipping file [notebooks/returns_exploration_jun11.ipynb]
+2025-02-19 14:40:26,810 DEBUG    root            Skipping file [notebooks/ORB-151 and 163: ec_returns_analysis_v1__001_data_reqs.ipynb]
+2025-02-19 14:40:26,810 DEBUG    root            Skipping file [notebooks/interface_jobs_exploration.ipynb]
+2025-02-19 14:40:26,810 DEBUG    root            Skipping file [notebooks/lg_test.ipynb]
+2025-02-19 14:40:26,810 DEBUG    root            Skipping file [notebooks/return_reasons.ipynb]
+2025-02-19 14:40:26,811 DEBUG    root            Skipping file [notebooks/pcausal_model_scratchpad.ipynb]
+2025-02-19 14:40:26,811 DEBUG    root            Skipping file [notebooks/robot_returns_analysis_v0.ipynb]
+2025-02-19 14:40:26,811 DEBUG    root            Skipping file [notebooks/nps_survey_delivery_issues_analysis.ipynb]
+2025-02-19 14:40:26,811 DEBUG    root            Skipping file [notebooks/starter.py]
+2025-02-19 14:40:26,811 INFO     ___FILE_ONLY___ src/__init__.py
+
+2025-02-19 14:40:26,812 INFO     ___FILE_ONLY___ src/syn_data_generator_v1.py
+
+2025-02-19 14:40:26,812 INFO     ___FILE_ONLY___ src/copilot/Dockerfile
+
+2025-02-19 14:40:26,812 INFO     ___FILE_ONLY___ src/copilot/pyproject.toml
+
+2025-02-19 14:40:26,813 INFO     ___FILE_ONLY___ src/copilot/__init__.py
+
+2025-02-19 14:40:26,813 INFO     ___FILE_ONLY___ src/copilot/README.md
+
+2025-02-19 14:40:26,813 INFO     ___FILE_ONLY___ src/copilot/Dockerfile.dev
+
+2025-02-19 14:40:26,813 INFO     ___FILE_ONLY___ src/copilot/research_agent.py
+
+2025-02-19 14:40:26,813 INFO     ___FILE_ONLY___ src/copilot/app.py
+
+2025-02-19 14:40:26,813 INFO     ___FILE_ONLY___ src/copilot/poetry.lock
+
+2025-02-19 14:40:26,813 INFO     ___FILE_ONLY___ src/copilot/image.png
+
+2025-02-19 14:40:26,814 INFO     ___FILE_ONLY___ src/copilot/scripts/generate_fake_sales_data.py
+
+2025-02-19 14:40:26,814 INFO     ___FILE_ONLY___ src/copilot/scripts/generate_fake_returns_data.py
+
+2025-02-19 14:40:26,814 INFO     ___FILE_ONLY___ src/lyra_v0/services_app.py
+
+2025-02-19 14:40:26,814 INFO     ___FILE_ONLY___ src/lyra_v0/Dockerfile
+
+2025-02-19 14:40:26,815 INFO     ___FILE_ONLY___ src/lyra_v0/generate_synthetic_data.py
+
+2025-02-19 14:40:26,815 INFO     ___FILE_ONLY___ src/lyra_v0/pyproject.toml
+
+2025-02-19 14:40:26,815 INFO     ___FILE_ONLY___ src/lyra_v0/llm_text_utils.py
+
+2025-02-19 14:40:26,815 INFO     ___FILE_ONLY___ src/lyra_v0/llm_openai.py
+
+2025-02-19 14:40:26,815 INFO     ___FILE_ONLY___ src/lyra_v0/__init__.py
+
+2025-02-19 14:40:26,815 INFO     ___FILE_ONLY___ src/lyra_v0/README.md
+
+2025-02-19 14:40:26,815 INFO     ___FILE_ONLY___ src/lyra_v0/.dockerignore
+
+2025-02-19 14:40:26,815 INFO     ___FILE_ONLY___ src/lyra_v0/app.py
+
+2025-02-19 14:40:26,815 INFO     ___FILE_ONLY___ src/lyra_v0/insights_app.py
+
+2025-02-19 14:40:26,816 INFO     ___FILE_ONLY___ src/lyra_v0/lyra_service.py
+
+2025-02-19 14:40:26,816 INFO     ___FILE_ONLY___ src/lyra_v0/poetry.lock
+
+2025-02-19 14:40:26,816 INFO     ___FILE_ONLY___ src/lyra_v0/test_gemini_access.py
+
+2025-02-19 14:40:26,816 DEBUG    root            Skipping file [src/lyra_v0/.vscode]
+2025-02-19 14:40:26,817 INFO     ___FILE_ONLY___ src/lyra_v0/.streamlit/config.toml
+
+2025-02-19 14:40:26,817 DEBUG    root            Skipping file [src/lyra_v0/tests/test_lyra_service.py]
+2025-02-19 14:40:26,818 DEBUG    root            Skipping file [src/lyra_v0/tests/test_llm_text_utils.py]
+2025-02-19 14:40:26,818 INFO     ___FILE_ONLY___ src/common/__init__.py
+
+2025-02-19 14:40:26,819 INFO     ___FILE_ONLY___ src/common/utils/feature_impact.py
+
+2025-02-19 14:40:26,819 INFO     ___FILE_ONLY___ src/common/utils/__init__.py
+
+2025-02-19 14:40:26,819 INFO     ___FILE_ONLY___ src/common/utils/logger.py
+
+2025-02-19 14:40:26,819 INFO     ___FILE_ONLY___ src/common/utils/data_prep.py
+
+2025-02-19 14:40:26,819 INFO     ___FILE_ONLY___ src/common/utils/regression_impact.py
+
+2025-02-19 14:40:26,820 INFO     ___FILE_ONLY___ src/lyra/cloudbuild.yaml
+
+2025-02-19 14:40:26,820 INFO     ___FILE_ONLY___ src/lyra/Dockerfile.backend
+
+2025-02-19 14:40:26,820 INFO     ___FILE_ONLY___ src/lyra/README.md
+
+2025-02-19 14:40:26,820 INFO     ___FILE_ONLY___ src/lyra/.dockerignore
+
+2025-02-19 14:40:26,820 INFO     ___FILE_ONLY___ src/lyra/docker-compose.yml
+
+2025-02-19 14:40:26,820 INFO     ___FILE_ONLY___ src/lyra/Dockerfile.frontend
+
+2025-02-19 14:40:26,820 INFO     ___FILE_ONLY___ src/lyra/Dockerfile.ollama
+
+2025-02-19 14:40:26,821 DEBUG    root            Skipping file [src/lyra/.vscode]
+2025-02-19 14:40:26,821 INFO     ___FILE_ONLY___ src/lyra/frontend/.env.local.example
+
+2025-02-19 14:40:26,821 INFO     ___FILE_ONLY___ src/lyra/frontend/tailwind.config.js
+
+2025-02-19 14:40:26,821 INFO     ___FILE_ONLY___ src/lyra/frontend/next.config.js
+
+2025-02-19 14:40:26,822 INFO     ___FILE_ONLY___ src/lyra/frontend/package-lock.json
+
+2025-02-19 14:40:26,822 INFO     ___FILE_ONLY___ src/lyra/frontend/package.json
+
+2025-02-19 14:40:26,822 INFO     ___FILE_ONLY___ src/lyra/frontend/tsconfig.json
+
+2025-02-19 14:40:26,822 INFO     ___FILE_ONLY___ src/lyra/frontend/postcss.config.js
+
+2025-02-19 14:40:26,823 INFO     ___FILE_ONLY___ src/lyra/frontend/public/sample_summary_result.json
+
+2025-02-19 14:40:26,823 INFO     ___FILE_ONLY___ src/lyra/frontend/public/lyra_requirements.png
+
+2025-02-19 14:40:26,823 INFO     ___FILE_ONLY___ src/lyra/frontend/public/quality_survey_insights_run1.json
+
+2025-02-19 14:40:26,823 INFO     ___FILE_ONLY___ src/lyra/frontend/public/lyra_volume_estimates_sources.png
+
+2025-02-19 14:40:26,823 INFO     ___FILE_ONLY___ src/lyra/frontend/public/lyra_stage_2_3.png
+
+2025-02-19 14:40:26,823 INFO     ___FILE_ONLY___ src/lyra/frontend/public/lyra-constellation.png
+
+2025-02-19 14:40:26,824 INFO     ___FILE_ONLY___ src/lyra/frontend/public/dyson-logo.png
+
+2025-02-19 14:40:26,824 INFO     ___FILE_ONLY___ src/lyra/frontend/public/lyra_stage_1.png
+
+2025-02-19 14:40:26,825 INFO     ___FILE_ONLY___ src/lyra/frontend/src/types/global.d.ts
+
+2025-02-19 14:40:26,826 INFO     ___FILE_ONLY___ src/lyra/frontend/src/utils/api.ts
+
+2025-02-19 14:40:26,826 INFO     ___FILE_ONLY___ src/lyra/frontend/src/styles/DataFlowVisualization.module.css
+
+2025-02-19 14:40:26,826 INFO     ___FILE_ONLY___ src/lyra/frontend/src/styles/globals.css
+
+2025-02-19 14:40:26,827 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/SubmitButton.tsx
+
+2025-02-19 14:40:26,827 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/Tabs.tsx
+
+2025-02-19 14:40:26,827 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/SummaryComponent.tsx
+
+2025-02-19 14:40:26,827 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/TextInput.tsx
+
+2025-02-19 14:40:26,828 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/CostCalculator.tsx
+
+2025-02-19 14:40:26,828 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/VerbatimReasons.tsx
+
+2025-02-19 14:40:26,828 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/ImportantReasons.tsx
+
+2025-02-19 14:40:26,828 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/LyraDataFlowVisualization.tsx
+
+2025-02-19 14:40:26,829 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/ResultDisplay.tsx
+
+2025-02-19 14:40:26,829 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/SankeyChart.tsx
+
+2025-02-19 14:40:26,829 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/ModelSelector.tsx
+
+2025-02-19 14:40:26,829 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/FileUpload.tsx
+
+2025-02-19 14:40:26,829 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/ReturnReasonsInsightCache.tsx
+
+2025-02-19 14:40:26,830 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/SampleLyraTransformation.tsx
+
+2025-02-19 14:40:26,830 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/DataFlowVisualization.tsx
+
+2025-02-19 14:40:26,830 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/MenuBar.tsx
+
+2025-02-19 14:40:26,830 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/ReturnReasonsInsights.tsx
+
+2025-02-19 14:40:26,830 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/Layout.tsx
+
+2025-02-19 14:40:26,830 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/Header.tsx
+
+2025-02-19 14:40:26,831 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/CSVUploader.tsx
+
+2025-02-19 14:40:26,831 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/InsightsTimeline.tsx
+
+2025-02-19 14:40:26,831 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/Toggle.tsx
+
+2025-02-19 14:40:26,831 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/ProcessingIndicator.tsx
+
+2025-02-19 14:40:26,831 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/ParetoAnalysis.tsx
+
+2025-02-19 14:40:26,832 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/ColumnNameInput.tsx
+
+2025-02-19 14:40:26,832 INFO     ___FILE_ONLY___ src/lyra/frontend/src/components/ReturnReasonsTrends.tsx
+
+2025-02-19 14:40:26,832 INFO     ___FILE_ONLY___ src/lyra/frontend/src/pages/index.tsx
+
+2025-02-19 14:40:26,832 INFO     ___FILE_ONLY___ src/lyra/frontend/src/pages/system-design.tsx
+
+2025-02-19 14:40:26,833 INFO     ___FILE_ONLY___ src/lyra/frontend/src/pages/cost-comparison.tsx
+
+2025-02-19 14:40:26,833 INFO     ___FILE_ONLY___ src/lyra/frontend/src/pages/scheduled-jobs.tsx
+
+2025-02-19 14:40:26,833 INFO     ___FILE_ONLY___ src/lyra/frontend/src/pages/_document.tsx
+
+2025-02-19 14:40:26,833 INFO     ___FILE_ONLY___ src/lyra/frontend/src/pages/return-reasons-report.tsx
+
+2025-02-19 14:40:26,834 INFO     ___FILE_ONLY___ src/lyra/frontend/src/pages/sample-insights.tsx
+
+2025-02-19 14:40:26,834 INFO     ___FILE_ONLY___ src/lyra/frontend/src/pages/_app.tsx
+
+2025-02-19 14:40:26,834 INFO     ___FILE_ONLY___ src/lyra/backend/config.py
+
+2025-02-19 14:40:26,834 INFO     ___FILE_ONLY___ src/lyra/backend/pyproject.toml
+
+2025-02-19 14:40:26,834 INFO     ___FILE_ONLY___ src/lyra/backend/README.md
+
+2025-02-19 14:40:26,835 INFO     ___FILE_ONLY___ src/lyra/backend/.env.example
+
+2025-02-19 14:40:26,835 INFO     ___FILE_ONLY___ src/lyra/backend/poetry.lock
+
+2025-02-19 14:40:26,835 DEBUG    root            Skipping file [src/lyra/backend/.venv]
+2025-02-19 14:40:26,836 INFO     ___FILE_ONLY___ src/lyra/backend/dags/nlp_pipeline_dag.py
+
+2025-02-19 14:40:26,837 DEBUG    root            Skipping file [src/lyra/backend/tests/test_services.py]
+2025-02-19 14:40:26,837 DEBUG    root            Skipping file [src/lyra/backend/tests/test_evaluator.py]
+2025-02-19 14:40:26,837 DEBUG    root            Skipping file [src/lyra/backend/tests/test_rate_limiter.py]
+2025-02-19 14:40:26,837 DEBUG    root            Skipping file [src/lyra/backend/tests/test_api.py]
+2025-02-19 14:40:26,837 DEBUG    root            Skipping file [src/lyra/backend/tests/test_request_cache.py]
+2025-02-19 14:40:26,838 INFO     ___FILE_ONLY___ src/lyra/backend/utils/smart_rate_limiter.py
+
+2025-02-19 14:40:26,838 INFO     ___FILE_ONLY___ src/lyra/backend/utils/llm.py
+
+2025-02-19 14:40:26,838 INFO     ___FILE_ONLY___ src/lyra/backend/utils/common.py
+
+2025-02-19 14:40:26,838 INFO     ___FILE_ONLY___ src/lyra/backend/utils/llm_utils.py
+
+2025-02-19 14:40:26,838 INFO     ___FILE_ONLY___ src/lyra/backend/utils/bigquery_utils.py
+
+2025-02-19 14:40:26,839 INFO     ___FILE_ONLY___ src/lyra/backend/utils/evaluator.py
+
+2025-02-19 14:40:26,839 INFO     ___FILE_ONLY___ src/lyra/backend/scripts/return_reasons_inference.py
+
+2025-02-19 14:40:26,839 INFO     ___FILE_ONLY___ src/lyra/backend/scripts/benchmark_rate_limiter.py
+
+2025-02-19 14:40:26,839 INFO     ___FILE_ONLY___ src/lyra/backend/scripts/survey_data_inference.py
+
+2025-02-19 14:40:26,840 INFO     ___FILE_ONLY___ src/lyra/backend/scripts/sqls/aftership_de_returns.sql
+
+2025-02-19 14:40:26,840 INFO     ___FILE_ONLY___ src/lyra/backend/scripts/sqls/cielo_us_returns.sql
+
+2025-02-19 14:40:26,841 INFO     ___FILE_ONLY___ src/lyra/backend/scripts/configs/cielo_return_reasons_inference_config.yaml
+
+2025-02-19 14:40:26,841 INFO     ___FILE_ONLY___ src/lyra/backend/scripts/configs/survey_inference_config.yaml
+
+2025-02-19 14:40:26,841 INFO     ___FILE_ONLY___ src/lyra/backend/scripts/configs/aftership_return_reasons_inference_config.yaml
+
+2025-02-19 14:40:26,842 INFO     ___FILE_ONLY___ src/lyra/backend/api/main.py
+
+2025-02-19 14:40:26,842 DEBUG    root            Skipping file [src/lyra/backend/notebooks/02_quality_survey_data_eda.ipynb]
+2025-02-19 14:40:26,842 DEBUG    root            Skipping file [src/lyra/backend/notebooks/01_aftership_rr_labels_eda.ipynb]
+2025-02-19 14:40:26,843 DEBUG    root            Skipping file [src/lyra/backend/notebooks/evaluate_gen5_return_reasons.ipynb]
+2025-02-19 14:40:26,843 DEBUG    root            Skipping file [src/lyra/backend/notebooks/return_reasons_slides.ipynb]
+2025-02-19 14:40:26,843 DEBUG    root            Skipping file [src/lyra/backend/notebooks/return_reasons_w_Lyra_v1.ipynb]
+2025-02-19 14:40:26,843 DEBUG    root            Skipping file [src/lyra/backend/notebooks/scratchpad.ipynb]
+2025-02-19 14:40:26,843 DEBUG    root            Skipping file [src/lyra/backend/notebooks/aftership_return_reasons_w_Lyra_v1.ipynb]
+2025-02-19 14:40:26,843 DEBUG    root            Skipping file [src/lyra/backend/notebooks/return_reasons_w_local2.ipynb]
+2025-02-19 14:40:26,844 DEBUG    root            Skipping file [src/lyra/backend/notebooks/00_getting_started.ipynb]
+2025-02-19 14:40:26,844 DEBUG    root            Skipping file [src/lyra/backend/notebooks/return_reasons_w_local.ipynb]
+2025-02-19 14:40:26,844 DEBUG    root            Skipping file [src/lyra/backend/notebooks/training_data_prep_gen5_labels.ipynb]
+2025-02-19 14:40:26,844 DEBUG    root            Skipping file [src/lyra/backend/notebooks/return_reason_labelling_dataset_gen.ipynb]
+2025-02-19 14:40:26,844 DEBUG    root            Skipping file [src/lyra/backend/notebooks/03_quality_survey_data_eda__report.ipynb]
+2025-02-19 14:40:26,844 DEBUG    root            Skipping file [src/lyra/backend/notebooks/evaluations]
+2025-02-19 14:40:26,844 DEBUG    root            Skipping file [src/lyra/backend/notebooks/report_outputs]
+2025-02-19 14:40:26,845 DEBUG    root            Skipping file [src/lyra/backend/notebooks/scripts]
+2025-02-19 14:40:26,845 INFO     ___FILE_ONLY___ src/lyra/backend/services/__init__.py
+
+2025-02-19 14:40:26,847 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/models.py
+
+2025-02-19 14:40:26,847 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/evaluation.py
+
+2025-02-19 14:40:26,847 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/llm_model.py
+
+2025-02-19 14:40:26,847 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/inference.py
+
+2025-02-19 14:40:26,847 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/base.py
+
+2025-02-19 14:40:26,848 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/evaluators/heuristics.py
+
+2025-02-19 14:40:26,848 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/evaluators/llm_judges.py
+
+2025-02-19 14:40:26,849 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/evaluators/base.py
+
+2025-02-19 14:40:26,849 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/prompts/survey_topics_v1.txt
+
+2025-02-19 14:40:26,850 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/prompts/return_reasons_model_v2.txt
+
+2025-02-19 14:40:26,850 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/prompts/survey_topics_v2.txt
+
+2025-02-19 14:40:26,850 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/prompts/return_reasons_model_v1.txt
+
+2025-02-19 14:40:26,851 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/prompts/topic_modelling_v1.txt
+
+2025-02-19 14:40:26,851 INFO     ___FILE_ONLY___ src/lyra/backend/services/topic_modeling/prompts/topic_modelling_w_highlights_v1.txt
+
+2025-02-19 14:40:26,851 INFO     ___FILE_ONLY___ src/lyra/backend/services/translation/models.py
+
+2025-02-19 14:40:26,852 INFO     ___FILE_ONLY___ src/lyra/backend/services/translation/evaluation.py
+
+2025-02-19 14:40:26,852 INFO     ___FILE_ONLY___ src/lyra/backend/services/translation/llm_model.py
+
+2025-02-19 14:40:26,852 INFO     ___FILE_ONLY___ src/lyra/backend/services/translation/inference.py
+
+2025-02-19 14:40:26,852 INFO     ___FILE_ONLY___ src/lyra/backend/services/translation/base.py
+
+2025-02-19 14:40:26,853 INFO     ___FILE_ONLY___ src/lyra/backend/services/summarization/models.py
+
+2025-02-19 14:40:26,853 INFO     ___FILE_ONLY___ src/lyra/backend/services/summarization/evaluation.py
+
+2025-02-19 14:40:26,853 INFO     ___FILE_ONLY___ src/lyra/backend/services/summarization/inference.py
+
+2025-02-19 14:40:26,854 INFO     ___FILE_ONLY___ src/lyra/backend/services/summarization/base.py
+
+2025-02-19 14:40:26,854 INFO     ___FILE_ONLY___ src/lyra/backend/services/summarization/evaluators/llm_judges.py
+
+2025-02-19 14:40:26,855 INFO     ___FILE_ONLY___ src/lyra/backend/services/sentiment_analysis/models.py
+
+2025-02-19 14:40:26,855 INFO     ___FILE_ONLY___ src/lyra/backend/services/sentiment_analysis/llm_model.py
+
+2025-02-19 14:40:26,855 INFO     ___FILE_ONLY___ src/lyra/backend/services/sentiment_analysis/inference.py
+
+2025-02-19 14:40:26,855 INFO     ___FILE_ONLY___ src/lyra/backend/services/sentiment_analysis/base.py
+
+2025-02-19 14:40:26,856 INFO     ___FILE_ONLY___ src/lyra/backend/services/sentiment_analysis/evaluators/heuristics.py
+
+2025-02-19 14:40:26,856 INFO     ___FILE_ONLY___ src/lyra/backend/services/sentiment_analysis/evaluators/llm_judges.py
+
+2025-02-19 14:40:26,857 INFO     ___FILE_ONLY___ src/lyra/backend/services/sentiment_analysis/evaluators/base.py
+
+2025-02-19 14:40:26,857 INFO     ___FILE_ONLY___ src/lyra/backend/services/sentiment_analysis/prompts/absa_v1.txt
+
+2025-02-19 14:40:26,857 INFO     ___FILE_ONLY___ src/lyra/backend/services/sentiment_analysis/prompts/survey_sentiment_analysis_v2.txt
+
+2025-02-19 14:40:26,858 INFO     ___FILE_ONLY___ src/lyra/backend/services/sentiment_analysis/prompts/survey_sentiment_analysis_v1.txt
+
+2025-02-19 14:40:26,858 INFO     ___FILE_ONLY___ src/lyra/backend/services/sentiment_analysis/prompts/absa_w_phrase_v1.txt
+
+2025-02-19 14:40:26,858 INFO     ___FILE_ONLY___ src/lyra/docs/evaluators.md
+
+2025-02-19 14:40:26,859 DEBUG    root            Skipping file [src/lyra/ollama/entrypoint.sh]
+2025-02-19 14:40:26,872 DEBUG    root            Metrics reporting process started...

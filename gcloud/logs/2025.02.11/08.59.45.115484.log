@@ -1,0 +1,25 @@
+2025-02-11 08:59:45,116 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-02-11 08:59:45,129 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'unset']
+2025-02-11 08:59:45,130 DEBUG    root            Running [gcloud.config.unset] with arguments: [SECTION/PROPERTY: "auth/bnt-battery-engineer-sa@dde-prj-buildandtest-p001.iam.gserviceaccount.com"]
+2025-02-11 08:59:45,130 DEBUG    root            (gcloud.config.unset) Section [auth] has no property [bnt-battery-engineer-sa@dde-prj-buildandtest-p001.iam.gserviceaccount.com].
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 930, in Property
+    return self.__properties[property_name]
+KeyError: 'bnt-battery-engineer-sa@dde-prj-buildandtest-p001.iam.gserviceaccount.com'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/surface/config/unset.py", line 71, in Run
+    prop = properties.FromString(args.property)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4324, in FromString
+    return VALUES.Section(section).Property(prop)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 932, in Property
+    raise NoSuchPropertyError('Section [{s}] has no property [{p}].'.format(
+googlecloudsdk.core.properties.NoSuchPropertyError: Section [auth] has no property [bnt-battery-engineer-sa@dde-prj-buildandtest-p001.iam.gserviceaccount.com].
+2025-02-11 08:59:45,145 ERROR    root            (gcloud.config.unset) Section [auth] has no property [bnt-battery-engineer-sa@dde-prj-buildandtest-p001.iam.gserviceaccount.com].
+2025-02-11 08:59:45,155 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,18 @@
+2025-02-11 08:58:17,593 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2025-02-11 08:58:17,600 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2025-02-11 08:58:17,612 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'describe']
+2025-02-11 08:58:17,632 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'configure_docker']
+2025-02-11 08:58:17,679 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
+2025-02-11 08:58:17,687 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'revoke']
+2025-02-11 08:58:17,692 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'git_helper']
+2025-02-11 08:58:17,704 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_identity_token']
+2025-02-11 08:58:17,709 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_refresh_token']
+2025-02-11 08:58:17,718 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'activate_service_account']
+2025-02-11 08:58:17,730 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'enterprise_certificate_config']
+2025-02-11 08:58:17,736 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'docker_helper']
+2025-02-11 08:58:17,742 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'list']
+2025-02-11 08:58:17,746 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_access_token']
+2025-02-11 08:58:17,751 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'activate_refresh_token']
+2025-02-11 08:58:17,751 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'auth']
+2025-02-11 08:58:17,752 ERROR    root            (gcloud.auth) Invalid choice: 'unset'.
+2025-02-11 08:58:17,826 DEBUG    root            Metrics reporting process started...

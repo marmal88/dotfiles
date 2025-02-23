@@ -1,0 +1,18 @@
+2025-02-07 10:49:45,798 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2025-02-07 10:49:45,799 ERROR    root            (gcloud.projects) Command name argument expected.
+2025-02-07 10:49:45,815 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'undelete']
+2025-02-07 10:49:45,888 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'remove_iam_policy_binding']
+2025-02-07 10:49:45,953 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2025-02-07 10:49:45,957 DEBUG    root            No implementation for release track [GA] for element: [/Users/daniel.low/Downloads/google-cloud-sdk/lib/surface/projects/search]
+2025-02-07 10:49:45,968 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'set_iam_policy']
+2025-02-07 10:49:45,977 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_ancestors']
+2025-02-07 10:49:45,990 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_ancestors_iam_policy']
+2025-02-07 10:49:45,994 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'delete']
+2025-02-07 10:49:46,007 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'add_iam_policy_binding']
+2025-02-07 10:49:46,012 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2025-02-07 10:49:46,018 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'create']
+2025-02-07 10:49:46,023 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'update']
+2025-02-07 10:49:46,035 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_iam_policy']
+2025-02-07 10:49:46,041 DEBUG    root            No implementation for release track [GA] for element: [/Users/daniel.low/Downloads/google-cloud-sdk/lib/surface/projects/move]
+2025-02-07 10:49:46,041 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)
+2025-02-07 10:49:46,066 DEBUG    root            Metrics reporting process started...

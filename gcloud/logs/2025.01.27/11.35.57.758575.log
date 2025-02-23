@@ -1,0 +1,18 @@
+2025-01-27 11:35:57,763 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2025-01-27 11:35:57,771 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'describe']
+2025-01-27 11:35:57,778 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'activate_service_account']
+2025-01-27 11:35:57,838 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
+2025-01-27 11:35:57,842 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'revoke']
+2025-01-27 11:35:57,844 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2025-01-27 11:35:57,851 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'enterprise_certificate_config']
+2025-01-27 11:35:57,856 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'activate_refresh_token']
+2025-01-27 11:35:57,862 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'docker_helper']
+2025-01-27 11:35:57,864 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'list']
+2025-01-27 11:35:57,869 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_identity_token']
+2025-01-27 11:35:57,871 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_access_token']
+2025-01-27 11:35:57,873 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_refresh_token']
+2025-01-27 11:35:57,875 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'configure_docker']
+2025-01-27 11:35:57,878 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'git_helper']
+2025-01-27 11:35:57,878 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'auth']
+2025-01-27 11:35:57,879 ERROR    root            (gcloud.auth) Invalid choice: 'default'.
+2025-01-27 11:35:58,083 DEBUG    root            Metrics reporting process started...

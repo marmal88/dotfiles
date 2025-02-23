@@ -1,0 +1,5 @@
+2025-01-27 10:44:53,396 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2025-01-27 10:44:53,399 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2025-01-27 10:44:53,420 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application-default', 'set_quota_project']
+2025-01-27 10:44:53,421 ERROR    root            (gcloud.auth.application-default.set-quota-project) argument QUOTA_PROJECT_ID: Must be specified.
+2025-01-27 10:44:53,425 DEBUG    root            Metrics reporting process started...

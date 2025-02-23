@@ -1,0 +1,8 @@
+2025-02-12 22:12:32,357 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-02-12 22:12:32,359 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get']
+2025-02-12 22:12:32,360 DEBUG    root            Running [gcloud.config.get] with arguments: [SECTION/PROPERTY: "project"]
+2025-02-12 22:12:32,361 DEBUG    root            Chosen display Format:value(.)
+2025-02-12 22:12:32,361 INFO     root            Display format: "value(.)"
+2025-02-12 22:12:32,361 INFO     ___FILE_ONLY___ dde-prj-buildandtest-p001
+
+2025-02-12 22:12:32,366 DEBUG    root            Metrics reporting process started...

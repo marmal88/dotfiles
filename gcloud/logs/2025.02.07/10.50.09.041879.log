@@ -1,0 +1,48 @@
+2025-02-07 10:50:09,092 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2025-02-07 10:50:09,125 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'submit']
+2025-02-07 10:50:09,135 DEBUG    root            Running [gcloud.builds.submit] with arguments: [--async: "True", --config: "./cloudbuild.yaml", --gcs-source-staging-dir: "gs://dde-ops-data-science-p001_cloudbuild/dds-mlflow-gcp-auth", --project: "dde-ops-data-science-p001", --region: "europe-west4", SOURCE: "."]
+2025-02-07 10:50:09,160 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-02-07 10:50:09,834 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/dde-ops-data-science-p001_cloudbuild?alt=json HTTP/1.1" 403 530
+2025-02-07 10:50:09,837 DEBUG    root            (gcloud.builds.submit) The user is forbidden from accessing the bucket [dde-ops-data-science-p001_cloudbuild]. Please check your organization's policy or if the user has the "serviceusage.services.use" permission. Giving the user Owner, Editor, or Viewer roles may also fix this issue. Alternatively, use the --no-source option and access your source code via a different method.
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/submit_util.py", line 403, in SetSource
+    gcs_client.CreateBucketIfNotExists(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/storage_api.py", line 393, in CreateBucketIfNotExists
+    self.client.buckets.Get(self.messages.StorageBucketsGetRequest(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/storage/v1/storage_v1_client.py", line 461, in Get
+    return self._RunMethod(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://storage.googleapis.com/storage/v1/b/dde-ops-data-science-p001_cloudbuild?alt=json>: response: <{'x-guploader-uploadid': 'AHMx-iF4IGDjtQrr1Ghvvgu4UzJUG5M4stUMnKceCrMN9rrpoZrDI-9UU4ansKiw4Ay6_Pp_', 'content-type': 'application/json; charset=UTF-8', 'date': 'Fri, 07 Feb 2025 02:50:09 GMT', 'vary': 'Origin, X-Origin', 'cache-control': 'no-cache, no-store, max-age=0, must-revalidate', 'expires': 'Mon, 01 Jan 1990 00:00:00 GMT', 'pragma': 'no-cache', 'content-length': '530', 'server': 'UploadServer', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "daniel.low@dyson.com does not have serviceusage.services.use access to the Google Cloud project. Permission 'serviceusage.services.use' denied on resource (or it may not exist).",
+    "errors": [
+      {
+        "message": "daniel.low@dyson.com does not have serviceusage.services.use access to the Google Cloud project. Permission 'serviceusage.services.use' denied on resource (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/surface/builds/submit.py", line 247, in Run
+    build_config = submit_util.SetSource(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/submit_util.py", line 414, in SetSource
+    raise BucketForbiddenError(
+googlecloudsdk.command_lib.builds.submit_util.BucketForbiddenError: The user is forbidden from accessing the bucket [dde-ops-data-science-p001_cloudbuild]. Please check your organization's policy or if the user has the "serviceusage.services.use" permission. Giving the user Owner, Editor, or Viewer roles may also fix this issue. Alternatively, use the --no-source option and access your source code via a different method.
+2025-02-07 10:50:09,845 ERROR    root            (gcloud.builds.submit) The user is forbidden from accessing the bucket [dde-ops-data-science-p001_cloudbuild]. Please check your organization's policy or if the user has the "serviceusage.services.use" permission. Giving the user Owner, Editor, or Viewer roles may also fix this issue. Alternatively, use the --no-source option and access your source code via a different method.
+2025-02-07 10:50:09,872 DEBUG    root            Metrics reporting process started...

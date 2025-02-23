@@ -1,0 +1,278 @@
+2025-02-09 22:37:22,612 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2025-02-09 22:37:22,878 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'submit']
+2025-02-09 22:37:22,895 DEBUG    root            Running [gcloud.builds.submit] with arguments: [--async: "True", --config: "user-managed-notebook-cpu/cloudbuild.yaml", --gcs-source-staging-dir: "gs://dde-ops-data-science-p001_cloudbuild/user-managed-notebook-cpu", --impersonate-service-account: "cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com", --project: "dde-ops-data-science-p001", --region: "europe-west4", --service-account: "projects/dde-ops-data-science-p001/serviceAccounts/cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com", SOURCE: "."]
+2025-02-09 22:37:22,904 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com].
+2025-02-09 22:37:22,916 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-02-09 22:37:22,921 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-02-09 22:37:23,211 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-02-09 22:37:23,215 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com:generateAccessToken
+2025-02-09 22:37:23,216 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-02-09 22:37:23,337 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com:generateAccessToken HTTP/1.1" 200 None
+2025-02-09 22:37:23,341 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com].
+2025-02-09 22:37:23,344 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-02-09 22:37:23,344 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-02-09 22:37:23,430 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-02-09 22:37:23,433 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com:generateAccessToken
+2025-02-09 22:37:23,434 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-02-09 22:37:23,566 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com:generateAccessToken HTTP/1.1" 200 None
+2025-02-09 22:37:23,643 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-02-09 22:37:25,757 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/dde-ops-data-science-p001_cloudbuild?alt=json HTTP/1.1" 200 1187
+2025-02-09 22:37:25,762 INFO     root            Using default gcloudignore file:
+--------------------------------------------------
+# This file specifies files that are *not* uploaded to Google Cloud
+# using gcloud. It follows the same syntax as .gitignore, with the addition of
+# "#!include" directives (which insert the entries of the given .gitignore-style
+# file at that point).
+#
+# For more information, run:
+#   $ gcloud topic gcloudignore
+#
+.gcloudignore
+# If you would like to upload your .git directory, .gitignore file or files
+# from your .gitignore file, remove the corresponding line
+# below:
+.git
+.gitignore
+#!include:.gitignore
+
+--------------------------------------------------
+2025-02-09 22:37:25,772 DEBUG    root            Skipping file [.gitignore]
+2025-02-09 22:37:25,773 DEBUG    root            Skipping file [.git]
+2025-02-09 22:37:25,798 INFO     ___FILE_ONLY___ Creating temporary archive of 53 file(s) totalling 108.0 KiB before compression.
+
+2025-02-09 22:37:25,800 DEBUG    root            Added dir [mlflow]
+2025-02-09 22:37:25,801 DEBUG    root            Added dir [cicd-inspection]
+2025-02-09 22:37:25,801 DEBUG    root            Added dir [user-managed-notebook-gpu]
+2025-02-09 22:37:25,801 DEBUG    root            Added dir [workbench-instance-gpu]
+2025-02-09 22:37:25,801 DEBUG    root            Added dir [workbench-instance-cpu]
+2025-02-09 22:37:25,801 DEBUG    root            Added dir [user-managed-notebook-cpu]
+2025-02-09 22:37:25,802 DEBUG    root            Added dir [user-managed-notebook-gpu/tests]
+2025-02-09 22:37:25,802 DEBUG    root            Added dir [user-managed-notebook-gpu/certificates]
+2025-02-09 22:37:25,802 DEBUG    root            Added dir [workbench-instance-gpu/certificates]
+2025-02-09 22:37:25,802 DEBUG    root            Added dir [workbench-instance-gpu/gcs_sync_scripts]
+2025-02-09 22:37:25,802 DEBUG    root            Added dir [workbench-instance-cpu/certificates]
+2025-02-09 22:37:25,802 DEBUG    root            Added dir [workbench-instance-cpu/gcs_sync_scripts]
+2025-02-09 22:37:25,803 DEBUG    root            Added dir [user-managed-notebook-cpu/tests]
+2025-02-09 22:37:25,803 DEBUG    root            Added dir [user-managed-notebook-cpu/certificates]
+2025-02-09 22:37:25,804 DEBUG    root            Added [build_ci.sh]
+2025-02-09 22:37:25,808 DEBUG    root            Added [README.md]
+2025-02-09 22:37:25,811 DEBUG    root            Added [mlflow/Dockerfile]
+2025-02-09 22:37:25,812 DEBUG    root            Added [mlflow/cloudbuild.yaml]
+2025-02-09 22:37:25,815 DEBUG    root            Added [mlflow/run.sh]
+2025-02-09 22:37:25,819 DEBUG    root            Added [mlflow/mlflow_test.py]
+2025-02-09 22:37:25,823 DEBUG    root            Added [cicd-inspection/Dockerfile]
+2025-02-09 22:37:25,824 DEBUG    root            Added [cicd-inspection/cloudbuild.yaml]
+2025-02-09 22:37:25,826 DEBUG    root            Added [user-managed-notebook-gpu/Dockerfile]
+2025-02-09 22:37:25,827 DEBUG    root            Added [user-managed-notebook-gpu/cloudbuild.yaml]
+2025-02-09 22:37:25,830 DEBUG    root            Added [user-managed-notebook-gpu/run.sh]
+2025-02-09 22:37:25,833 DEBUG    root            Added [user-managed-notebook-gpu/r_requirements.txt]
+2025-02-09 22:37:25,835 DEBUG    root            Added [user-managed-notebook-gpu/py_requirements.txt]
+2025-02-09 22:37:25,839 DEBUG    root            Added [user-managed-notebook-gpu/tests/conftest.py]
+2025-02-09 22:37:25,842 DEBUG    root            Added [user-managed-notebook-gpu/tests/test_imports.py]
+2025-02-09 22:37:25,845 DEBUG    root            Added [user-managed-notebook-gpu/certificates/mlflow-dev-dyson-global-corp-chain.crt]
+2025-02-09 22:37:25,849 DEBUG    root            Added [user-managed-notebook-gpu/certificates/stash-dyson-global-corp-chain.crt]
+2025-02-09 22:37:25,851 DEBUG    root            Added [user-managed-notebook-gpu/certificates/mlflow-dyson-global-corp-chain.crt]
+2025-02-09 22:37:25,854 DEBUG    root            Added [workbench-instance-gpu/base_dependencies.txt]
+2025-02-09 22:37:25,857 DEBUG    root            Added [workbench-instance-gpu/Dockerfile]
+2025-02-09 22:37:25,857 DEBUG    root            Added [workbench-instance-gpu/cloudbuild.yaml]
+2025-02-09 22:37:25,860 DEBUG    root            Added [workbench-instance-gpu/run.sh]
+2025-02-09 22:37:25,863 DEBUG    root            Added [workbench-instance-gpu/py_requirements.txt]
+2025-02-09 22:37:25,864 DEBUG    root            Added [workbench-instance-gpu/certificates/mlflow-dev-dyson-global-corp-chain.crt]
+2025-02-09 22:37:25,866 DEBUG    root            Added [workbench-instance-gpu/certificates/stash-dyson-global-corp-chain.crt]
+2025-02-09 22:37:25,869 DEBUG    root            Added [workbench-instance-gpu/certificates/mlflow-dyson-global-corp-chain.crt]
+2025-02-09 22:37:25,872 DEBUG    root            Added [workbench-instance-gpu/gcs_sync_scripts/sync_to_bucket.conf]
+2025-02-09 22:37:25,877 DEBUG    root            Added [workbench-instance-gpu/gcs_sync_scripts/sync_to_bucket.sh]
+2025-02-09 22:37:25,889 DEBUG    root            Added [workbench-instance-gpu/gcs_sync_scripts/sync_from_bucket.sh]
+2025-02-09 22:37:25,892 DEBUG    root            Added [workbench-instance-cpu/base_dependencies.txt]
+2025-02-09 22:37:25,896 DEBUG    root            Added [workbench-instance-cpu/Dockerfile]
+2025-02-09 22:37:25,897 DEBUG    root            Added [workbench-instance-cpu/cloudbuild.yaml]
+2025-02-09 22:37:25,897 DEBUG    root            Added [workbench-instance-cpu/run.sh]
+2025-02-09 22:37:25,901 DEBUG    root            Added [workbench-instance-cpu/r_requirements.txt]
+2025-02-09 22:37:25,902 DEBUG    root            Added [workbench-instance-cpu/py_requirements.txt]
+2025-02-09 22:37:25,904 DEBUG    root            Added [workbench-instance-cpu/certificates/mlflow-dev-dyson-global-corp-chain.crt]
+2025-02-09 22:37:25,905 DEBUG    root            Added [workbench-instance-cpu/certificates/stash-dyson-global-corp-chain.crt]
+2025-02-09 22:37:25,906 DEBUG    root            Added [workbench-instance-cpu/certificates/mlflow-dyson-global-corp-chain.crt]
+2025-02-09 22:37:25,908 DEBUG    root            Added [workbench-instance-cpu/gcs_sync_scripts/sync_to_bucket.conf]
+2025-02-09 22:37:25,909 DEBUG    root            Added [workbench-instance-cpu/gcs_sync_scripts/sync_to_bucket.sh]
+2025-02-09 22:37:25,910 DEBUG    root            Added [workbench-instance-cpu/gcs_sync_scripts/sync_from_bucket.sh]
+2025-02-09 22:37:25,913 DEBUG    root            Added [user-managed-notebook-cpu/network.lic]
+2025-02-09 22:37:25,917 DEBUG    root            Added [user-managed-notebook-cpu/base_dependencies.txt]
+2025-02-09 22:37:25,921 DEBUG    root            Added [user-managed-notebook-cpu/Dockerfile]
+2025-02-09 22:37:25,922 DEBUG    root            Added [user-managed-notebook-cpu/cloudbuild.yaml]
+2025-02-09 22:37:25,924 DEBUG    root            Added [user-managed-notebook-cpu/run.sh]
+2025-02-09 22:37:25,927 DEBUG    root            Added [user-managed-notebook-cpu/r_requirements.txt]
+2025-02-09 22:37:25,928 DEBUG    root            Added [user-managed-notebook-cpu/py_requirements.txt]
+2025-02-09 22:37:25,934 DEBUG    root            Added [user-managed-notebook-cpu/tests/conftest.py]
+2025-02-09 22:37:25,935 DEBUG    root            Added [user-managed-notebook-cpu/tests/test_imports.py]
+2025-02-09 22:37:25,936 DEBUG    root            Added [user-managed-notebook-cpu/certificates/mlflow-dev-dyson-global-corp-chain.crt]
+2025-02-09 22:37:25,938 DEBUG    root            Added [user-managed-notebook-cpu/certificates/stash-dyson-global-corp-chain.crt]
+2025-02-09 22:37:25,940 DEBUG    root            Added [user-managed-notebook-cpu/certificates/mlflow-dyson-global-corp-chain.crt]
+2025-02-09 22:37:25,941 INFO     ___FILE_ONLY___ Some files were not included in the source upload.
+
+Check the gcloud log [/Users/daniel.low/.config/gcloud/logs/2025.02.09/22.37.22.371963.log] to see which files and the contents of the
+default gcloudignore file used (see `$ gcloud topic gcloudignore` to learn
+more).
+
+
+2025-02-09 22:37:25,941 INFO     ___FILE_ONLY___ Uploading tarball of [.] to [gs://dde-ops-data-science-p001_cloudbuild/user-managed-notebook-cpu/1739111843.636411-1786b862766d4fd28a7091fa6ecf1e4f.tgz]
+
+2025-02-09 22:37:25,959 INFO     root            Uploading [/var/folders/cs/p5_dzp410hlgfg_ljwj0jyg00000gp/T/tmp8dd4_bhq/file.tgz] to [dde-ops-data-science-p001_cloudbuild/user-managed-notebook-cpu/1739111843.636411-1786b862766d4fd28a7091fa6ecf1e4f.tgz]
+2025-02-09 22:37:25,963 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-02-09 22:37:28,168 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "POST /upload/storage/v1/b/dde-ops-data-science-p001_cloudbuild/o?alt=json&name=user-managed-notebook-cpu%2F1739111843.636411-1786b862766d4fd28a7091fa6ecf1e4f.tgz&uploadType=multipart HTTP/1.1" 200 1166
+2025-02-09 22:37:28,177 DEBUG    root            submitting build: <Build
+ images: []
+ options: <BuildOptions
+ dynamicSubstitutions: True
+ env: []
+ logging: LoggingValueValuesEnum(CLOUD_LOGGING_ONLY, 4)
+ pool: <PoolOption
+ name: 'projects/${PROJECT_ID}/locations/${LOCATION}/workerPools/dds-mlops-worker-pool'>
+ secretEnv: []
+ sourceProvenanceHash: []
+ volumes: []>
+ secrets: []
+ serviceAccount: 'projects/dde-ops-data-science-p001/serviceAccounts/cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com'
+ source: <Source
+ storageSource: <StorageSource
+ bucket: 'dde-ops-data-science-p001_cloudbuild'
+ generation: 1739111848069648
+ object: 'user-managed-notebook-cpu/1739111843.636411-1786b862766d4fd28a7091fa6ecf1e4f.tgz'>>
+ steps: [<BuildStep
+ allowExitCodes: []
+ args: ['-c', 'hadolint Dockerfile --no-fail\n']
+ dir: './user-managed-notebook-cpu'
+ entrypoint: 'bash'
+ env: []
+ id: 'Hadolint'
+ name: '${LOCATION}-docker.pkg.dev/${PROJECT_ID}/docker/cicd-inspection:v2'
+ secretEnv: []
+ volumes: []
+ waitFor: []>, <BuildStep
+ allowExitCodes: []
+ args: ['-c', 'sed -i "s/dde-ops-data-science-.001/${PROJECT_ID}/g" py_requirements.txt\ndocker build --network=cloudbuild -t $_ARTIFACT_REGISTRY/$_IMAGE_NAME:$_IMAGE_VERSION -f Dockerfile .\n']
+ dir: './user-managed-notebook-cpu'
+ entrypoint: 'bash'
+ env: []
+ id: 'Building Docker Image'
+ name: '${LOCATION}-docker.pkg.dev/${PROJECT_ID}/docker/cicd-inspection:v2'
+ secretEnv: []
+ volumes: []
+ waitFor: []>, <BuildStep
+ allowExitCodes: []
+ args: ['-c', 'trivy image $_ARTIFACT_REGISTRY/$_IMAGE_NAME:$_IMAGE_VERSION --timeout 60m\n']
+ dir: './user-managed-notebook-cpu'
+ entrypoint: 'bash'
+ env: []
+ id: 'Trivy Scan'
+ name: '${LOCATION}-docker.pkg.dev/${PROJECT_ID}/docker/cicd-inspection:v2'
+ secretEnv: []
+ volumes: []
+ waitFor: []>, <BuildStep
+ allowExitCodes: []
+ args: ['-c', "docker run --network=cloudbuild $_ARTIFACT_REGISTRY/$_IMAGE_NAME:$_IMAGE_VERSION \\\nsh -c \\\n'cd ../../ &&\npytest tests'\n"]
+ dir: './user-managed-notebook-cpu'
+ entrypoint: 'bash'
+ env: []
+ id: 'Testing the Image'
+ name: '${LOCATION}-docker.pkg.dev/${PROJECT_ID}/docker/cicd-inspection:v2'
+ secretEnv: []
+ volumes: []
+ waitFor: []>, <BuildStep
+ allowExitCodes: []
+ args: ['-c', 'docker push $_ARTIFACT_REGISTRY/$_IMAGE_NAME:$_IMAGE_VERSION\n']
+ dir: './user-managed-notebook-cpu'
+ entrypoint: 'bash'
+ env: []
+ id: 'Pushing the Image'
+ name: '${LOCATION}-docker.pkg.dev/${PROJECT_ID}/docker/cicd-inspection:v2'
+ secretEnv: []
+ volumes: []
+ waitFor: []>]
+ substitutions: <SubstitutionsValue
+ additionalProperties: [<AdditionalProperty
+ key: '_ARTIFACT_REGISTRY'
+ value: '${LOCATION}-docker.pkg.dev/${PROJECT_ID}/docker'>, <AdditionalProperty
+ key: '_IMAGE_NAME'
+ value: 'user-managed-notebook-cpu'>, <AdditionalProperty
+ key: '_IMAGE_VERSION'
+ value: '0.1.13'>]>
+ tags: []
+ timeout: '3600s'
+ warnings: []>
+2025-02-09 22:37:28,179 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com].
+2025-02-09 22:37:28,181 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-02-09 22:37:28,182 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-02-09 22:37:28,271 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-02-09 22:37:28,276 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com:generateAccessToken
+2025-02-09 22:37:28,277 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-02-09 22:37:28,395 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com:generateAccessToken HTTP/1.1" 200 None
+2025-02-09 22:37:28,400 WARNING  root            This command is using service account impersonation. All API calls will be executed as [cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com].
+2025-02-09 22:37:28,403 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-02-09 22:37:28,404 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-02-09 22:37:28,500 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-02-09 22:37:28,508 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com:generateAccessToken
+2025-02-09 22:37:28,509 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-02-09 22:37:28,613 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com:generateAccessToken HTTP/1.1" 200 None
+2025-02-09 22:37:28,669 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2025-02-09 22:37:31,298 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "POST /v1/projects/dde-ops-data-science-p001/locations/europe-west4/builds?alt=json HTTP/1.1" 200 None
+2025-02-09 22:37:31,310 INFO     ___FILE_ONLY___ Created [https://cloudbuild.googleapis.com/v1/projects/dde-ops-data-science-p001/locations/europe-west4/builds/944a6674-acd7-4bba-a0da-38c41dc000f8].
+
+2025-02-09 22:37:31,310 INFO     ___FILE_ONLY___ Logs are available at [ https://console.cloud.google.com/cloud-build/builds;region=europe-west4/944a6674-acd7-4bba-a0da-38c41dc000f8?project=699197215593 ].
+
+2025-02-09 22:37:31,310 DEBUG    root            Chosen display Format:
+        table(
+          id,
+          createTime.date('%Y-%m-%dT%H:%M:%S%Oz', undefined='-'),
+          duration(start=startTime,end=finishTime,precision=0,calendar=false,undefined="  -").slice(2:).join(""):label=DURATION,
+          build_source(undefined="-"):label=SOURCE,
+          build_images(undefined="-"):label=IMAGES,
+          status
+        )
+      
+2025-02-09 22:37:31,311 INFO     root            Display format: "
+        table(
+          id,
+          createTime.date('%Y-%m-%dT%H:%M:%S%Oz', undefined='-'),
+          duration(start=startTime,end=finishTime,precision=0,calendar=false,undefined="  -").slice(2:).join(""):label=DURATION,
+          build_source(undefined="-"):label=SOURCE,
+          build_images(undefined="-"):label=IMAGES,
+          status
+        )
+      "
+2025-02-09 22:37:31,335 INFO     ___FILE_ONLY___ ID
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___                                     
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ CREATE_TIME
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___                 
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ DURATION
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___   
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ SOURCE
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___                                                                                                                       
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ IMAGES
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___   
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ STATUS
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ 
+
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ 944a6674-acd7-4bba-a0da-38c41dc000f8
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___   
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ 2025-02-09T14:37:30+00:00
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___   
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ -
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___          
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ gs://dde-ops-data-science-p001_cloudbuild/user-managed-notebook-cpu/1739111843.636411-1786b862766d4fd28a7091fa6ecf1e4f.tgz
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___   
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ -
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___        
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ QUEUED
+2025-02-09 22:37:31,336 INFO     ___FILE_ONLY___ 
+
+2025-02-09 22:37:31,350 DEBUG    root            Checking for updates...
+2025-02-09 22:37:31,352 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-02-09 22:37:31,624 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 227832
+2025-02-09 22:37:31,787 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+
+2025-02-09 22:37:31,811 DEBUG    root            Metrics reporting process started...

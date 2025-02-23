@@ -1,0 +1,33 @@
+2025-02-06 13:46:21,189 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2025-02-06 13:46:21,227 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'submit']
+2025-02-06 13:46:21,236 DEBUG    root            Running [gcloud.builds.submit] with arguments: [--async: "True", --config: "cloudbuild.yaml", --gcs-source-staging-dir: "gs://dde-prj-orbit-d001_cloudbuild/lyra", --impersonate-service-account: "cloudbuild-sa@dde-prj-orbit-d001.iam.gserviceaccount.com", --project: "dde-prj-orbit-d001", --region: "europe-west2", --substitutions: "OrderedDict([('_IMAGE_NAME', 'ollama'), ('_DOCKERFILE_NAME', 'Dockerfile.ollama')])", SOURCE: "src/lyra"]
+2025-02-06 13:46:21,236 DEBUG    root            (gcloud.builds.submit) Unable to read file [cloudbuild.yaml]: [Errno 2] No such file or directory: 'cloudbuild.yaml'
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/core/util/files.py", line 1310, in _FileOpener
+    return io.open(path, mode, encoding=encoding, newline=newline)
+FileNotFoundError: [Errno 2] No such file or directory: 'cloudbuild.yaml'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/surface/builds/submit.py", line 216, in Run
+    build_config = submit_util.CreateBuildConfig(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/submit_util.py", line 633, in CreateBuildConfig
+    build_config = _SetBuildSteps(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/submit_util.py", line 300, in _SetBuildSteps
+    build_config = config.LoadCloudbuildConfigFromPath(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudbuild/config.py", line 156, in LoadCloudbuildConfigFromPath
+    build = cloudbuild_util.LoadMessageFromPath(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudbuild/cloudbuild_util.py", line 495, in LoadMessageFromPath
+    with files.FileReader(path) as f:  # Returns user-friendly error messages
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/core/util/files.py", line 1211, in FileReader
+    return _FileOpener(path, 'rt', 'read', encoding='utf-8')
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/core/util/files.py", line 1317, in _FileOpener
+    raise exc_type('Unable to {0} file [{1}]: {2}'.format(verb, path, e))
+googlecloudsdk.core.util.files.MissingFileError: Unable to read file [cloudbuild.yaml]: [Errno 2] No such file or directory: 'cloudbuild.yaml'
+2025-02-06 13:46:21,238 ERROR    root            (gcloud.builds.submit) Unable to read file [cloudbuild.yaml]: [Errno 2] No such file or directory: 'cloudbuild.yaml'
+2025-02-06 13:46:21,248 DEBUG    root            Metrics reporting process started...

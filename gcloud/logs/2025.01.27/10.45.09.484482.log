@@ -1,0 +1,24 @@
+2025-01-27 10:45:09,485 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2025-01-27 10:45:09,486 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2025-01-27 10:45:09,498 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application-default', 'set_quota_project']
+2025-01-27 10:45:09,499 DEBUG    root            Running [gcloud.auth.application-default.set-quota-project] with arguments: [QUOTA_PROJECT_ID: "dde-prj-buildandtest-d001"]
+2025-01-27 10:45:09,512 INFO     root            Using alternate credentials from file: [/Users/daniel.low/.config/gcloud/application_default_credentials.json]
+2025-01-27 10:45:09,518 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-01-27 10:45:09,523 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-01-27 10:45:09,597 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-01-27 10:45:09,604 INFO     root            Using alternate credentials from file: [/Users/daniel.low/.config/gcloud/application_default_credentials.json]
+2025-01-27 10:45:09,616 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-01-27 10:45:10,720 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/dde-prj-buildandtest-d001:testIamPermissions?alt=json HTTP/1.1" 200 None
+2025-01-27 10:45:10,726 DEBUG    root            (gcloud.auth.application-default.set-quota-project) Cannot add the project "dde-prj-buildandtest-d001" to application default credentials (ADC) as a quota project because the account in ADC does not have the "serviceusage.services.use" permission on this project.
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/surface/auth/application_default/set_quota_project.py", line 58, in Run
+    return auth_util.AddQuotaProjectToADC(args.quota_project_id)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/auth/auth_util.py", line 321, in AddQuotaProjectToADC
+    raise MissingPermissionOnQuotaProjectError(
+googlecloudsdk.command_lib.auth.auth_util.MissingPermissionOnQuotaProjectError: Cannot add the project "dde-prj-buildandtest-d001" to application default credentials (ADC) as a quota project because the account in ADC does not have the "serviceusage.services.use" permission on this project.
+2025-01-27 10:45:10,757 ERROR    root            (gcloud.auth.application-default.set-quota-project) Cannot add the project "dde-prj-buildandtest-d001" to application default credentials (ADC) as a quota project because the account in ADC does not have the "serviceusage.services.use" permission on this project.
+2025-01-27 10:45:10,796 DEBUG    root            Metrics reporting process started...

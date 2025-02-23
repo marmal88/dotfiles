@@ -1,0 +1,101 @@
+2025-02-12 15:45:01,939 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2025-02-12 15:45:01,950 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service_accounts']
+2025-02-12 15:45:01,976 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service-accounts', 'describe']
+2025-02-12 15:45:01,977 DEBUG    root            Running [gcloud.iam.service-accounts.describe] with arguments: [--project: "dde-ops-data-science-d001", SERVICE_ACCOUNT: "106789008090629678782"]
+2025-02-12 15:45:02,028 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2025-02-12 15:45:03,293 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "GET /v1/projects/-/serviceAccounts/106789008090629678782?alt=json HTTP/11" 200 None
+2025-02-12 15:45:03,297 DEBUG    root            Chosen display Format:default
+2025-02-12 15:45:03,372 INFO     root            Display format: "default"
+2025-02-12 15:45:03,403 INFO     ___FILE_ONLY___ description
+2025-02-12 15:45:03,403 INFO     ___FILE_ONLY___ :
+2025-02-12 15:45:03,403 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,403 INFO     ___FILE_ONLY___ Service
+2025-02-12 15:45:03,403 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,403 INFO     ___FILE_ONLY___ account
+2025-02-12 15:45:03,403 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ to
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ be
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ used
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ to
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ run
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ the
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ cloud
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ build
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ jobs
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ for
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ vertex
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ ai
+2025-02-12 15:45:03,404 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___   
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___ model
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___ and
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___ endpoint
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___ deployment
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___ displayName
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___ :
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___ Model
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___ Deployment
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___ Cloud
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___ Build
+2025-02-12 15:45:03,405 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:45:03,406 INFO     ___FILE_ONLY___ email
+2025-02-12 15:45:03,406 INFO     ___FILE_ONLY___ :
+2025-02-12 15:45:03,406 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,406 INFO     ___FILE_ONLY___ model-deployment-cloudbuild-sa@dde-ops-data-science-d001.iam.gserviceaccount.com
+2025-02-12 15:45:03,406 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:45:03,406 INFO     ___FILE_ONLY___ etag
+2025-02-12 15:45:03,406 INFO     ___FILE_ONLY___ :
+2025-02-12 15:45:03,406 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,406 INFO     ___FILE_ONLY___ MDEwMjE5MjA=
+2025-02-12 15:45:03,406 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:45:03,406 INFO     ___FILE_ONLY___ name
+2025-02-12 15:45:03,406 INFO     ___FILE_ONLY___ :
+2025-02-12 15:45:03,407 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,407 INFO     ___FILE_ONLY___ projects/dde-ops-data-science-d001/serviceAccounts/model-deployment-cloudbuild-sa@dde-ops-data-science-d001.iam.gserviceaccount.com
+2025-02-12 15:45:03,407 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:45:03,407 INFO     ___FILE_ONLY___ oauth2ClientId
+2025-02-12 15:45:03,408 INFO     ___FILE_ONLY___ :
+2025-02-12 15:45:03,408 INFO     ___FILE_ONLY___  '
+2025-02-12 15:45:03,408 INFO     ___FILE_ONLY___ 106789008090629678782
+2025-02-12 15:45:03,408 INFO     ___FILE_ONLY___ '
+2025-02-12 15:45:03,408 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:45:03,408 INFO     ___FILE_ONLY___ projectId
+2025-02-12 15:45:03,408 INFO     ___FILE_ONLY___ :
+2025-02-12 15:45:03,408 INFO     ___FILE_ONLY___  
+2025-02-12 15:45:03,408 INFO     ___FILE_ONLY___ dde-ops-data-science-d001
+2025-02-12 15:45:03,408 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:45:03,408 INFO     ___FILE_ONLY___ uniqueId
+2025-02-12 15:45:03,408 INFO     ___FILE_ONLY___ :
+2025-02-12 15:45:03,409 INFO     ___FILE_ONLY___  '
+2025-02-12 15:45:03,409 INFO     ___FILE_ONLY___ 106789008090629678782
+2025-02-12 15:45:03,409 INFO     ___FILE_ONLY___ '
+2025-02-12 15:45:03,409 INFO     ___FILE_ONLY___ 
+
+2025-02-12 15:45:03,421 DEBUG    root            Metrics reporting process started...

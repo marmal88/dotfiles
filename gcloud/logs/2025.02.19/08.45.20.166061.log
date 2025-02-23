@@ -1,0 +1,10 @@
+2025-02-19 08:45:20,181 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2025-02-19 08:45:20,186 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2025-02-19 08:45:20,187 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "daniel.low@dyson.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "dde-prj-buildandtest-p001"]
+2025-02-19 08:45:20,214 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-02-19 08:45:21,332 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/dde-prj-buildandtest-p001?alt=json HTTP/11" 200 None
+2025-02-19 08:45:21,333 DEBUG    root            Chosen display Format:default value(name)
+2025-02-19 08:45:21,333 INFO     root            Display format: "default value(name)"
+2025-02-19 08:45:21,377 INFO     ___FILE_ONLY___ dde-prj-buildandtest-p001
+
+2025-02-19 08:45:21,387 DEBUG    root            Metrics reporting process started...

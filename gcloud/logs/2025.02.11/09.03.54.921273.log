@@ -1,0 +1,14 @@
+2025-02-11 09:03:54,922 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2025-02-11 09:03:54,936 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'revoke']
+2025-02-11 09:03:54,937 DEBUG    root            Running [gcloud.auth.revoke] with arguments: [ACCOUNTS:1: "['auth/bnt-battery-engineer-sa@dde-prj-buildandtest-p001.iam.gserviceaccount.com']"]
+2025-02-11 09:03:54,939 DEBUG    root            (gcloud.auth.revoke) Unknown value for [accounts]: auth/bnt-battery-engineer-sa@dde-prj-buildandtest-p001.iam.gserviceaccount.com
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/surface/auth/revoke.py", line 85, in Run
+    raise c_exc.UnknownArgumentException(
+googlecloudsdk.calliope.exceptions.UnknownArgumentException: Unknown value for [accounts]: auth/bnt-battery-engineer-sa@dde-prj-buildandtest-p001.iam.gserviceaccount.com
+2025-02-11 09:03:54,941 ERROR    root            (gcloud.auth.revoke) Unknown value for [accounts]: auth/bnt-battery-engineer-sa@dde-prj-buildandtest-p001.iam.gserviceaccount.com
+2025-02-11 09:03:54,951 DEBUG    root            Metrics reporting process started...

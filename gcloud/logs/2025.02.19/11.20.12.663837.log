@@ -1,0 +1,15 @@
+2025-02-19 11:20:12,665 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2025-02-19 11:20:12,666 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_access_token']
+2025-02-19 11:20:12,667 DEBUG    root            Running [gcloud.auth.print-access-token] with arguments: [--impersonate-service-account: "model-deployment-cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com"]
+2025-02-19 11:20:12,667 WARNING  root            This command is using service account impersonation. All API calls will be executed as [model-deployment-cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com].
+2025-02-19 11:20:12,680 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-02-19 11:20:12,686 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-02-19 11:20:12,787 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-02-19 11:20:12,791 DEBUG    google.auth.transport.requests Making request: POST https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/model-deployment-cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com:generateAccessToken
+2025-02-19 11:20:12,792 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iamcredentials.googleapis.com:443
+2025-02-19 11:20:12,895 DEBUG    urllib3.connectionpool https://iamcredentials.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/model-deployment-cloudbuild-sa@dde-ops-data-science-p001.iam.gserviceaccount.com:generateAccessToken HTTP/11" 200 None
+2025-02-19 11:20:12,897 DEBUG    root            Chosen display Format:value(token)
+2025-02-19 11:20:12,898 INFO     root            Display format: "value(token)"
+2025-02-19 11:20:12,962 INFO     ___FILE_ONLY___ ya29.c.c0ASRK0GZ2S4-1RfZhU42ZlSvEoWVFrapBD90O6u4SVv2ds8YCA5ct1bnSCeM655NDPOUl5RXYhHmWFps3HA53kFWZMG4mgWGbMF3egwJeuhL8jaZYF3jLBl_iMJkut-sBERxgptcuZESWXJFHqgu_7jqtqsG2AuJ1v2zBHCWIAg1MvrYHN1UQBj0QIry-KXx5Y5m0VyRzU2PBF4B6j0n-fiaGw2T_q3R5u6kk0zW7bviBKl83VVSQba2EQ9v_stJPsWKnjQNehkPKBfr1JTF2urAQ3MCTbJhvx-AbiGw5H6mHm6alxp4v2gMk4fc-W_2jwF-yjnleoWaolNSWaRxHZamZ2n0f07zmxIo7mYMkk3M26kflQBORu6fMvLv_XYxgtJEIJE2Vn_51DBaNV151cvJjSEp8VXx_L1l-SCYHwZSNSHcOlEwjH9XuZHuhZet0DUPlhvHGYdlLxbGyO-GQQl_Bv-484pyq1mc-BZO9dH46Y7yNjbcOCEspB9fcmPV9OqA1-Y53638iNiszn5AhXQdyCTINYQYPsGDKOAiQqfIbWnIc84e4aoonFQRXNginCEKdSrH7i8K2qRH9380hgcWmHDKinKNDQmBf8RaYOU9o16BInIR65NE8uh8L644Pg0t3dwsS5pjzUqxshRscX3k8-6Vn_z1ZnO58MwXmrsj3xR8a5Z4zYm9w8RwyfSbn-Y1M3kV6710Us1Z_hwswWic2l1kXQZa5BVpYMob0xyr6heU1VxwgqngXf0o3Snz3OobsBBVbMmX4ha5UJIoMp2p4ce5MQRzQxjWcaemhsw6x_qdola-Rm0BsQ0mvbJJk0k07tUrIhROFcthJkkZq-IVF-4v7BwStVB1-4uk06rntyW58tuqRrS62jY0FWZYf9UW5ncFkjrUbjBviu_QORtznFhU9rVozt3414twBZz6OUwVtJrUusxZq26V5kXZ4JY_deM56hIlSoFgM7hQhlw-i2eMeQYij2ap1Zzauns-3lQpQUXqwdn9
+
+2025-02-19 11:20:12,971 DEBUG    root            Metrics reporting process started...

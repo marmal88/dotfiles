@@ -1,0 +1,13 @@
+2025-01-24 12:03:18,569 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2025-01-24 12:03:18,632 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2025-01-24 12:03:18,634 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "daniel.low@dyson.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "dde-ops-data-science-s001"]
+2025-01-24 12:03:18,861 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-01-24 12:03:18,869 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-01-24 12:03:18,985 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-01-24 12:03:19,059 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-01-24 12:03:20,221 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/dde-ops-data-science-s001?alt=json HTTP/1.1" 200 None
+2025-01-24 12:03:20,224 DEBUG    root            Chosen display Format:default value(name)
+2025-01-24 12:03:20,224 INFO     root            Display format: "default value(name)"
+2025-01-24 12:03:20,471 INFO     ___FILE_ONLY___ dde-ops-data-science-s001
+
+2025-01-24 12:03:20,484 DEBUG    root            Metrics reporting process started...

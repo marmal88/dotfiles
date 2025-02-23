@@ -1,0 +1,9 @@
+2025-02-19 11:20:00,279 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2025-02-19 11:20:00,294 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_access_token']
+2025-02-19 11:20:00,295 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'auth']
+2025-02-19 11:20:00,296 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'auth', 'print_access_token']
+2025-02-19 11:20:00,297 ERROR    root            (gcloud.auth.print-access-token) unrecognized arguments: --impersonate (did you mean '--impersonate-service-account'?) 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+2025-02-19 11:20:00,301 DEBUG    root            Metrics reporting process started...

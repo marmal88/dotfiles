@@ -1,0 +1,54 @@
+2025-02-05 11:42:53,303 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2025-02-05 11:42:53,324 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'addresses']
+2025-02-05 11:42:53,375 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'addresses', 'delete']
+2025-02-05 11:42:53,377 DEBUG    root            Running [gcloud.compute.addresses.delete] with arguments: [--project: "dde-ops-data-science-p001", --region: "europe-west4", NAME:1: "['docusearch-external-ip']"]
+2025-02-05 11:42:53,518 DEBUG    root            Chosen display Format:list[title="The following addresses will be deleted:",always-display-title]
+2025-02-05 11:42:57,365 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2025-02-05 11:42:59,014 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "DELETE /compute/v1/projects/dde-ops-data-science-p001/regions/europe-west4/addresses/docusearch-external-ip?alt=json HTTP/1.1" 200 None
+2025-02-05 11:42:59,020 DEBUG    root            Operations to inspect: [(<Operation
+ id: 3893386216251285677
+ insertTime: '2025-02-04T19:42:58.841-08:00'
+ kind: 'compute#operation'
+ name: 'operation-1738726978703-62d5cebed50bc-04e8342c-81a309a0'
+ operationType: 'delete'
+ progress: 0
+ region: 'https://www.googleapis.com/compute/v1/projects/dde-ops-data-science-p001/regions/europe-west4'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/dde-ops-data-science-p001/regions/europe-west4/operations/operation-1738726978703-62d5cebed50bc-04e8342c-81a309a0'
+ startTime: '2025-02-04T19:42:58.844-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 203016149339714001
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/dde-ops-data-science-p001/regions/europe-west4/addresses/docusearch-external-ip'
+ user: 'daniel.low@dyson.com'
+ warnings: []>, 3)]
+2025-02-05 11:42:59,022 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2025-02-05 11:43:00,577 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/dde-ops-data-science-p001/regions/europe-west4/operations/operation-1738726978703-62d5cebed50bc-04e8342c-81a309a0/wait?alt=json HTTP/1.1" 200 None
+2025-02-05 11:43:00,581 DEBUG    root            Operations to inspect: [(<Operation
+ endTime: '2025-02-04T19:42:59.356-08:00'
+ id: 3893386216251285677
+ insertTime: '2025-02-04T19:42:58.841-08:00'
+ kind: 'compute#operation'
+ name: 'operation-1738726978703-62d5cebed50bc-04e8342c-81a309a0'
+ operationType: 'delete'
+ progress: 100
+ region: 'https://www.googleapis.com/compute/v1/projects/dde-ops-data-science-p001/regions/europe-west4'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/dde-ops-data-science-p001/regions/europe-west4/operations/operation-1738726978703-62d5cebed50bc-04e8342c-81a309a0'
+ startTime: '2025-02-04T19:42:58.844-08:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 203016149339714001
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/dde-ops-data-science-p001/regions/europe-west4/addresses/docusearch-external-ip'
+ user: 'daniel.low@dyson.com'
+ warnings: []>, 3)]
+2025-02-05 11:43:00,582 INFO     ___FILE_ONLY___ Deleted [https://www.googleapis.com/compute/v1/projects/dde-ops-data-science-p001/regions/europe-west4/addresses/docusearch-external-ip].
+
+2025-02-05 11:43:00,582 DEBUG    root            Chosen display Format:none
+2025-02-05 11:43:00,582 INFO     root            Display format: "none"
+2025-02-05 11:43:00,597 INFO     root            cache collection=compute.addresses api_version=v1 params=['project', 'region', 'address']
+2025-02-05 11:43:00,597 INFO     root            cache collection=compute.globalAddresses api_version=v1 params=['project', 'address']
+2025-02-05 11:43:00,631 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+
+2025-02-05 11:43:00,664 DEBUG    root            Metrics reporting process started...

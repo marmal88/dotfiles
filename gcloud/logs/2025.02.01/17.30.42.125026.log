@@ -1,0 +1,118 @@
+2025-02-01 17:30:42,129 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2025-02-01 17:30:42,134 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'peered_dns_domains']
+2025-02-01 17:30:42,201 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'peered-dns-domains', 'list']
+2025-02-01 17:30:42,203 DEBUG    root            Running [gcloud.services.peered-dns-domains.list] with arguments: [--network: "gc-net-svpc-prd-vpc-euw4-01"]
+2025-02-01 17:30:42,551 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-02-01 17:30:42,558 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-02-01 17:30:42,880 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-02-01 17:30:42,957 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-02-01 17:30:44,302 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/dde-ops-data-science-d001?alt=json HTTP/1.1" 200 None
+2025-02-01 17:30:44,353 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): servicenetworking.googleapis.com:443
+2025-02-01 17:30:45,963 DEBUG    urllib3.connectionpool https://servicenetworking.googleapis.com:443 "GET /v1/services/servicenetworking.googleapis.com/projects/227097679559/global/networks/gc-net-svpc-prd-vpc-euw4-01/peeredDnsDomains?alt=json HTTP/1.1" 404 None
+2025-02-01 17:30:45,969 DEBUG    root            Chosen display Format:default
+2025-02-01 17:30:46,301 DEBUG    root            Chosen display Format:default
+2025-02-01 17:30:46,220 DEBUG    root            (gcloud.services.peered-dns-domains.list) NOT_FOUND: Consumer network: 'gc-net-svpc-prd-vpc-euw4-01' not found in project: '227097679559'.
+Help Token: Ab6lFGduik7fIxy-sO8YRvLf7wnT0iqVylqD1CDWB7J2GdfePyfVCSB_idR_mUrCK_uK1z8efcVyLrcaPqVYcVcgYHTzWsDV5X_NKRPe5GN062YY. This command is authenticated as daniel.low@dyson.com which is the active account specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=907028&network=gc-net-svpc-prd-vpc-euw4-01&project=227097679559
+    type: googleapis.com
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: servicenetworking.googleapis.com
+  metadata:
+    network: gc-net-svpc-prd-vpc-euw4-01
+    project: '227097679559'
+  reason: SN_CONSUMER_NETWORK_NOT_FOUND
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/services/peering.py", line 408, in ListPeeredDnsDomains
+    return client.services_projects_global_networks_peeredDnsDomains.List(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/servicenetworking/v1/servicenetworking_v1_client.py", line 637, in List
+    return self._RunMethod(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpNotFoundError: HttpError accessing <https://servicenetworking.googleapis.com/v1/services/servicenetworking.googleapis.com/projects/227097679559/global/networks/gc-net-svpc-prd-vpc-euw4-01/peeredDnsDomains?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sat, 01 Feb 2025 09:30:45 GMT', 'server': 'ESF', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 404}>, content <{
+  "error": {
+    "code": 404,
+    "message": "Consumer network: 'gc-net-svpc-prd-vpc-euw4-01' not found in project: '227097679559'.\nHelp Token: Ab6lFGduik7fIxy-sO8YRvLf7wnT0iqVylqD1CDWB7J2GdfePyfVCSB_idR_mUrCK_uK1z8efcVyLrcaPqVYcVcgYHTzWsDV5X_NKRPe5GN062YY",
+    "status": "NOT_FOUND",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+        "violations": [
+          {
+            "type": "googleapis.com",
+            "subject": "?error_code=907028&network=gc-net-svpc-prd-vpc-euw4-01&project=227097679559"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "SN_CONSUMER_NETWORK_NOT_FOUND",
+        "domain": "servicenetworking.googleapis.com",
+        "metadata": {
+          "network": "gc-net-svpc-prd-vpc-euw4-01",
+          "project": "227097679559"
+        }
+      }
+    ]
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 934, in Run
+    resources = command_instance.Run(args)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/surface/services/peered_dns_domains/list.py", line 89, in Run
+    domains = peering.ListPeeredDnsDomains(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/services/peering.py", line 415, in ListPeeredDnsDomains
+    exceptions.ReraiseError(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/services/exceptions.py", line 158, in ReraiseError
+    core_exceptions.reraise(klass(api_lib_exceptions.HttpException(err)))
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 149, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/six/__init__.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/services/peering.py", line 408, in ListPeeredDnsDomains
+    return client.services_projects_global_networks_peeredDnsDomains.List(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/servicenetworking/v1/servicenetworking_v1_client.py", line 637, in List
+    return self._RunMethod(
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/Users/daniel.low/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+googlecloudsdk.api_lib.services.exceptions.ListPeeredDnsDomainsPermissionDeniedException: NOT_FOUND: Consumer network: 'gc-net-svpc-prd-vpc-euw4-01' not found in project: '227097679559'.
+Help Token: Ab6lFGduik7fIxy-sO8YRvLf7wnT0iqVylqD1CDWB7J2GdfePyfVCSB_idR_mUrCK_uK1z8efcVyLrcaPqVYcVcgYHTzWsDV5X_NKRPe5GN062YY. This command is authenticated as daniel.low@dyson.com which is the active account specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=907028&network=gc-net-svpc-prd-vpc-euw4-01&project=227097679559
+    type: googleapis.com
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: servicenetworking.googleapis.com
+  metadata:
+    network: gc-net-svpc-prd-vpc-euw4-01
+    project: '227097679559'
+  reason: SN_CONSUMER_NETWORK_NOT_FOUND
+2025-02-01 17:30:46,308 ERROR    root            (gcloud.services.peered-dns-domains.list) NOT_FOUND: Consumer network: 'gc-net-svpc-prd-vpc-euw4-01' not found in project: '227097679559'.
+Help Token: Ab6lFGduik7fIxy-sO8YRvLf7wnT0iqVylqD1CDWB7J2GdfePyfVCSB_idR_mUrCK_uK1z8efcVyLrcaPqVYcVcgYHTzWsDV5X_NKRPe5GN062YY. This command is authenticated as daniel.low@dyson.com which is the active account specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=907028&network=gc-net-svpc-prd-vpc-euw4-01&project=227097679559
+    type: googleapis.com
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: servicenetworking.googleapis.com
+  metadata:
+    network: gc-net-svpc-prd-vpc-euw4-01
+    project: '227097679559'
+  reason: SN_CONSUMER_NETWORK_NOT_FOUND
+2025-02-01 17:30:46,309 DEBUG    root            Chosen display Format:default
+2025-02-01 17:30:46,358 DEBUG    root            Metrics reporting process started...

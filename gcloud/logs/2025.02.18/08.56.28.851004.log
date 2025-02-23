@@ -1,0 +1,13 @@
+2025-02-18 08:56:28,862 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2025-02-18 08:56:28,934 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2025-02-18 08:56:28,936 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "daniel.low@dyson.com", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "dde-prj-buildandtest-p001"]
+2025-02-18 08:56:29,117 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-02-18 08:56:29,132 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-02-18 08:56:29,430 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-02-18 08:56:29,467 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-02-18 08:56:30,735 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/dde-prj-buildandtest-p001?alt=json HTTP/11" 200 None
+2025-02-18 08:56:30,736 DEBUG    root            Chosen display Format:default value(name)
+2025-02-18 08:56:30,736 INFO     root            Display format: "default value(name)"
+2025-02-18 08:56:30,809 INFO     ___FILE_ONLY___ dde-prj-buildandtest-p001
+
+2025-02-18 08:56:30,818 DEBUG    root            Metrics reporting process started...
