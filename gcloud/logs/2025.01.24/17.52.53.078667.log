@@ -1,8 +1,0 @@
-2025-01-24 17:52:53,090 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
-2025-01-24 17:52:53,116 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get_value']
-2025-01-24 17:52:53,117 DEBUG    root            Running [gcloud.config.get-value] with arguments: [SECTION/PROPERTY: "account"]
-2025-01-24 17:52:53,117 DEBUG    root            Chosen display Format:value(.)
-2025-01-24 17:52:53,118 INFO     root            Display format: "value(.)"
-2025-01-24 17:52:53,118 INFO     ___FILE_ONLY___ daniel.low@dyson.com
-
-2025-01-24 17:52:53,124 DEBUG    root            Metrics reporting process started...

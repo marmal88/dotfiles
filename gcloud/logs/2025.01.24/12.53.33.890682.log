@@ -1,4 +1,0 @@
-2025-01-24 12:53:33,907 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
-2025-01-24 12:53:33,930 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'add_iam_policy_binding']
-2025-01-24 12:53:33,938 ERROR    root            (gcloud.projects.add-iam-policy-binding) argument --condition: valid keys are [None, description, expression, title]; received: resource.type
-2025-01-24 12:53:33,943 DEBUG    root            Metrics reporting process started...

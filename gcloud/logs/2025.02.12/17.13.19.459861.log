@@ -1,8 +1,0 @@
-2025-02-12 17:13:19,472 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
-2025-02-12 17:13:19,494 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_iam_policy']
-2025-02-12 17:13:19,495 DEBUG    root            Running [gcloud.projects.get-iam-policy] with arguments: [--filter: "bindings.members:daniel.low@dyson.com", --flatten: "['bindings[].members']", --format: "table(bindings.role)", PROJECT_ID_OR_NUMBER: "dde-ops-data-science-d001"]
-2025-02-12 17:13:19,517 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
-2025-02-12 17:13:20,654 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/dde-ops-data-science-d001:getIamPolicy?alt=json HTTP/11" 200 None
-2025-02-12 17:13:20,657 DEBUG    root            Chosen display Format:default table(bindings.role)
-2025-02-12 17:13:20,658 INFO     root            Display format: "default table(bindings.role)"
-2025-02-12 17:13:20,760 DEBUG    root            Metrics reporting process started...

@@ -1,4 +1,0 @@
-2025-01-24 15:36:23,872 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
-2025-01-24 15:36:24,079 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'submit']
-2025-01-24 15:36:24,101 ERROR    root            (gcloud.builds.submit) argument --project: expected one argument
-2025-01-24 15:36:24,106 DEBUG    root            Metrics reporting process started...

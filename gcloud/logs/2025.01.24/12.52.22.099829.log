@@ -1,9 +1,0 @@
-2025-01-24 12:52:22,110 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
-2025-01-24 12:52:22,130 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'add_iam_policy_binding']
-2025-01-24 12:52:22,137 DEBUG    root            Running [gcloud.projects.add-iam-policy-binding] with arguments: [--member: "serviceAccount:lyra-terraform@dde-ops-data-science-d001.iam.gserviceaccount.com", --role: "roles/storage.admin", PROJECT_ID: "dde-prj-orbit-d001"]
-2025-01-24 12:52:22,159 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
-2025-01-24 12:52:22,792 INFO     ___FILE_ONLY___ 
-
-Command killed by keyboard interrupt
-
-

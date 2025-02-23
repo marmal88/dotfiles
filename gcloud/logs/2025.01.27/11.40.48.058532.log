@@ -1,8 +1,0 @@
-2025-01-27 11:40:48,059 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
-2025-01-27 11:40:48,070 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get_value']
-2025-01-27 11:40:48,071 DEBUG    root            Running [gcloud.config.get-value] with arguments: [SECTION/PROPERTY: "project"]
-2025-01-27 11:40:48,071 DEBUG    root            Chosen display Format:value(.)
-2025-01-27 11:40:48,072 INFO     root            Display format: "value(.)"
-2025-01-27 11:40:48,072 INFO     ___FILE_ONLY___ dde-ops-data-science-d001
-
-2025-01-27 11:40:48,087 DEBUG    root            Metrics reporting process started...
