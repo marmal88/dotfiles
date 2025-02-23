@@ -6,7 +6,11 @@ require('neo-tree').setup({
             visible = true,
             show_hidden_count = true,
             hide_dotfiles = false,
-            hide_gitignored = false
-        }
-    },
+            hide_gitignored = false,
+            hide_by_name = {
+                '.DS_Store'
+            },
+            never_show = {},
+        },
+    }
 })
