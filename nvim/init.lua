@@ -1,2 +1,3 @@
-require("luaconfig.remap")
-require("luaconfig.set")
+require('config.keymap')
+require('config.lazy')
+require('config.set')
