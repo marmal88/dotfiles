@@ -50,6 +50,7 @@ local toggle_terminal = function()
     else
         vim.api.nvim_win_hide(state.floating.win)
     end
+    vim.cmd('normal i')
 end
 
 -- Example usage:

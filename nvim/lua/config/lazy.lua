@@ -24,7 +24,7 @@ require("lazy").setup({
 		{ 'rebelot/kanagawa.nvim',  config = function() vim.cmd.colorscheme "kanagawa" end },
 		{ import = "plugins" },
         { import = "plugins.lsp"},
-        { import = "plugins.git"}
+        { import = "plugins.git"},
 	},
 	defaults = {
 		lazy = false,   -- sets custom plugins to be lazy loaded by default
