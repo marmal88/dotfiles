@@ -6,7 +6,8 @@ vim.keymap.set('x', '<leader>p', [["_dP]])    --in visual mode paste and retain 
 vim.keymap.set('n', '<leader>u', '<Cmd>UndotreeToggle<CR>')
 
 -- neotree config
-vim.keymap.set('n', '<leader>e', '<Cmd>Neotree toggle<CR>')
+vim.keymap.set('n', '<leader>e', '<Cmd>Neotree float reveal toggle<CR>')
+vim.keymap.set('n', '<leader>er', '<Cmd>Neotree reveal position=left<CR>')
 
 -- neogit 
 vim.keymap.set("n", "<leader>git", "<Cmd>Neogit<CR>", { noremap = true, silent = true })
