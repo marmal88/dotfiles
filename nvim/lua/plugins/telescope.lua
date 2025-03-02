@@ -24,7 +24,10 @@ return {
         -- git search
         vim.keymap.set('n', '<leader>gb', require('telescope.builtin').git_branches ),
         vim.keymap.set('n', '<leader>gc', require('telescope.builtin').git_commits ),
-        vim.keymap.set('n', '<leader>gs', require('telescope.builtin').git_stash )
+        vim.keymap.set('n', '<leader>gs', require('telescope.builtin').git_stash ),
+
+        -- quickfix search
+        vim.keymap.set('n', '<leader>fix', require('telescope.builtin').quickfix ),
     },
     opts = {
         defaults = {
