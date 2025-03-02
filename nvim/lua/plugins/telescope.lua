@@ -17,7 +17,11 @@ return {
             require('telescope.builtin').find_files(opts) end),
         vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags),
         vim.keymap.set('n', '<leader>fb','<cmd>Telescope buffers sort_mru=true sort_lastused=true ignore_current_buffer=true<cr>'),
-        -- git telescope
+
+        -- grep search
+        -- vim.keymap.set('n', '<leader>rg', require('telescope.builtin').grep_string),
+
+        -- git search
         vim.keymap.set('n', '<leader>gb', require('telescope.builtin').git_branches ),
         vim.keymap.set('n', '<leader>gc', require('telescope.builtin').git_commits ),
         vim.keymap.set('n', '<leader>gs', require('telescope.builtin').git_stash )
