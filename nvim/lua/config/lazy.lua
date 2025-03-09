@@ -19,10 +19,10 @@ vim.opt.runtimepath:prepend(lazypath)
 -- Setup lazy.nvim
 require("lazy").setup({
 	spec = {
-        { 'kyazdani42/nvim-web-devicons', opts = {} },
+        { 'kyazdani42/nvim-web-devicons' },
         { 'DaikyXendo/nvim-material-icon' },
-		{ 'rebelot/kanagawa.nvim',  config = function() vim.cmd.colorscheme "kanagawa" end },
-		{ import = "plugins" },
+        { 'rebelot/kanagawa.nvim',  config = function() vim.cmd.colorscheme "kanagawa" end },
+	    { import = "plugins" },
         { import = "plugins.lsp"},
         { import = "plugins.git"},
         { import = "plugins.ide"},
@@ -37,3 +37,4 @@ require("lazy").setup({
 		notify = false, -- get a notification when changes are found
 	},
 })
+

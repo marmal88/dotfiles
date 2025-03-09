@@ -21,19 +21,23 @@ return {
                         :+:    :+: :+:    :+:    :+:     :+:+:   :+: :+:    :+:    ⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣟⡘⣿⣿⣃⠀⠀⠀
                        +:+        +:+    +:+    +:+     :+:+:+  +:+ +:+            ⣴⣷⣀⣸⣿⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⠹⣿⣯⣤⣾⠏⠉⠉⠉⠙⠢⠀
                       :#:        +#+    +:+    +#+     +#+ +:+ +#+ :#:              ⠈⠙⢿⣿⡟⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣄⠛⠉⢩⣷⣴⡆⠀⠀⠀⠀
-                     +#+   +#+# +#+    +#+    +#+     +#+  +#+#+# +#+   +#+#       ⠀⠀⠀⠋⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣀⡠⠋⠈⢿⣇⠀⠀⠀⠀⠀
-                    #+#    #+# #+#    #+#    #+#     #+#   #+#+# #+#    #+#       ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀  
-                    ########   ######## ########### ###    ####  ########                                      
+                     +#+  +#+#  +#+    +#+    +#+     +#+  +#+#+# +#+   +#+#       ⠀⠀⠀⠋⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣀⡠⠋⠈⢿⣇⠀⠀⠀⠀⠀
+                    #+#  #+#   #+#    #+#    #+#     #+#   #+#+# #+#    #+#       ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀  
+                    ########   #########  ########  ###    ####  ########                                      
                     ]],
         },
         sections  = {
             { section = "header" },
             { icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 1 },
             { icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
-            { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },            { section = "startup"}
+            { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
+            { section = "startup"}
         },
     },
-    explorer = {enabled = true},
+    explorer = {
+        enabled = true,
+        layout  = { preset = "sidebar", preview = false}
+    },
     indent = { enabled = true },
     input = { enabled = true },
     picker = { enabled = true },
@@ -53,7 +57,7 @@ return {
     },
   },
   keys = {
-      -- Top Pickers & Explorer
+      -- Top Pickers & Explorer e:
     { "<leader>.", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
     { "<leader>,", function() Snacks.picker.buffers() end, desc = "Buffers" },
     { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
