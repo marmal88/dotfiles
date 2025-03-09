@@ -25,6 +25,7 @@ require("lazy").setup({
 		{ import = "plugins" },
         { import = "plugins.lsp"},
         { import = "plugins.git"},
+        { import = "plugins.ide"},
 	},
 	defaults = {
 		lazy = false,   -- sets custom plugins to be lazy loaded by default
