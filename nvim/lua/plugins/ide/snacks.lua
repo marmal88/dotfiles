@@ -23,7 +23,7 @@ return {
         notification = { wrap=true}
     },
     image = {
-        inline = true,
+        inline = false, -- wezterm not support inline
         enabled = true,
         float = true,
     },
