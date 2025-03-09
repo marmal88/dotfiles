@@ -15,7 +15,7 @@ c.color_scheme = 'kanagawa'
 
 -- minimal tabs
 c.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
-c.window_background_opacity = 0.96
+c.window_background_opacity = 0.70
 c.macos_window_background_blur = 20
 
 return c
