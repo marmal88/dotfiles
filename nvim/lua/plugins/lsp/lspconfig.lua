@@ -2,9 +2,15 @@ return {
     "neovim/nvim-lspconfig",
     dependencies = {
         "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "folke/neodev.nvim",
     },
     config = function()
-        local on_attach = function(_, _)
+        require('neodev').setup()
+
+        local opts = { noremap = true, silent = true }
+        local on_attach = function(_, bufnr)
+            opts.buffer = bufnr
             vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
             vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', opts)
             vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>', opts)
@@ -16,46 +22,32 @@ return {
             vim.keymap.set({'n', 'x'}, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
             vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
         end
+
         local capabilities = require('cmp_nvim_lsp').default_capabilities()
+        local servers = {
+            'pyright',
+            'bashls',
+            'terraformls',
+            'tflint',
+            'lua_ls',
+            'jsonls',
+            'vimls',
+        }
         require("mason").setup()
-        require('mason-lspconfig').setup({
-            ensure_installed = {
-                'pyright',
-                'bashls',
-                'terraformls',
-                'tflint',
-                'lua_ls',
-                'jsonls',
-                'vimls'
+        require('mason-lspconfig').setup(
+            {
+                automatic_installation = true,
+                ensure_installed = servers,
             }
-        })
+        )
 
-        require('lspconfig').lua_ls.setup {
-            on_attach = on_attach,
-            capabilities = capabilities
-        }
+        -- Loop through the servers list and set them up with the same on_attach and capabilities
+        for _, server_name in ipairs(servers) do
+            require('lspconfig')[server_name].setup {
+                on_attach = on_attach,       -- This USES the on_attach function
+                capabilities = capabilities, -- This USES the capabilities table
+            }
+        end
 
-
-        require('lspconfig').bashls.setup {
-            on_attach = on_attach,
-            capabilities = capabilities
-        }
-
-        require('lspconfig').pyright.setup {
-            on_attach = on_attach,
-            capabilities = capabilities,
-            filetypes = {'python'}
-        }
-
-        require('lspconfig').terraformls.setup {
-            on_attach = on_attach,
-            capabilties = capabilities,
-            filetypes = {'hcl', 'tf'}
-        }
-
-        require('lspconfig').tflint.setup {
-            on_attach = on_attach,
-            capabilities = capabilities,
-        }
     end,
 }
