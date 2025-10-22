@@ -5,8 +5,8 @@ local c = wezterm.config_builder()
 local mod = {}
 
 if platform.is_mac then
-   mod.SUPER = 'SUPER'
-   mod.SUPER_REV = 'SUPER|SHIFT'
+   mod.SUPER = 'CMD'
+   mod.SUPER_REV = 'CMD|SHIFT'
 elseif platform.is_win or platform.is_linux then
    mod.SUPER = 'ALT' -- to not conflict with Windows key shortcuts
    mod.SUPER_REV = 'ALT|SHIFT'
@@ -29,6 +29,9 @@ c.initial_cols = 180
 
 -- Key bindings
 c.keys = {
+    { key = '0', mods = mod.SUPER_REV, action = wezterm.action.ToggleFullScreen },
+    { key = 'w', mods = mod.SUPER_REV, action = wezterm.action.CloseCurrentPane { confirm = false } },
+    { key = 'q', mods = mod.SUPER_REV, action = wezterm.action.CloseCurrentTab { confirm = false } },
     {
         key = "\\",
         mods = mod.SUPER,
@@ -36,7 +39,7 @@ c.keys = {
     },
     {
         key = "]",
-        mods = mod.SUPER_REV,
+        mods = mod.SUPER,
         action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain'}
     },
     {
