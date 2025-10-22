@@ -1,6 +1,5 @@
-# ~/.config files for mac
+# ~/.config files
 
 # Stuff Installed
-- aerospace
-- borders
 - neovim
+- wezterm
