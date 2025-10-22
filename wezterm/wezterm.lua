@@ -1,5 +1,16 @@
 local wezterm = require("wezterm")
+local platform = require('utils.platform')
 local c = wezterm.config_builder()
+
+local mod = {}
+
+if platform.is_mac then
+   mod.SUPER = 'SUPER'
+   mod.SUPER_REV = 'SUPER|SHIFT'
+elseif platform.is_win or platform.is_linux then
+   mod.SUPER = 'ALT' -- to not conflict with Windows key shortcuts
+   mod.SUPER_REV = 'ALT|SHIFT'
+end
 
 -- font configs
 c.font = wezterm.font { family = 'JetBrains Mono' }
@@ -17,21 +28,20 @@ c.initial_rows = 40
 c.initial_cols = 180
 
 -- Key bindings
-c.leader = { key = 'b', mods = 'CTRL' }
 c.keys = {
     {
-        key = "%",
-        mods = "LEADER",
+        key = "\\",
+        mods = mod.SUPER,
         action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain'}
     },
     {
-        key = '^',
-        mods = 'LEADER',
+        key = "]",
+        mods = mod.SUPER_REV,
         action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain'}
     },
     {
         key = 'k',
-        mods = 'CMD',
+        mods = mod.SUPER,
         action = wezterm.action.SendString 'clear\n'
     }
 }
