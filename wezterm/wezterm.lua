@@ -1,5 +1,6 @@
 local wezterm = require("wezterm")
 local platform = require('utils.platform')
+local ssh = require('utils.ssh')
 local c = wezterm.config_builder()
 
 local mod = {}
@@ -19,7 +20,7 @@ c.line_height = 1.2
 c.window_padding = { left = 0, right = 1, top = 0, bottom = 0 }
 
 -- colourscheme configs
-c.color_scheme = 'kanagawa'
+c.color_scheme = 'kanagawa (Gogh)'
 
 -- minimal tabs
 c.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
@@ -38,5 +39,8 @@ c.keys = {
     { key = "]", mods = mod.SUPER, action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain'}, desc = 'Shortcut for :vsplit'},
     { key = 'k', mods = 'CMD', action = wezterm.action.SendString 'clear\n',  desc = 'Shortcut to clear text on screen'},
 }
+
+-- multiplexing
+c.ssh_domains = ssh.domains
 
 return c
