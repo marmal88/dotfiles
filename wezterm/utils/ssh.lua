@@ -12,3 +12,5 @@ c.ssh_domains = {
     username = 'dan',
   },
 }
+
+return c.ssh_domains
