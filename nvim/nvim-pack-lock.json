@@ -9,6 +9,10 @@
       "rev": "3946f01",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
+    "markdown-preview.nvim": {
+      "rev": "a923f5f",
+      "src": "https://github.com/iamcco/markdown-preview.nvim"
+    },
     "mason-lspconfig.nvim": {
       "rev": "1d77bd8",
       "src": "https://github.com/mason-org/mason-lspconfig.nvim"

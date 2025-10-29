@@ -5,6 +5,7 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-mini/mini.pick", desc = 'Picker'},
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
 	{ src = "https://github.com/nvim-lualine/lualine.nvim", desc = 'Lua line manager' },
+	{ src = 'https://github.com/iamcco/markdown-preview.nvim', desc = 'Markdown Previewer'},
 	-- File Explorer
 	{ src = "https://github.com/stevearc/oil.nvim", desc = 'File Editor'},
 	-- Language Related Plugins
@@ -37,6 +38,7 @@ vim.keymap.set( 'n', '<leader>ff', ':Pick files<CR>', {desc = 'Picker search'} )
 vim.keymap.set( 'n', '<leader>h', ':Pick help<CR>', {desc = 'Picker help'} )
 vim.keymap.set( 'n', '<leader>e', ':Oil<CR>', {desc = 'File explorer'} )
 vim.keymap.set( 'n', '<leader>g', ':Neogit kind=floating<CR>', {desc = 'Neogit floating'} )
+vim.keymap.set( 'n', '<leader>mp', ':MarkdownPreviewToggle<CR>', {desc = 'Markdown Preview Toggle'})
 
 -- Keybindings (Others)
 vim.keymap.set('n', '<C-u>', '<C-u>zz')  -- scroll up and center
