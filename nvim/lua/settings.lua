@@ -34,10 +34,11 @@ vim.diagnostic.config( { virtual_lines = true })
 -- Keybindings for plugins
 vim.g.mapleader = " "
 vim.keymap.set( 'n', '<leader>lf', vim.lsp.buf.format )
-vim.keymap.set( 'n', '<leader>ff', ':Pick files<CR>', {desc = 'Picker search'} )
+vim.keymap.set( 'n', '<leader>ff', ':Pick files<CR>', {desc = 'Picker search files'} )
+vim.keymap.set( 'n', '<leader>fg', ':Pick grep_live<CR>', {desc = 'Picker search using grep'} )
 vim.keymap.set( 'n', '<leader>h', ':Pick help<CR>', {desc = 'Picker help'} )
 vim.keymap.set( 'n', '<leader>e', ':Oil<CR>', {desc = 'File explorer'} )
-vim.keymap.set( 'n', '<leader>g', ':Neogit kind=floating<CR>', {desc = 'Neogit floating'} )
+vim.keymap.set( 'n', '<leader>g', ':Neogit kind=auto<CR>', {desc = 'Neogit floating'} )
 vim.keymap.set( 'n', '<leader>mp', ':MarkdownPreviewToggle<CR>', {desc = 'Markdown Preview Toggle'})
 
 -- Keybindings (Others)
