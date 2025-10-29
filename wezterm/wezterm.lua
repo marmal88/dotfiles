@@ -18,7 +18,10 @@ elseif platform.is_win or platform.is_linux then
 end
 
 -- font configs
-c.font = wezterm.font { family = 'JetBrains Mono' }
+c.font = wezterm.font {
+	family = 'JetBrains Mono',
+	harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }, -- disable ligatures 
+}
 c.font_size = 12.0
 c.line_height = 1.2
 c.window_padding = { left = 0, right = 0, top = 0, bottom = 0 }
