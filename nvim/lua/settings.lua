@@ -6,8 +6,12 @@ vim.pack.add({
 	{ src = "https://github.com/stevearc/oil.nvim", desc = 'File Explorer/Editor'},
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
 	{ src = "https://github.com/nvim-lualine/lualine.nvim", desc = 'Lua line manager' },
+	-- File Explorer
+	{ src = "https://github.com/stevearc/oil.nvim", desc = 'File Editor'},
+	-- Language Related Plugins
 	{ src = "https://github.com/neovim/nvim-lspconfig", desc = 'Language Server Protocol' },
 	{ src = 'https://github.com/mason-org/mason.nvim', desc = 'Language Manager' },
+	{ src = 'https://github.com/tmhedberg/simpylfold', desc = 'Python Folding'},
 })
 
 require('plugins.oil')
@@ -20,7 +24,7 @@ vim.cmd("colorscheme kanagawa")
 
 -- Language related
 require("mason").setup()
-vim.lsp.enable('lua_ls')
+vim.lsp.enable( { 'lua_ls', 'pyright', 'bashls', 'terraformls', 'jsonls', 'tflint' } )
 vim.diagnostic.config( { virtual_lines = true })
 
 -- keybindings
