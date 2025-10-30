@@ -19,7 +19,9 @@ set wrap
 set clipboard=unnamedplus
 
 " Markdown previewer
-let g:mkdp_auto_start = 1
+let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
 let g:mkdp_port = '5555'
 let g:mkdp_filetypes = ['markdown']
+let g:mkdp_combine_preview = 0
+let g:mkdp_page_title = '${name}'
