@@ -49,8 +49,8 @@ vim.keymap.set( 'n', '<C-u>', '<C-u>zz')  -- scroll up and center
 vim.keymap.set( 'n', '<C-d>', '<C-d>zz')  -- scroll down and center
 
 -- Window size control
-vim.keymap.set( 'n', '<M-j>', '<cmd>resize +2<CR>')  -- Increase height of pane
-vim.keymap.set( 'n', '<M-k>', '<cmd>resize -2<CR>')  -- Minimize height of pane 
+vim.keymap.set( 'n', '<M-k>', '<cmd>resize +2<CR>')  -- Increase height of pane
+vim.keymap.set( 'n', '<M-j>', '<cmd>resize -2<CR>')  -- Minimize height of pane 
 vim.keymap.set( 'n', '<M-h>', '<cmd>vertical resize +5<CR>')  -- Increase width of pane
 vim.keymap.set( 'n', '<M-l>', '<cmd>vertical resize -5<CR>')  -- Minimize width of pane
 
