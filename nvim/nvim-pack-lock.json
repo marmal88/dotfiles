@@ -51,6 +51,10 @@
       "rev": "ff4c851",
       "src": "https://github.com/tmhedberg/simpylfold"
     },
+    "undotree": {
+      "rev": "0f1c981",
+      "src": "https://github.com/mbbill/undotree.git"
+    },
     "vim-fugitive": {
       "rev": "61b51c0",
       "src": "https://github.com/tpope/vim-fugitive"

@@ -41,6 +41,7 @@ vim.keymap.set( 'n', '<leader>h', ':Pick help<CR>', {desc = 'Picker help'} )
 vim.keymap.set( 'n', '<leader>e', ':Oil<CR>', {desc = 'File explorer'} )
 vim.keymap.set( 'n', '<leader>g', ':Neogit kind=auto<CR>', {desc = 'Neogit floating'} )
 vim.keymap.set( 'n', '<leader>mp', ':MarkdownPreviewToggle<CR>', {desc = 'Markdown Preview Toggle'})
+vim.keymap.set( 'n', '<leader>u', ':UndotreeToggle<CR>', {desc = 'UndoTree Toggle'})
 
 -- Keybindings (Others)
 vim.keymap.set('n', '<C-u>', '<C-u>zz')  -- scroll up and center
