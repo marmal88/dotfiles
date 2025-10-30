@@ -7,6 +7,7 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-lualine/lualine.nvim", desc = 'Lua line manager' },
 	{ src = 'https://github.com/nvim-lua/plenary.nvim', desc = 'async'},
 	{ src = 'https://github.com/iamcco/markdown-preview.nvim', desc = 'Markdown Previewer'},
+	{ src = 'https://github.com/mbbill/undotree.git', desc = 'Undo tree'},
 	-- File Explorer
 	{ src = "https://github.com/stevearc/oil.nvim", desc = 'File Editor'},
 	-- Language Related Plugins
@@ -35,7 +36,7 @@ vim.diagnostic.config( { virtual_lines = true })
 -- Keybindings for plugins
 vim.g.mapleader = " "
 vim.keymap.set( 'n', '<leader>lf', vim.lsp.buf.format )
-vim.keymap.set( 'n', '<leader>ff', ':Pick files<CR>', {desc = 'Picker search files'} )
+vim.keymap.set( 'n', '<leader>ff', ':Pick files<CR>', { desc = 'Picker search files'} )
 vim.keymap.set( 'n', '<leader>fg', ':Pick grep_live<CR>', {desc = 'Picker search using grep'} )
 vim.keymap.set( 'n', '<leader>h', ':Pick help<CR>', {desc = 'Picker help'} )
 vim.keymap.set( 'n', '<leader>e', ':Oil<CR>', {desc = 'File explorer'} )
@@ -44,5 +45,12 @@ vim.keymap.set( 'n', '<leader>mp', ':MarkdownPreviewToggle<CR>', {desc = 'Markdo
 vim.keymap.set( 'n', '<leader>u', ':UndotreeToggle<CR>', {desc = 'UndoTree Toggle'})
 
 -- Keybindings (Others)
-vim.keymap.set('n', '<C-u>', '<C-u>zz')  -- scroll up and center
-vim.keymap.set('n', '<C-d>', '<C-d>zz')  -- scroll down and center
+vim.keymap.set( 'n', '<C-u>', '<C-u>zz')  -- scroll up and center
+vim.keymap.set( 'n', '<C-d>', '<C-d>zz')  -- scroll down and center
+
+-- Window size control
+vim.keymap.set( 'n', '<M-j>', '<cmd>resize +2<CR>')  -- Increase height of pane
+vim.keymap.set( 'n', '<M-k>', '<cmd>resize -2<CR>')  -- Minimize height of pane 
+vim.keymap.set( 'n', '<M-h>', '<cmd>vertical resize +5<CR>')  -- Increase width of pane
+vim.keymap.set( 'n', '<M-l>', '<cmd>vertical resize -5<CR>')  -- Minimize width of pane
+
