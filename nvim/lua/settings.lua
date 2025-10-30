@@ -54,3 +54,6 @@ vim.keymap.set( 'n', '<M-j>', '<cmd>resize -2<CR>')  -- Minimize height of pane
 vim.keymap.set( 'n', '<M-h>', '<cmd>vertical resize +5<CR>')  -- Increase width of pane
 vim.keymap.set( 'n', '<M-l>', '<cmd>vertical resize -5<CR>')  -- Minimize width of pane
 
+-- terminal close
+vim.keymap.set( 't', '<leader>q', '<C-\\><C-N>')  -- Detach from terminal to Normal mode
+
