@@ -1,15 +1,4 @@
--- Configs
-vim.cmd("colorscheme kanagawa")
-
--- Language related
-require("mason").setup()
-vim.lsp.enable( { 'lua_ls', 'pyright', 'bashls', 'terraformls', 'jsonls', 'tflint' } )
-
--- Language Diagnostics
-vim.diagnostic.config( {
-	virtual_lines = { current_line = true },
-	virtual_text = false,
-})
+-- Configs for keymaps and bindings
 
 -- Keybindings for plugins
 vim.g.mapleader = " "

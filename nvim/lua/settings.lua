@@ -24,12 +24,19 @@ vim.pack.add({
 	{ src = 'https://github.com/sindrets/diffview.nvim', desc = 'Git diffview'}
 })
 
+-- Import necessary plugins
 require('plugins.oil')
 require('plugins.mini-pick')
 require('plugins.lualine')
 require('lsp.lua_ls')
 require('configs.keymaps')
 
+-- colorscheme
+vim.cmd("colorscheme kanagawa")
+
+-- Language related
+require("mason").setup()
+vim.lsp.enable( { 'lua_ls', 'pyright', 'bashls', 'terraformls', 'jsonls', 'tflint' } )
 require('tiny-inline-diagnostic').setup({
 	options = {
 		add_messages = { display_count = true },
