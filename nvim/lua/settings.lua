@@ -28,18 +28,19 @@ vim.pack.add({
 
 -- Import necessary plugins
 require('plugins.oil')
-require('plugins.mini-pick')
 require('plugins.lualine')
 require('plugins.bufferline')
 require('lsp.lua_ls')
-require('configs.keymaps')
+require('lsp.pyright')
 require('plugins.keymaps')
+require('plugins.fzf-lua')
+require('plugins.mini-pick')
 
 -- Colorscheme
-vim.cmd("colorscheme kanagawa")
+vim.cmd('colorscheme kanagawa')
 
 -- Language related
-require("mason").setup()
+require('mason').setup()
 vim.lsp.enable( { 'lua_ls', 'pyright', 'bashls', 'terraformls', 'jsonls', 'tflint' } )
 require('tiny-inline-diagnostic').setup({
 	preset = 'ghost',
