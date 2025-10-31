@@ -5,6 +5,8 @@ vim.g.mapleader = " "
 vim.keymap.set( 'n', '<leader>lf', vim.lsp.buf.format )
 vim.keymap.set( 'n', '<leader>ff', ':Pick files<CR>', { desc = 'Picker search files'} )
 vim.keymap.set( 'n', '<leader>fg', ':Pick grep_live<CR>', {desc = 'Picker search using grep'} )
+vim.keymap.set( 'n', '<leader>ft', ':Pick cli<CR>', { desc = 'Picker search terminal'} )
+vim.keymap.set( 'n', '<leader>fb', ':Pick buffers<CR>', {desc = 'Picker search buggers'} )
 vim.keymap.set( 'n', '<leader>h', ':Pick help<CR>', {desc = 'Picker help'} )
 vim.keymap.set( 'n', '<leader>e', ':Oil<CR>', {desc = 'File explorer'} )
 vim.keymap.set( 'n', '<leader>g', ':Neogit kind=auto<CR>', {desc = 'Neogit floating'} )
