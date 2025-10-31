@@ -8,6 +8,7 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-mini/mini.pick", desc = 'Picker'},
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
 	{ src = "https://github.com/nvim-lualine/lualine.nvim", desc = 'Lua line manager' },
+	{ src = 'https://github.com/akinsho/bufferline.nvim', desc = 'Buffer line manager' },
 	{ src = 'https://github.com/nvim-lua/plenary.nvim', desc = 'async'},
 	{ src = 'https://github.com/iamcco/markdown-preview.nvim', desc = 'Markdown Previewer'},
 	{ src = 'https://github.com/mbbill/undotree.git', desc = 'Undo tree'},
@@ -28,6 +29,7 @@ vim.pack.add({
 require('plugins.oil')
 require('plugins.mini-pick')
 require('plugins.lualine')
+require('plugins.bufferline')
 require('lsp.lua_ls')
 require('configs.keymaps')
 require('plugins.keymaps')
