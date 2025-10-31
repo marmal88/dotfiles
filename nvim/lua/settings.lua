@@ -29,3 +29,11 @@ require('plugins.lualine')
 require('lsp.lua_ls')
 require('configs.keymaps')
 
+require('tiny-inline-diagnostic').setup({
+	options = {
+		add_messages = { display_count = true },
+		show_source = { enabled = true },
+		multilines = { enabled = true },
+	},
+	blend = { factor = 0.8 },
+})
