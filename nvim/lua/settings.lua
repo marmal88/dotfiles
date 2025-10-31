@@ -27,4 +27,5 @@ require('plugins.oil')
 require('plugins.mini-pick')
 require('plugins.lualine')
 require('lsp.lua_ls')
+require('configs.keymaps')
 
