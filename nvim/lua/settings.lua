@@ -50,3 +50,6 @@ require('tiny-inline-diagnostic').setup({
 	},
 	blend = { factor = 0.8 },
 })
+
+-- Enable the new experimental command-line features.
+require('vim._extui').enable {}
