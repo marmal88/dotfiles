@@ -30,6 +30,7 @@ require('plugins.mini-pick')
 require('plugins.lualine')
 require('lsp.lua_ls')
 require('configs.keymaps')
+require('plugins.keymaps')
 
 -- Colorscheme
 vim.cmd("colorscheme kanagawa")
