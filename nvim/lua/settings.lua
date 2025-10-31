@@ -31,13 +31,14 @@ require('plugins.lualine')
 require('lsp.lua_ls')
 require('configs.keymaps')
 
--- colorscheme
+-- Colorscheme
 vim.cmd("colorscheme kanagawa")
 
 -- Language related
 require("mason").setup()
 vim.lsp.enable( { 'lua_ls', 'pyright', 'bashls', 'terraformls', 'jsonls', 'tflint' } )
 require('tiny-inline-diagnostic').setup({
+	preset = 'ghost',
 	options = {
 		add_messages = { display_count = true },
 		show_source = { enabled = true },
