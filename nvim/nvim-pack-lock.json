@@ -8,6 +8,10 @@
       "rev": "4516612",
       "src": "https://github.com/sindrets/diffview.nvim"
     },
+    "fzf-lua": {
+      "rev": "a8458b7",
+      "src": "https://github.com/ibhagwan/fzf-lua"
+    },
     "gitsigns.nvim": {
       "rev": "20ad441",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
