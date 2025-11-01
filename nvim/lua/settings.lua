@@ -46,7 +46,6 @@ require('vim._extui').enable {}
 
 -- Language related
 require('lsp.luals')
-require('lsp.luacheck')
 require('lsp.ruff')
 require('lsp.pyright')
 require('plugins.diagnostics')
