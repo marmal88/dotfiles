@@ -42,6 +42,10 @@
       "rev": "c6d00913",
       "src": "https://github.com/NeogitOrg/neogit"
     },
+    "nvim-lint": {
+      "rev": "8c694e1",
+      "src": "https://github.com/mfussenegger/nvim-lint"
+    },
     "nvim-lspconfig": [],
     "nvim-treesitter": {
       "version": "'main'"

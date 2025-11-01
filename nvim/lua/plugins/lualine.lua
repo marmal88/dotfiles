@@ -1,4 +1,13 @@
 -- Default lualine configurations
+-- Linter progress
+local lint_progress = function()
+  local linters = require("lint").get_running()
+  if #linters == 0 then
+      return "󰦕"
+  end
+  return "󱉶 " .. table.concat(linters, ", ")
+end
+
 -- Configurations changed are commented
 return require('lualine').setup {
   options = {
@@ -37,7 +46,7 @@ return require('lualine').setup {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
     lualine_c = {'filename'},
-    lualine_x = {'encoding', 'filetype'},  -- removed fileformat
+    lualine_x = {'encoding', 'filetype', lint_progress},  -- removed fileformat
     lualine_y = {'progress'},
     lualine_z = { {'datetime', style = '%I:%M:%S %p'} } -- format datetime
   },

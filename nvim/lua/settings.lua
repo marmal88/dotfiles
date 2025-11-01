@@ -18,8 +18,11 @@ vim.pack.add({
 	-- Language Related Plugins
 	{ src = 'https://github.com/neovim/nvim-lspconfig', desc = 'Language Server Protocol' },
 	{ src = 'https://github.com/mason-org/mason.nvim', desc = 'Language Manager' },
+	{ src = 'https://github.com/mason-org/mason-lspconfig.nvim', desc = 'Language Manager lsp' },
 	{ src = 'https://github.com/tmhedberg/simpylfold', desc = 'Python Folding'},
 	{ src = 'https://github.com/rachartier/tiny-inline-diagnostic.nvim', desc = 'Diagnostics'},
+	{ src = 'https://github.com/mfussenegger/nvim-lint', desc = 'Linter'},
+	-- { src = 'https://github.com/stevearc/conform.nvim', desc = 'Formatter'},
 	-- Git Plugins
 	{ src = 'https://github.com/lewis6991/gitsigns.nvim', desc = 'Git integration for UI'},
 	{ src = 'https://github.com/NeogitOrg/neogit', desc = 'Git workflow'},
@@ -30,18 +33,32 @@ vim.pack.add({
 require('plugins.oil')
 require('plugins.lualine')
 require('plugins.bufferline')
-require('lsp.lua_ls')
-require('lsp.pyright')
 require('plugins.keymaps')
 require('plugins.fzf-lua')
 require('plugins.mini-pick')
+require('plugins.autocmds')
 
 -- Colorscheme
 vim.cmd('colorscheme kanagawa')
 
+-- Enable the new experimental command-line features.
+require('vim._extui').enable {}
+
 -- Language related
+require('lsp.luals')
+require('lsp.luacheck')
+require('lsp.ruff')
+require('lsp.pyright')
 require('mason').setup()
-vim.lsp.enable( { 'lua_ls', 'pyright', 'bashls', 'terraformls', 'jsonls', 'tflint' } )
+vim.lsp.enable({'luals', 'pyright'})
+
+-- Linting
+require('lint').linters_by_ft = {
+	lua = {'luacheck'},
+	python = { 'ruff' }
+}
+
+-- Setup diagnostics
 require('tiny-inline-diagnostic').setup({
 	preset = 'ghost',
 	options = {
@@ -49,8 +66,6 @@ require('tiny-inline-diagnostic').setup({
 		show_source = { enabled = true },
 		multilines = { enabled = true },
 	},
-	blend = { factor = 0.8 },
+	blend = { factor = 0.2 },
 })
 
--- Enable the new experimental command-line features.
-require('vim._extui').enable {}
