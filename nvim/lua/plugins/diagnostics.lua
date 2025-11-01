@@ -1,10 +1,10 @@
 -- Configs for diagnostics
 
--- Language Diagnostics
+-- Disable native vim language diagnostics
 vim.diagnostic.config( {
-	underline = false, -- signs dont change unless underline changed to true
+	underline = true, -- signs dont change unless underline changed to true
 	virtual_lines = { current_line = false },
-	virtual_text = true,
+	virtual_text = false,
 	signs = {
 		text = {
 			[vim.diagnostic.severity.ERROR] = "",
@@ -15,3 +15,13 @@ vim.diagnostic.config( {
 	},
 })
 
+-- Setup tiny-inline-diagnostics
+require('tiny-inline-diagnostic').setup({
+	preset = 'ghost',
+	options = {
+		add_messages = { display_count = true },
+		show_source = { enabled = true },
+		multilines = { enabled = true },
+	},
+	blend = { factor = 0.2 },
+})

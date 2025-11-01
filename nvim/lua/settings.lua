@@ -49,6 +49,7 @@ require('lsp.luals')
 require('lsp.luacheck')
 require('lsp.ruff')
 require('lsp.pyright')
+require('plugins.diagnostics')
 require('mason').setup()
 vim.lsp.enable({'luals', 'pyright'})
 
@@ -57,15 +58,3 @@ require('lint').linters_by_ft = {
 	lua = {'luacheck'},
 	python = { 'ruff' }
 }
-
--- Setup diagnostics
-require('tiny-inline-diagnostic').setup({
-	preset = 'ghost',
-	options = {
-		add_messages = { display_count = true },
-		show_source = { enabled = true },
-		multilines = { enabled = true },
-	},
-	blend = { factor = 0.2 },
-})
-
