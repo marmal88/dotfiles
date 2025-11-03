@@ -1,11 +1,17 @@
 return require('blink.cmp').setup({
-	sources = { default = { 'lsp', 'path', 'snippets', 'buffer' }, },
+	sources = { default = {
+			'snippets', -- snippets from snippets directory
+			'lsp',  -- completions from language server
+			'path', -- completions from file path
+			'buffer' -- words already present in the buffer
+		},
+	},
 	snippets = { preset = 'mini_snippets' },
 	-- snippets = { friendly_snippets = true },
 	completion = {
 		menu = {
 			auto_show = true,
-			auto_show_delay_ms = 500,
+			auto_show_delay_ms = 300,
 			draw = {
 				columns = {
 					{ "label", "label_description", gap = 1 },
@@ -14,6 +20,7 @@ return require('blink.cmp').setup({
 			}
 		},
 		documentation = {
+			auto_show = true,
 			window = { border = 'single' },
 		},
 		trigger = { show_on_keyword = true },
@@ -36,8 +43,8 @@ return require('blink.cmp').setup({
 		['<C-j>'] = { 'scroll_documentation_up', 'fallback' },
 		['<C-n>'] = { 'scroll_documentation_down', 'fallback' },
 		-- signature
-		['<C-k>'] = { 'show_signature', 'hide_signature', 'fallback' },
-		['<C-Enter>'] = { 'select_and_accept' }
+		['<C-s>'] = { 'show_signature', 'hide_signature', 'fallback' },
+		['<C-k>'] = { 'select_and_accept' }
 	},
 	-- sources
 	-- displays the function signature
