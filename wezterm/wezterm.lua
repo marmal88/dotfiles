@@ -1,11 +1,9 @@
-local wezterm = require("wezterm")
+local wezterm = require('wezterm')
 local platform = require('utils.platform')
 local ssh = require('utils.ssh')
-local events = require('utils.events')
 local c = wezterm.config_builder()
 
 local mod = {}
-events.setup()
 
 if platform.is_mac then
    mod.SUPER = 'CTRL'
@@ -31,7 +29,7 @@ c.scrollback_lines = 2000
 c.color_scheme = 'kanagawa (Gogh)'
 
 -- minimal tabs
-c.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
+c.window_decorations = 'INTEGRATED_BUTTONS|RESIZE' --INTEGRATED_BUTTONS|
 c.window_background_opacity = 0.70
 c.macos_window_background_blur = 5
 c.initial_rows = 40
@@ -53,15 +51,6 @@ c.keys = {
     -- Multiplexing
     { key = 'a', mods = 'LEADER', action = wezterm.action.AttachDomain 'jetson', desc = 'Attach to domain unix'},
     { key = 'd', mods = 'LEADER', action = wezterm.action.DetachDomain { DomainName = 'jetson' }, desc = 'Detach from domain unix'},
-    -- Workspaces
-    { key = 's', mods = 'LEADER', action = wezterm.action.ShowLauncherArgs { flags = 'WORKSPACES' }, desc = 'Show Workspaces' },
-    { key = 'r', mods = 'LEADER',
-        action = wezterm.action.PromptInputLine {
-            description = 'Enter new workspace name:',
-            action = wezterm.action.EmitEvent 'rename-workspace',
-        },
-        desc = 'Rename the current workspace'
-    },
 }
 
 -- multiplexing
