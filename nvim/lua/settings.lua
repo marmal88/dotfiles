@@ -11,8 +11,8 @@ vim.pack.add({
 	{ src = 'https://github.com/nvim-lualine/lualine.nvim', desc = 'Lua line manager' },
 	{ src = 'https://github.com/akinsho/bufferline.nvim', desc = 'Buffer line manager' },
 	{ src = 'https://github.com/nvim-lua/plenary.nvim', desc = 'async'},
-	{ src = 'https://github.com/iamcco/markdown-preview.nvim', desc = 'Markdown Previewer'},
 	{ src = 'https://github.com/mbbill/undotree.git', desc = 'Undo tree'},
+	{ src = 'https://github.com/tpope/vim-surround', desc = 'Surround'},
 	-- Manage Marks
 	{ src = 'https://github.com/chentoast/marks.nvim', desc = 'Mark Signs'},
 	-- File Explorer
@@ -28,6 +28,7 @@ vim.pack.add({
 	{ src = 'https://github.com/nvim-mini/mini.snippets', desc = 'Snippet Manager'},
 	-- language specific
 	{ src = 'https://github.com/tmhedberg/simpylfold', desc = 'Python Folding'},
+	{ src = 'https://github.com/iamcco/markdown-preview.nvim', desc = 'Markdown Previewer'},
 	-- Git Plugins
 	{ src = 'https://github.com/lewis6991/gitsigns.nvim', desc = 'Git integration for UI'},
 	{ src = 'https://github.com/NeogitOrg/neogit', desc = 'Git workflow'},
@@ -41,10 +42,9 @@ require('plugins.bufferline')
 require('plugins.keymaps')
 require('plugins.fzf-lua')
 require('plugins.mini-pick')
-require('plugins.autocmds')
 require('plugins.mini-snippets')
+-- require('plugins.autocmds')
 require('plugins.blink-cmp')
-require('plugins.marks')
 
 -- Colorscheme
 vim.cmd('colorscheme kanagawa')
@@ -60,8 +60,3 @@ require('plugins.diagnostics')
 require('mason').setup()
 vim.lsp.enable({'luals', 'pyright'})
 
--- Linting
-require('lint').linters_by_ft = {
-	lua = {'luacheck'},
-	python = { 'ruff' }
-}
