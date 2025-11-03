@@ -8,6 +8,7 @@ vim.keymap.set( 'n', '<leader>ff', ':FzfLua files<CR>', { desc = 'Fzf-lua search
 vim.keymap.set( 'n', '<leader>fg', ':FzfLua grep_last<CR>', {desc = 'Fzf-lua search using grep'} )
 vim.keymap.set( 'n', '<leader>fb', ':FzfLua buffers<CR>', {desc = 'Fzf-lua search buffers'} )
 vim.keymap.set( 'n', '<leader>fe', ':FzfLua oldfiles<CR>', {desc = 'Fzf-lua search everything'} )
+vim.keymap.set( 'n', '<leader>fm', ':FzfLua marks<CR>', {desc = 'Fzf-lua search marks'} )
 vim.keymap.set( 'n', '<leader>h', ':FzfLua helptags<CR>', {desc = 'Picker help'} )
 vim.keymap.set( 'n', '<leader>e', ':Oil<CR>', {desc = 'File explorer'} )
 vim.keymap.set( 'n', '<leader>g', ':Neogit kind=auto<CR>', {desc = 'Neogit floating'} )
