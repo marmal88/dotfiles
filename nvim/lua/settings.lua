@@ -19,12 +19,13 @@ vim.pack.add({
 	{ src = 'https://github.com/neovim/nvim-lspconfig', desc = 'Language Server Protocol' },
 	{ src = 'https://github.com/mason-org/mason.nvim', desc = 'Language Manager' },
 	{ src = 'https://github.com/mason-org/mason-lspconfig.nvim', desc = 'Language Manager lsp' },
-	{ src = 'https://github.com/tmhedberg/simpylfold', desc = 'Python Folding'},
 	{ src = 'https://github.com/rachartier/tiny-inline-diagnostic.nvim', desc = 'Diagnostics'},
 	{ src = 'https://github.com/mfussenegger/nvim-lint', desc = 'Linter'},
 	-- { src = 'https://github.com/stevearc/conform.nvim', desc = 'Formatter'},
 	{ src = 'https://github.com/saghen/blink.cmp', desc = 'Autocompletion'},
 	{ src = 'https://github.com/nvim-mini/mini.snippets', desc = 'Snippet Manager'},
+	-- language specific
+	{ src = 'https://github.com/tmhedberg/simpylfold', desc = 'Python Folding'},
 	-- Git Plugins
 	{ src = 'https://github.com/lewis6991/gitsigns.nvim', desc = 'Git integration for UI'},
 	{ src = 'https://github.com/NeogitOrg/neogit', desc = 'Git workflow'},
