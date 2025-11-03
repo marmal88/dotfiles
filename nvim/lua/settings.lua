@@ -13,6 +13,8 @@ vim.pack.add({
 	{ src = 'https://github.com/nvim-lua/plenary.nvim', desc = 'async'},
 	{ src = 'https://github.com/iamcco/markdown-preview.nvim', desc = 'Markdown Previewer'},
 	{ src = 'https://github.com/mbbill/undotree.git', desc = 'Undo tree'},
+	-- Manage Marks
+	{ src = 'https://github.com/chentoast/marks.nvim', desc = 'Mark Signs'},
 	-- File Explorer
 	{ src = 'https://github.com/stevearc/oil.nvim', desc = 'File Editor'},
 	-- Language Related Plugins
@@ -42,6 +44,7 @@ require('plugins.mini-pick')
 require('plugins.autocmds')
 require('plugins.mini-snippets')
 require('plugins.blink-cmp')
+require('plugins.marks')
 
 -- Colorscheme
 vim.cmd('colorscheme kanagawa')
