@@ -29,10 +29,6 @@
       "rev": "a923f5f",
       "src": "https://github.com/iamcco/markdown-preview.nvim"
     },
-    "mason-lspconfig.nvim": {
-      "rev": "1d77bd8",
-      "src": "https://github.com/mason-org/mason-lspconfig.nvim"
-    },
     "mason.nvim": {
       "rev": "ad7146a",
       "src": "https://github.com/mason-org/mason.nvim"
@@ -78,14 +74,6 @@
     "undotree": {
       "rev": "0f1c981",
       "src": "https://github.com/mbbill/undotree.git"
-    },
-    "vim-fugitive": {
-      "rev": "61b51c0",
-      "src": "https://github.com/tpope/vim-fugitive"
-    },
-    "vim-instant-markdown": {
-      "rev": "e62da3d",
-      "src": "https://github.com/instant-markdown/vim-instant-markdown"
     }
   }
 }
