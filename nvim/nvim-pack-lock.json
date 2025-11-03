@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "blink.cmp": {
+      "rev": "2408f14",
+      "src": "https://github.com/saghen/blink.cmp"
+    },
     "bufferline.nvim": {
       "rev": "655133c",
       "src": "https://github.com/akinsho/bufferline.nvim"
@@ -34,6 +38,10 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.pick": [],
+    "mini.snippets": {
+      "rev": "7610dc3",
+      "src": "https://github.com/nvim-mini/mini.snippets"
+    },
     "neo-tree.nvim": {
       "rev": "fa61e06",
       "src": "https://github.com/nvim-neo-tree/neo-tree.nvim"

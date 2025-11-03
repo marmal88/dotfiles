@@ -23,6 +23,8 @@ vim.pack.add({
 	{ src = 'https://github.com/rachartier/tiny-inline-diagnostic.nvim', desc = 'Diagnostics'},
 	{ src = 'https://github.com/mfussenegger/nvim-lint', desc = 'Linter'},
 	-- { src = 'https://github.com/stevearc/conform.nvim', desc = 'Formatter'},
+	{ src = 'https://github.com/saghen/blink.cmp', desc = 'Autocompletion'},
+	{ src = 'https://github.com/nvim-mini/mini.snippets', desc = 'Snippet Manager'},
 	-- Git Plugins
 	{ src = 'https://github.com/lewis6991/gitsigns.nvim', desc = 'Git integration for UI'},
 	{ src = 'https://github.com/NeogitOrg/neogit', desc = 'Git workflow'},
@@ -37,6 +39,8 @@ require('plugins.keymaps')
 require('plugins.fzf-lua')
 require('plugins.mini-pick')
 require('plugins.autocmds')
+require('plugins.mini-snippets')
+require('plugins.blink-cmp')
 
 -- Colorscheme
 vim.cmd('colorscheme kanagawa')
