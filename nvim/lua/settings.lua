@@ -13,6 +13,10 @@ vim.pack.add({
 	{ src = 'https://github.com/nvim-lua/plenary.nvim', desc = 'async'},
 	{ src = 'https://github.com/mbbill/undotree.git', desc = 'Undo tree'},
 	{ src = 'https://github.com/tpope/vim-surround', desc = 'Surround'},
+	-- Appearence
+	{ src = 'https://github.com/nvim-mini/mini.indentscope', desc = 'Indent'},
+	{ src = 'https://github.com/sphamba/smear-cursor.nvim', desc = 'Cursor Animation'},
+	{ src = 'https://github.com/nvim-mini/mini.notify', desc = 'Notification'},
 	-- Manage Marks
 	{ src = 'https://github.com/chentoast/marks.nvim', desc = 'Mark Signs'},
 	-- File Explorer
@@ -43,8 +47,12 @@ require('plugins.keymaps')
 require('plugins.fzf-lua')
 require('plugins.mini-pick')
 require('plugins.mini-snippets')
+require('mini.indentscope').setup( { symbol = '│' } )
+require('plugins.smear-cursor')
+require('mini.notify').setup()
 -- require('plugins.autocmds')
 require('plugins.blink-cmp')
+require('plugins.marks')
 
 -- Colorscheme
 vim.cmd('colorscheme kanagawa')

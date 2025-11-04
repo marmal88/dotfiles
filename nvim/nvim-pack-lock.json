@@ -38,6 +38,14 @@
       "rev": "ad7146a",
       "src": "https://github.com/mason-org/mason.nvim"
     },
+    "mini.indentscope": {
+      "rev": "0308f94",
+      "src": "https://github.com/nvim-mini/mini.indentscope"
+    },
+    "mini.notify": {
+      "rev": "895630b",
+      "src": "https://github.com/nvim-mini/mini.notify"
+    },
     "mini.pick": [],
     "mini.snippets": {
       "rev": "7610dc3",
@@ -71,6 +79,10 @@
     "simpylfold": {
       "rev": "ff4c851",
       "src": "https://github.com/tmhedberg/simpylfold"
+    },
+    "smear-cursor.nvim": {
+      "rev": "abfa583",
+      "src": "https://github.com/sphamba/smear-cursor.nvim"
     },
     "tiny-inline-diagnostic.nvim": {
       "rev": "994c13d",
