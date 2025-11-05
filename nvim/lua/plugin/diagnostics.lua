@@ -18,10 +18,10 @@ vim.diagnostic.config( {
 	signs = {
 		active = true,
 		text = {
-			[vim.diagnostic.severity.ERROR] = require('plugins.icons').diagnostics.ERROR,
-			[vim.diagnostic.severity.WARN] = require('plugins.icons').diagnostics.WARN,
-			[vim.diagnostic.severity.INFO] = require('plugins.icons').diagnostics.INFO,
-			[vim.diagnostic.severity.HINT] = require('plugins.icons').diagnostics.HINT,
+			[vim.diagnostic.severity.ERROR] = require('plugin.icons').diagnostics.ERROR,
+			[vim.diagnostic.severity.WARN] = require('plugin.icons').diagnostics.WARN,
+			[vim.diagnostic.severity.INFO] = require('plugin.icons').diagnostics.INFO,
+			[vim.diagnostic.severity.HINT] = require('plugin.icons').diagnostics.HINT,
 		},
 	},
 })
