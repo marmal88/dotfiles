@@ -27,9 +27,9 @@ vim.pack.add({
 	{ src = 'https://github.com/mason-org/mason-lspconfig.nvim', desc = 'Language Manager lsp' },
 	{ src = 'https://github.com/rachartier/tiny-inline-diagnostic.nvim', desc = 'Diagnostics'},
 	{ src = 'https://github.com/mfussenegger/nvim-lint', desc = 'Linter'},
-	-- { src = 'https://github.com/stevearc/conform.nvim', desc = 'Formatter'},
 	{ src = 'https://github.com/saghen/blink.cmp', desc = 'Autocompletion'},
 	{ src = 'https://github.com/nvim-mini/mini.snippets', desc = 'Snippet Manager'},
+	{ src = 'https://github.com/stevearc/conform.nvim',                  desc = 'Formatter' },
 	-- language specific
 	{ src = 'https://github.com/tmhedberg/simpylfold', desc = 'Python Folding'},
 	{ src = 'https://github.com/iamcco/markdown-preview.nvim', desc = 'Markdown Previewer'},

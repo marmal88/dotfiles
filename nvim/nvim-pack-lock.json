@@ -8,6 +8,10 @@
       "rev": "655133c",
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
+    "conform.nvim": {
+      "rev": "cde4da5",
+      "src": "https://github.com/stevearc/conform.nvim"
+    },
     "diffview.nvim": {
       "rev": "4516612",
       "src": "https://github.com/sindrets/diffview.nvim"
