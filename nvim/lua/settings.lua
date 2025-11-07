@@ -13,6 +13,8 @@ vim.pack.add({
 	{ src = 'https://github.com/nvim-lua/plenary.nvim',                  desc = 'async' },
 	{ src = 'https://github.com/mbbill/undotree.git',                    desc = 'Undo tree' },
 	{ src = 'https://github.com/tpope/vim-surround',                     desc = 'Surround' },
+	{ src = 'https://github.com/iamcco/markdown-preview.nvim',           desc = 'Markdown Previewer' },
+	{ src = 'https://github.com/tmhedberg/SimpylFold',                   desc = 'Python folding' },
 	-- Appearence
 	{ src = 'https://github.com/nvim-mini/mini.indentscope',             desc = 'Indent' },
 	{ src = 'https://github.com/sphamba/smear-cursor.nvim',              desc = 'Cursor Animation' },
@@ -30,13 +32,11 @@ vim.pack.add({
 	{ src = 'https://github.com/stevearc/conform.nvim',                  desc = 'Formatter' },
 	{ src = 'https://github.com/saghen/blink.cmp',                       desc = 'Autocompletion' },
 	{ src = 'https://github.com/nvim-mini/mini.snippets',                desc = 'Snippet Manager' },
+	-- Debugger specific
 	{ src = 'https://github.com/nvim-neotest/nvim-nio',                  desc = 'Snippet Manager' },
 	{ src = 'https://github.com/mfussenegger/nvim-dap',                  desc = 'Debugger Adapter Protocol' },
 	{ src = 'https://github.com/rcarriga/nvim-dap-ui',                   desc = 'Debugger UI' },
 	{ src = 'https://github.com/mfussenegger/nvim-dap-python',           desc = 'Debugger Python' },
-	-- language specific
-	{ src = 'https://github.com/tmhedberg/simpylfold',                   desc = 'Python Folding' },
-	{ src = 'https://github.com/iamcco/markdown-preview.nvim',           desc = 'Markdown Previewer' },
 	-- Git Plugins
 	{ src = 'https://github.com/lewis6991/gitsigns.nvim',                desc = 'Git integration for UI' },
 	{ src = 'https://github.com/NeogitOrg/neogit',                       desc = 'Git workflow' },

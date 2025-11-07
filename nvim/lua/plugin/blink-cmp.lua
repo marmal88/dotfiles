@@ -1,7 +1,8 @@
 return require('blink.cmp').setup({
-	sources = { default = {
+	sources = {
+		default = {
 			'snippets', -- snippets from snippets directory
-			'lsp',  -- completions from language server
+			'lsp', -- completions from language server
 			'path', -- completions from file path
 			'buffer' -- words already present in the buffer
 		},
@@ -14,17 +15,17 @@ return require('blink.cmp').setup({
 			auto_show_delay_ms = 300,
 			draw = {
 				columns = {
-					{ "label", "label_description", gap = 1 },
+					{ "label",     "label_description", gap = 1 },
 					{ "kind_icon", "kind" },
 				},
 			}
 		},
 		documentation = {
 			auto_show = true,
-			window = { border = 'single' },
 		},
 		trigger = { show_on_keyword = true },
-		list = { selection = {
+		list = {
+			selection = {
 				preselect = false,
 				auto_insert = true
 			},
@@ -35,8 +36,8 @@ return require('blink.cmp').setup({
 	keymap = {
 		preset = 'none',
 		['<C-p>'] = { 'show', 'hide', 'fallback' },
-		-- Combine select menu and snippet 
-		['<S-Tab>'] = { 'select_prev', 'snippet_backward','fallback'},
+		-- Combine select menu and snippet
+		['<S-Tab>'] = { 'select_prev', 'snippet_backward', 'fallback' },
 		['<Tab>'] = { 'select_next', 'snippet_forward', 'fallback' },
 		-- documentation
 		['<C-o>'] = { 'show_documentation', 'hide_documentation' },
