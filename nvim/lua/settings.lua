@@ -30,6 +30,10 @@ vim.pack.add({
 	{ src = 'https://github.com/stevearc/conform.nvim',                  desc = 'Formatter' },
 	{ src = 'https://github.com/saghen/blink.cmp',                       desc = 'Autocompletion' },
 	{ src = 'https://github.com/nvim-mini/mini.snippets',                desc = 'Snippet Manager' },
+	{ src = 'https://github.com/nvim-neotest/nvim-nio',                  desc = 'Snippet Manager' },
+	{ src = 'https://github.com/mfussenegger/nvim-dap',                  desc = 'Debugger Adapter Protocol' },
+	{ src = 'https://github.com/rcarriga/nvim-dap-ui',                   desc = 'Debugger UI' },
+	{ src = 'https://github.com/mfussenegger/nvim-dap-python',           desc = 'Debugger Python' },
 	-- language specific
 	{ src = 'https://github.com/tmhedberg/simpylfold',                   desc = 'Python Folding' },
 	{ src = 'https://github.com/iamcco/markdown-preview.nvim',           desc = 'Markdown Previewer' },
@@ -68,3 +72,4 @@ require('lsp.pyright')
 require('plugin.diagnostics')
 require('mason').setup()
 vim.lsp.enable({ 'luals', 'pyright' })
+require('plugin.debugger')

@@ -63,11 +63,27 @@
       "rev": "c6d00913",
       "src": "https://github.com/NeogitOrg/neogit"
     },
+    "nvim-dap": {
+      "rev": "e97dc47",
+      "src": "https://github.com/mfussenegger/nvim-dap"
+    },
+    "nvim-dap-python": {
+      "rev": "64652d1",
+      "src": "https://github.com/mfussenegger/nvim-dap-python"
+    },
+    "nvim-dap-ui": {
+      "rev": "cf91d5e",
+      "src": "https://github.com/rcarriga/nvim-dap-ui"
+    },
     "nvim-lint": {
       "rev": "8c694e1",
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-lspconfig": [],
+    "nvim-nio": {
+      "rev": "21f5324",
+      "src": "https://github.com/nvim-neotest/nvim-nio"
+    },
     "nvim-treesitter": {
       "version": "'main'"
     },
