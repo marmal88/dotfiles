@@ -26,6 +26,6 @@ let g:mkdp_filetypes = ['markdown']
 let g:mkdp_combine_preview = 0
 let g:mkdp_page_title = '${name}'
 
-" folding
+" Folding using treesitter
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
