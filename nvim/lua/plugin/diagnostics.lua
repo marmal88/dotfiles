@@ -2,7 +2,7 @@
 
 -- Setup tiny-inline-diagnostics
 require('tiny-inline-diagnostic').setup({
-	preset = 'ghost',
+	preset = 'ghost', -- icons set to ghosts
 	options = {
 		add_messages = { display_count = true },
 		show_source = { enabled = true },
@@ -12,7 +12,7 @@ require('tiny-inline-diagnostic').setup({
 })
 
 -- Disable native vim language diagnostics
-vim.diagnostic.config( {
+vim.diagnostic.config({
 	underline = true,
 	virtual_text = false,
 	signs = {

@@ -1,5 +1,6 @@
 {
   "plugins": {
+    "SimpylFold": [],
     "blink.cmp": {
       "rev": "2408f14",
       "src": "https://github.com/saghen/blink.cmp"
@@ -79,7 +80,6 @@
       "rev": "8c694e1",
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
-    "nvim-lspconfig": [],
     "nvim-nio": {
       "rev": "21f5324",
       "src": "https://github.com/nvim-neotest/nvim-nio"
