@@ -6,19 +6,19 @@ local c = wezterm.config_builder()
 local mod = {}
 
 if platform.is_mac then
-   mod.SUPER = 'CTRL'
-   mod.SUPER_REV = 'CTRL|SHIFT'
-   c.leader = { key = 'a', mods = 'CTRL', timeout_milliseconds = 1000 }
+	mod.SUPER = 'CTRL'
+	mod.SUPER_REV = 'CTRL|SHIFT'
+	c.leader = { key = 'a', mods = 'CTRL', timeout_milliseconds = 1000 }
 elseif platform.is_win or platform.is_linux then
-   mod.SUPER = 'ALT'
-   mod.SUPER_REV = 'ALT|SHIFT'
-   c.leader = { key = 'a', mods = 'ALT', timeout_milliseconds = 1000 }
+	mod.SUPER = 'ALT'
+	mod.SUPER_REV = 'ALT|SHIFT'
+	c.leader = { key = 'a', mods = 'ALT', timeout_milliseconds = 1000 }
 end
 
 -- font configs
 c.font = wezterm.font {
 	family = 'JetBrains Mono',
-	harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }, -- disable ligatures 
+	harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }, -- disable ligatures
 }
 c.font_size = 12.0
 c.line_height = 1.2
@@ -30,31 +30,34 @@ c.color_scheme = 'kanagawa (Gogh)'
 
 -- minimal tabs
 c.window_decorations = 'INTEGRATED_BUTTONS|RESIZE' --INTEGRATED_BUTTONS|
-c.window_background_opacity = 0.70
+c.window_background_opacity = 0.95
 c.macos_window_background_blur = 5
 c.initial_rows = 40
 c.initial_cols = 180
 
 -- Key bindings
 c.keys = {
-    -- General key bindings
-    { key = ')', mods = 'LEADER', action = wezterm.action.ToggleFullScreen, desc = 'Shortcut to toggle fullscreen mode'},
-    { key = 'k', mods = 'CMD', action = wezterm.action.SendString 'clear\n',  desc = 'Shortcut to clear text on screen'},
-    --Panes
-    { key = "_", mods = 'LEADER', action = wezterm.action.SplitPane { direction = 'Down', size = { Percent = 50 } }, desc = 'Shortcut for :split'},
-    { key = "|", mods = 'LEADER', action = wezterm.action.SplitPane { direction = 'Right', size = { Percent = 50 } }, desc = 'Shortcut for :vsplit'},
-    { key = '`', mods = mod.SUPER, action = wezterm.action.SplitPane { direction = 'Down', size = { Percent = 20 } }, desc = 'Smaller terminal for quick application commands'},
-    { key = 'W', mods = mod.SUPER_REV, action = wezterm.action.CloseCurrentPane { confirm = false }, desc = 'Shortcut to close pane'},
-    -- Tabs
-    { key = 'w', mods = 'LEADER', action = wezterm.action.ShowTabNavigator, desc = 'Show Navigation for tabs'},
-    { key = 'Q', mods = mod.SUPER_REV,  action = wezterm.action.CloseCurrentTab { confirm = false }, desc = 'Shortcut to close tabs'},
-    -- Multiplexing
-    { key = 'a', mods = 'LEADER', action = wezterm.action.AttachDomain 'jetson', desc = 'Attach to domain unix'},
-    { key = 'd', mods = 'LEADER', action = wezterm.action.DetachDomain { DomainName = 'jetson' }, desc = 'Detach from domain unix'},
+	-- General key bindings
+	{ key = ')', mods = 'LEADER',      action = wezterm.action.ToggleFullScreen,                                           desc = 'Shortcut to toggle fullscreen mode' },
+	{ key = 'k', mods = 'CMD',         action = wezterm.action.SendString 'clear\n',                                       desc = 'Shortcut to clear text on screen' },
+	--Panes
+	{ key = "_", mods = 'LEADER',      action = wezterm.action.SplitPane { direction = 'Down', size = { Percent = 50 } },  desc = 'Shortcut for :split' },
+	{ key = "|", mods = 'LEADER',      action = wezterm.action.SplitPane { direction = 'Right', size = { Percent = 50 } }, desc = 'Shortcut for :vsplit' },
+	{ key = '`', mods = mod.SUPER,     action = wezterm.action.SplitPane { direction = 'Down', size = { Percent = 20 } },  desc = 'Smaller terminal for quick application commands' },
+	{ key = 'W', mods = mod.SUPER_REV, action = wezterm.action.CloseCurrentPane { confirm = false },                       desc = 'Shortcut to close pane' },
+	-- Tabs
+	{ key = 'w', mods = 'LEADER',      action = wezterm.action.ShowTabNavigator,                                           desc = 'Show Navigation for tabs' },
+	{ key = 'Q', mods = mod.SUPER_REV, action = wezterm.action.CloseCurrentTab { confirm = false },                        desc = 'Shortcut to close tabs' },
+	-- Multiplexing
+	{ key = 'a', mods = 'LEADER',      action = wezterm.action.AttachDomain 'jetson',                                      desc = 'Attach to domain unix' },
+	{ key = 'd', mods = 'LEADER',      action = wezterm.action.DetachDomain { DomainName = 'jetson' },                     desc = 'Detach from domain unix' },
 }
 
 -- multiplexing
 c.unix_domains = { { name = 'unix' } }
 c.ssh_domains = ssh
+
+-- cursor style
+c.default_cursor_style = "SteadyBlock"
 
 return c
