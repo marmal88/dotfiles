@@ -26,6 +26,14 @@
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "kanagawa.nvim": [],
+    "lazygit": {
+      "rev": "28cd1c2d",
+      "src": "https://github.com/jesseduffield/lazygit"
+    },
+    "lazygit.nvim": {
+      "rev": "2305dee",
+      "src": "https://github.com/kdheepak/lazygit.nvim"
+    },
     "lualine.nvim": {
       "rev": "3946f01",
       "src": "https://github.com/nvim-lualine/lualine.nvim"

@@ -17,7 +17,9 @@ vim.keymap.set('n', '<leader>h', '<CMD>FzfLua helptags<CR>', { desc = 'Picker he
 
 -- Plugins shortkeys
 vim.keymap.set('n', '<leader>e', '<CMD>Oil<CR>', { desc = 'File explorer' })
-vim.keymap.set('n', '<leader>g', '<CMD>Neogit kind=auto<CR>', { desc = 'Neogit floating' })
+vim.keymap.set('n', '<leader>gg', '<CMD>Neogit kind=auto<CR>', { desc = 'Neogit right' })
+vim.keymap.set('n', '<leader>gf', '<CMD>Neogit kind=floating<CR>', { desc = 'Neogit floating' })
+vim.keymap.set('n', '<leader>gl', '<CMD>LazyGit<CR>', { desc = 'Neogit floating' })
 vim.keymap.set('n', '<leader>mp', '<CMD>MarkdownPreviewToggle<CR>', { desc = 'Markdown Preview Toggle' })
 vim.keymap.set('n', '<leader>u', '<CMD>UndotreeToggle<CR>', { desc = 'UndoTree Toggle' })
 

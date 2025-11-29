@@ -38,6 +38,7 @@ vim.pack.add({
 	{ src = 'https://github.com/mfussenegger/nvim-dap-python',           desc = 'Debugger Python' },
 	-- Git Plugins
 	{ src = 'https://github.com/lewis6991/gitsigns.nvim',                desc = 'Git integration for UI' },
+	{ src = 'https://github.com/kdheepak/lazygit.nvim',                  desc = 'Lazygit plugin - lazygit needs to be installed' },
 	{ src = 'https://github.com/NeogitOrg/neogit',                       desc = 'Git workflow' },
 	{ src = 'https://github.com/sindrets/diffview.nvim',                 desc = 'Git diffview' }
 })
