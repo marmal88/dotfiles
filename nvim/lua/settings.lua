@@ -24,6 +24,7 @@ vim.pack.add({
 	-- File Explorer
 	{ src = 'https://github.com/stevearc/oil.nvim',                      desc = 'File Editor' },
 	-- Language Related Plugins
+	{ src = 'https://github.com/neovim/nvim-lspconfig',                  desc = 'Lsp-server-configs' },
 	{ src = 'https://github.com/mason-org/mason.nvim',                   desc = 'Language Manager' },
 	{ src = 'https://github.com/mason-org/mason-lspconfig.nvim',         desc = 'Language Manager lsp' },
 	{ src = 'https://github.com/rachartier/tiny-inline-diagnostic.nvim', desc = 'Diagnostics' },
