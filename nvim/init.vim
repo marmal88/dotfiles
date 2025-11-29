@@ -15,7 +15,7 @@ set termguicolors
 set signcolumn=yes
 set wrap
 
-" save to clipboard
+" default save to "+ register
 set clipboard=unnamedplus
 
 " Markdown previewer
