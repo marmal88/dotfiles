@@ -7,13 +7,14 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set showtabline=4
-set nowrap
 set noswapfile
 set winborder="rounded"
 set termguicolors
 
 set signcolumn=yes
 set wrap
+set incsearch
+set hlsearch
 
 " default save to "+ register
 set clipboard=unnamedplus
