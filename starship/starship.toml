@@ -5,7 +5,12 @@ $git_state\
 $git_status\
 $fill\
 $python\
+$go\
 $docker\
+$terraform\
+$kubernetes\
+$gcloud\
+$aws\ 
 $cmd_duration\
 $time\
 $line_break\
@@ -18,13 +23,31 @@ symbol = ' '
 
 [directory]
 style = 'bold fg:dark_blue'
-format = '[$path ]($style)'
 truncation_length = 3
-truncation_symbol = '…/'
 truncate_to_repo = false
+
+[python]
+symbol = " "
+style = "bold yellow"
+format = 'via [${symbol}python (${version} )(\($virtualenv\) )]($style)'
+pyenv_version_name = true
+pyenv_prefix = "uv "
+detect_extensions = ["py"]
+version_format = "v${raw}"
+
+[kubernetes]
+disabled = true
+symbol = "󱃾 "
+format = '[$symbol$context( \($namespace\))]($style) in '
+style = "cyan bold"
+
+[gcloud]
+symbol = "󱇶 "
+style = 'bold blue'
+format = '[${symbol} ${account}(@$domain) (\($project\))]($style)'
 
 [time]
 disabled = false
-format = "🕒 [at $time]($style) "
-time_format = "%H:%M:%S"
+format = " [$time]($style) "
+time_format = "%I:%M:%S%p"
 style = "bold yellow"
