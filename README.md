@@ -1,5 +1,6 @@
 # ~/.config files
 
 # Stuff Installed
-- neovim
-- wezterm
+- neovim - Code editor
+- wezterm - Terminal Emulator
+- starship - Shell prompts
