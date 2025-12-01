@@ -1,0 +1,30 @@
+format = """
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$fill\
+$python\
+$docker\
+$cmd_duration\
+$time\
+$line_break\
+$character"""
+
+add_newline = false
+
+[fill]
+symbol = ' '
+
+[directory]
+style = 'bold fg:dark_blue'
+format = '[$path ]($style)'
+truncation_length = 3
+truncation_symbol = '…/'
+truncate_to_repo = false
+
+[time]
+disabled = false
+format = "🕒 [at $time]($style) "
+time_format = "%H:%M:%S"
+style = "bold yellow"
