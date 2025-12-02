@@ -1,0 +1,53 @@
+format = """
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$fill\
+$python\
+$go\
+$docker\
+$terraform\
+$kubernetes\
+$gcloud\
+$aws\ 
+$cmd_duration\
+$time\
+$line_break\
+$character"""
+
+add_newline = false
+
+[fill]
+symbol = ' '
+
+[directory]
+style = 'bold fg:dark_blue'
+truncation_length = 3
+truncate_to_repo = false
+
+[python]
+symbol = " "
+style = "bold yellow"
+format = '[${symbol}python (${version} )(\($virtualenv\) )]($style)'
+pyenv_version_name = false
+pyenv_prefix = "uv "
+detect_extensions = ["py"]
+version_format = "v${raw}"
+
+[kubernetes]
+disabled = true
+symbol = "󱃾 "
+style = "cyan bold"
+format = '[$symbol$context( \($namespace\))]($style) in '
+
+[gcloud]
+symbol = "󱇶 "
+style = 'bold blue'
+format = '[${symbol} ${account}(@$domain) (\($project\))]($style)'
+
+[time]
+disabled = false
+style = "bold green"
+format = " [$time]($style) "
+time_format = "%I:%M:%S%p"
