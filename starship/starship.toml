@@ -29,7 +29,7 @@ truncate_to_repo = false
 [python]
 symbol = " "
 style = "bold yellow"
-format = 'via [${symbol}python (${version} )(\($virtualenv\) )]($style)'
+format = '[${symbol}python (${version} )(\($virtualenv\) )]($style)'
 pyenv_version_name = false
 pyenv_prefix = "uv "
 detect_extensions = ["py"]
@@ -38,8 +38,8 @@ version_format = "v${raw}"
 [kubernetes]
 disabled = true
 symbol = "󱃾 "
-format = '[$symbol$context( \($namespace\))]($style) in '
 style = "cyan bold"
+format = '[$symbol$context( \($namespace\))]($style) in '
 
 [gcloud]
 symbol = "󱇶 "
@@ -48,6 +48,6 @@ format = '[${symbol} ${account}(@$domain) (\($project\))]($style)'
 
 [time]
 disabled = false
+style = "bold green"
 format = " [$time]($style) "
 time_format = "%I:%M:%S%p"
-style = "bold yellow"
