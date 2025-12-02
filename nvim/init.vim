@@ -30,3 +30,8 @@ let g:mkdp_page_title = '${name}'
 " Folding using treesitter
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
+set foldlevelstart=99
+
+" Cursor
+let &t_SI = "\e[5 q"    " changes curor to thin line on insert
+let &t_EI = "\e[1 q"    " changes cursor to block on insert end
