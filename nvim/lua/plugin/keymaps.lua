@@ -40,3 +40,13 @@ vim.keymap.set('t', '<leader>q', '<C-\\><C-N>')                          -- Deta
 
 -- Coding
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Goto Definition' })
+
+--Diffview
+vim.keymap.set('n', '<leader>dh', '<CMD>DiffviewFileHistory<CR>', { desc = 'View file history' })
+vim.keymap.set('n', '<leader>dv', function()
+	if next(require('diffview.lib').views) == nil then
+		vim.cmd('DiffviewOpen')
+	else
+		vim.cmd('DiffviewClose')
+	end
+end, { desc = 'Toggle Diffview' })
