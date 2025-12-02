@@ -8,3 +8,5 @@
 # Fonts
 - font search (nerdfont)[here](https://www.nerdfonts.com/cheat-sheet)
 
+# Language specific
+- python [install](https://github.com/neovim/pynvim)
