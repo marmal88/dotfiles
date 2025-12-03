@@ -39,12 +39,17 @@ version_format = "v${raw}"
 disabled = true
 symbol = "󱃾 "
 style = "cyan bold"
-format = '[$symbol$context( \($namespace\))]($style) in '
+format = '[$symbol$context( \($namespace\))]($style)'
 
 [gcloud]
 symbol = "󱇶 "
 style = 'bold blue'
-format = '[${symbol} ${account}(@$domain) (\($project\))]($style)'
+format = '[${symbol} ${account}(@$domain) (\($project\) )]($style)'
+
+[cmd_duration]
+min_time = 1_000
+style = 'bold red'
+format = 'in [$duration]($style) '
 
 [time]
 disabled = false
