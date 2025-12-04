@@ -1,6 +1,9 @@
 {
   "plugins": {
-    "SimpylFold": [],
+    "SimpylFold": {
+      "rev": "ff4c85197c5555715093c08a8d4f9d493c4d80cd",
+      "src": "https://github.com/tmhedberg/SimpylFold"
+    },
     "blink.cmp": {
       "rev": "2408f14",
       "src": "https://github.com/saghen/blink.cmp"
@@ -25,7 +28,10 @@
       "rev": "20ad441",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
-    "kanagawa.nvim": [],
+    "kanagawa.nvim": {
+      "rev": "aef7f5cec0a40dbe7f3304214850c472e2264b10",
+      "src": "https://github.com/rebelot/kanagawa.nvim"
+    },
     "lazygit": {
       "rev": "28cd1c2d",
       "src": "https://github.com/jesseduffield/lazygit"
@@ -46,7 +52,10 @@
       "rev": "f353e8c",
       "src": "https://github.com/chentoast/marks.nvim"
     },
-    "mason-lspconfig.nvim": [],
+    "mason-lspconfig.nvim": {
+      "rev": "0b9bb925c000ae649ff7e7149c8cd00031f4b539",
+      "src": "https://github.com/mason-org/mason-lspconfig.nvim"
+    },
     "mason.nvim": {
       "rev": "ad7146a",
       "src": "https://github.com/mason-org/mason.nvim"
@@ -59,7 +68,10 @@
       "rev": "895630b",
       "src": "https://github.com/nvim-mini/mini.notify"
     },
-    "mini.pick": [],
+    "mini.pick": {
+      "rev": "b4351399db5043a781a32699a1bde60b747f711f",
+      "src": "https://github.com/nvim-mini/mini.pick"
+    },
     "mini.snippets": {
       "rev": "7610dc3",
       "src": "https://github.com/nvim-mini/mini.snippets"
@@ -97,13 +109,18 @@
       "src": "https://github.com/nvim-neotest/nvim-nio"
     },
     "nvim-treesitter": {
+      "rev": "75797cdd8ac125c7ace065b17788b439dcf89a71",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
     "nvim-web-devicons": {
       "rev": "8dcb311",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
-    "oil.nvim": [],
+    "oil.nvim": {
+      "rev": "cbcb3f997f6f261c577b943ec94e4ef55108dd95",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
     "plenary.nvim": {
       "rev": "b9fd522",
       "src": "https://github.com/nvim-lua/plenary.nvim"
