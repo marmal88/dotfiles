@@ -23,7 +23,7 @@ symbol = ' '
 
 [directory]
 style = 'bold fg:dark_blue'
-truncation_length = 3
+truncation_length = 5
 truncate_to_repo = false
 
 [python]
