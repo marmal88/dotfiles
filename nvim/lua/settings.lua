@@ -68,5 +68,5 @@ require('vim._extui').enable {}
 require('lsp.luals')
 require('plugin.diagnostics')
 require('mason').setup()
-vim.lsp.enable({ 'luals', 'pyright', 'ruff' })
+vim.lsp.enable({ 'luals', 'pyright', 'ruff', 'bashls' })
 require('plugin.debugger')
