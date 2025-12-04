@@ -65,6 +65,7 @@ vim.cmd('colorscheme kanagawa')
 require('vim._extui').enable {}
 
 -- Language related
+require('lsp.luals')
 require('plugin.diagnostics')
 require('mason').setup()
 vim.lsp.enable({ 'luals', 'pyright', 'ruff' })
