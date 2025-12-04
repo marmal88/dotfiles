@@ -1,6 +1,6 @@
-vim.lsp.config('luals', {
-	cmd = { 'lua-language-server' },
-	filetypes = { 'lua' },
+return {
+	cmd = { "lua-language-server" },
+	filetypes = { "lua" },
 	settings = {
 		Lua = {
 			runtime = { version = 'LuaJIT' },
@@ -13,4 +13,4 @@ vim.lsp.config('luals', {
 			},
 		},
 	},
-})
+}
