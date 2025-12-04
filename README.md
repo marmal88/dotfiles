@@ -8,6 +8,7 @@
     - [2.1 Neovim](#21-neovim)
         - [2.1.1 Blink CMP](#211-blink-cmp)
     - [2.2 OMZsh Plugins](#22-oh-my-zsh-zsh-vi-mode)
+    - [2.3 Lazygit](#23-lazygit)
 
 
 ## 1. Stuff Installed
@@ -21,7 +22,7 @@
 ### 1.2 Language specific installs
 - python [install](https://github.com/neovim/pynvim)
 
-### 2. Installation
+## 2. Installation
 If installing to a .config location with existing files run the following
 
 ```
@@ -41,4 +42,5 @@ For Blink CMP installation, read the documentation [here](https://cmp.saghen.dev
 ## 2.2 Oh-my-zsh (zsh-vi-mode)
 For zsh plugin (zsh-vi-mode) installation, read documentation [here](https://github.com/jeffreytse/zsh-vi-mode)
 
-
+## 2.3 Lazygit
+For lazygit, read documentation [here](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
