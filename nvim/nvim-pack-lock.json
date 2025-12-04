@@ -8,10 +8,6 @@
       "rev": "2408f14",
       "src": "https://github.com/saghen/blink.cmp"
     },
-    "bufferline.nvim": {
-      "rev": "655133c",
-      "src": "https://github.com/akinsho/bufferline.nvim"
-    },
     "conform.nvim": {
       "rev": "cde4da5",
       "src": "https://github.com/stevearc/conform.nvim"
@@ -125,10 +121,6 @@
       "rev": "b9fd522",
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
-    "simpylfold": {
-      "rev": "ff4c851",
-      "src": "https://github.com/tmhedberg/simpylfold"
-    },
     "smear-cursor.nvim": {
       "rev": "abfa583",
       "src": "https://github.com/sphamba/smear-cursor.nvim"
@@ -147,3 +139,4 @@
     }
   }
 }
+
