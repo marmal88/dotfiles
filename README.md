@@ -5,13 +5,15 @@
     - [1.1 Fonts](#11-fonts)
     - [1.2 Language Specific Installs](#12-language-specific-installs)
 - [2. Installation](#2-installation)
-    - [2.1 Neovim](#21-neovim)
-        - [2.1.1 Blink CMP](#211-blink-cmp)
-    - [2.2 OMZsh Plugins](#22-oh-my-zsh-zsh-vi-mode)
-    - [2.3 Lazygit](#23-lazygit)
+    - [2.1 Stow](#21-stow)
+    - [2.2 Neovim](#22-neovim)
+        - [2.2.1 Blink CMP](#221-blink-cmp)
+    - [2.3 OMZsh Plugins](#23-oh-my-zsh-zsh-vi-mode)
+    - [2.4 Lazygit](#24-lazygit)
 
 
 ## 1. Stuff Installed
+- gnu stow - symlink manager, [install](https://www.gnu.org/software/stow/)
 - neovim - Code editor, [install](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 - wezterm - Terminal Emulator, [install](https://wezterm.org/install/linux.html)
 - starship - Shell prompts, [install](https://starship.rs/guide/)
@@ -20,27 +22,25 @@
 - font search (nerdfont)[here](https://www.nerdfonts.com/cheat-sheet)
 
 ### 1.2 Language specific installs
-- python [install](https://github.com/neovim/pynvim)
+- pynvim - python [install](https://github.com/neovim/pynvim)
 
 ## 2. Installation
-If installing to a .config location with existing files run the following
 
-```
-# Navigate to the existing directory
-git init                               # Initialize it as a new local Git repository
-git remote add origin <repository_url> # Link it to the remote URL
+## 2.1 Stow
+Using GNU stow to manage the symlinks to the respective locations on MacOS and Linux.
 
-# Pull the remote changes into your local directory (this merges history)
-git pull origin main
-```
+GNU stow symlinks the files in the repo to the respective location from the `$HOME` location.
 
-## 2.1 Neovim
+- To stow run the command `stow -t ~ .` from the directory `~/dotfiles`.
+- To unstow run the command `stow -D .` from the directory `~/dotfiles`.
 
-### 2.1.1 Blink CMP
+## 2.2 Neovim
+
+### 2.2.1 Blink CMP
 For Blink CMP installation, read the documentation [here](https://cmp.saghen.dev/configuration/fuzzy.html)
 
-## 2.2 Oh-my-zsh (zsh-vi-mode)
+## 2.3 Oh-my-zsh (zsh-vi-mode)
 For zsh plugin (zsh-vi-mode) installation, read documentation [here](https://github.com/jeffreytse/zsh-vi-mode)
 
-## 2.3 Lazygit
+## 2.4 Lazygit
 For lazygit, read documentation [here](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
