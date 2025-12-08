@@ -60,6 +60,9 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 if [ -f '/Users/daniel.low/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/daniel.low/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 if [ -f '/Users/daniel.low/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/daniel.low/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
+# ripgrep
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
+
 # Certs
 export SSL_CERT_FILE=/Users/daniel.low/Certs/macOS-cacerts.pem
 export REQUESTS_CA_BUNDLE=/Users/daniel.low/Certs/macOS-cacerts.pem
