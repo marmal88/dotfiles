@@ -63,6 +63,9 @@ if [ -f '/Users/daniel.low/Downloads/google-cloud-sdk/completion.zsh.inc' ]; the
 # ripgrep
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
 
+# fzf
+source <(fzf --zsh)
+
 # Certs
 export SSL_CERT_FILE=/Users/daniel.low/Certs/macOS-cacerts.pem
 export REQUESTS_CA_BUNDLE=/Users/daniel.low/Certs/macOS-cacerts.pem

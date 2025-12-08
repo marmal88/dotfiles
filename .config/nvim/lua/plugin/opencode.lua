@@ -28,5 +28,5 @@ vim.keymap.set({ "n", "x" }, "<leader>on", function() os.command("session.new") 
 vim.keymap.set({ "n", "x" }, "<leader>oi", function() os.command("session.interrupt") end, { desc = "Interrupt session" })
 vim.keymap.set({ "n", "x" }, "<leader>ol", function() os.command("session.list") end, { desc = "List all sessions" })
 
-vim.keymap.set("n", "<C-u>", function() os.command("session.half.page.up") end, { desc = "opencode half page up" })
-vim.keymap.set("n", "<C-d>", function() os.command("session.half.page.down") end, { desc = "opencode half page down" })
+vim.keymap.set("n", "<PageUp>", function() os.command("session.half.page.up") end, { desc = "half page up" })
+vim.keymap.set("n", "<PageDown>", function() os.command("session.half.page.down") end, { desc = "half page down" })
