@@ -65,9 +65,9 @@ export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
 
 # fzf
 source <(fzf --zsh)
-export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --info=inline --bind='ctrl-/:toggle-preview'"
-export FZF_CTRL_T_OPTS="--preview 'bat --color=always {}' --preview-window '~3'"
-export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200' --preview-window 'right:50%'"
+export FZF_DEFAULT_OPTS="--height=60% --layout=reverse --info=inline --bind='ctrl-/:toggle-preview'"
+export FZF_CTRL_T_OPTS="--preview='bat --color=always {}' --preview-window='right:50%'"
+export FZF_ALT_C_OPTS="--preview='tree -C {} | head=-200' --preview-window='right:50%'"
 
 # Certs
 export SSL_CERT_FILE=/Users/daniel.low/Certs/macOS-cacerts.pem
