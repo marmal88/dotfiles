@@ -1,15 +1,15 @@
 -- Configs for diagnostics
 
 -- Setup tiny-inline-diagnostics
-require('tiny-inline-diagnostic').setup({
-	preset = 'ghost', -- icons set to ghosts
-	options = {
-		add_messages = { display_count = true },
-		show_source = { enabled = true },
-		multilines = { enabled = true },
-	},
-	blend = { factor = 0.2 },
-})
+-- require('tiny-inline-diagnostic').setup({
+-- 	preset = 'ghost', -- icons set to ghosts
+-- 	options = {
+-- 		add_messages = { display_count = true },
+-- 		show_source = { enabled = true },
+-- 		multilines = { enabled = true },
+-- 	},
+-- 	blend = { factor = 0.2 },
+-- })
 
 -- Disable native vim language diagnostics
 vim.diagnostic.config({

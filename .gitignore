@@ -1,9 +1,0 @@
-*
-!.gitignore
-!README.md
-!/nvim/
-!/nvim/**
-!/starship/
-!/starship/**
-!/wezterm/
-!/wezterm/**

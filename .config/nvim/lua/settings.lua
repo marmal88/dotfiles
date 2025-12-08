@@ -1,5 +1,6 @@
 -- Stores the plugins and packages
 -- For configuration files please see configs/keymaps.lua
+vim.lsp.set_log_level("off")
 
 -- Installed packages
 vim.pack.add({
@@ -31,6 +32,8 @@ vim.pack.add({
 	{ src = 'https://github.com/stevearc/conform.nvim',                  desc = 'Formatter' },
 	{ src = 'https://github.com/saghen/blink.cmp',                       desc = 'Autocompletion' },
 	{ src = 'https://github.com/nvim-mini/mini.snippets',                desc = 'Snippet Manager' },
+	-- AI
+	{ src = 'https://github.com/NickvanDyke/opencode.nvim',              desc = 'Opencode' },
 	-- Debugger specific
 	{ src = 'https://github.com/nvim-neotest/nvim-nio',                  desc = 'Snippet Manager' },
 	{ src = 'https://github.com/mfussenegger/nvim-dap',                  desc = 'Debugger Adapter Protocol' },
@@ -57,12 +60,10 @@ require('plugin.autocmds')
 require('plugin.blink-cmp')
 require('plugin.marks')
 require('plugin.conform')
+require('plugin.opencode')
 
 -- Colorscheme
 vim.cmd('colorscheme kanagawa')
-
--- Enable the new experimental command-line features.
-require('vim._extui').enable {}
 
 -- Language related
 require('lsp.luals')

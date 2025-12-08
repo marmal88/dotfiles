@@ -25,8 +25,33 @@ c.line_height = 1.2
 c.window_padding = { left = 0, right = 0, top = 0, bottom = 0 }
 c.scrollback_lines = 2000
 
--- colourscheme configs
+-- appearence configs
 c.color_scheme = 'kanagawa (Gogh)'
+
+-- random image generator
+-- local background_dir = wezterm.config_dir .. "/background"
+-- local images = wezterm.glob(background_dir .. "/*")
+-- math.randomseed(os.time())
+-- local selected_image = ""
+-- if #images > 0 then
+-- 	selected_image = images[math.random(#images)]
+-- else
+-- 	selected_image = nil
+-- end
+--
+-- c.background = {
+-- 	{
+-- 		source = { File = selected_image },
+-- 		opacity = 0.6,
+-- 		hsb = {
+-- 			hue = 1.0,
+-- 			saturation = 0.5, -- 0.0 is black & white, 1.0 is normal
+-- 			brightness = 0.8, -- Dim it down a bit
+-- 		},
+-- 		width = "100%",
+-- 		height = "100%",
+-- 	}
+-- }
 
 -- minimal tabs
 c.window_decorations = 'INTEGRATED_BUTTONS|RESIZE' --INTEGRATED_BUTTONS|

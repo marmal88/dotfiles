@@ -7,13 +7,16 @@ vim.keymap.set('n', '<leader>w', '<CMD>w<CR>', { desc = 'Save file now' })
 
 -- Pickers
 vim.keymap.set('n', '<leader>ft', '<CMD>Pick cli<CR>', { desc = 'Picker search terminal' })
-vim.keymap.set('n', '<leader>ff', '<CMD>FzfLua files<CR>', { desc = 'Fzf-lua search files' })
-vim.keymap.set('n', '<leader>fg', '<CMD>FzfLua grep_last<CR>', { desc = 'Fzf-lua search using grep' })
-vim.keymap.set('n', '<leader>fb', '<CMD>FzfLua buffers<CR>', { desc = 'Fzf-lua search buffers' })
-vim.keymap.set('n', '<leader>fe', '<CMD>FzfLua oldfiles<CR>', { desc = 'Fzf-lua search everything' })
-vim.keymap.set('n', '<leader>fm', '<CMD>FzfLua marks<CR>', { desc = 'Fzf-lua search marks' })
-vim.keymap.set('n', '<leader>dB', '<cmd>FzfLua dap_breakpoints<CR>', { desc = 'Fzf-lua search breakpoints' })
-vim.keymap.set('n', '<leader>h', '<CMD>FzfLua helptags<CR>', { desc = 'Picker help' })
+vim.keymap.set('n', '<leader>ff', '<CMD>Pick files<CR>', { desc = 'Picker search files' })
+vim.keymap.set('n', '<leader>fb', '<CMD>Pick buffers<CR>', { desc = 'Picker search buffers' })
+vim.keymap.set('n', '<leader>fm', '<CMD>Pick marks<CR>', { desc = 'Picker search marks' })
+-- vim.keymap.set('n', '<leader>ff', '<CMD>FzfLua files<CR>', { desc = 'Fzf-lua search files' })
+-- vim.keymap.set('n', '<leader>fg', '<CMD>FzfLua grep_last<CR>', { desc = 'Fzf-lua search using grep' })
+-- vim.keymap.set('n', '<leader>fb', '<CMD>FzfLua buffers<CR>', { desc = 'Fzf-lua search buffers' })
+-- vim.keymap.set('n', '<leader>fe', '<CMD>FzfLua oldfiles<CR>', { desc = 'Fzf-lua search everything' })
+-- vim.keymap.set('n', '<leader>fm', '<CMD>FzfLua marks<CR>', { desc = 'Fzf-lua search marks' })
+-- vim.keymap.set('n', '<leader>dB', '<cmd>FzfLua dap_breakpoints<CR>', { desc = 'Fzf-lua search breakpoints' })
+-- vim.keymap.set('n', '<leader>h', '<CMD>FzfLua helptags<CR>', { desc = 'Picker help' })
 
 -- Plugins shortkeys
 vim.keymap.set('n', '<leader>e', '<CMD>Oil<CR>', { desc = 'File explorer' })
