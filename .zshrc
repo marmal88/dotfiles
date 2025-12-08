@@ -60,6 +60,9 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 if [ -f '/Users/daniel.low/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/daniel.low/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 if [ -f '/Users/daniel.low/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/daniel.low/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
+# ripgrep
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
+
 # fzf
 source <(fzf --zsh)
 
