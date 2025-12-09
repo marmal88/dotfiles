@@ -14,20 +14,14 @@ ZSH_DISABLE_COMPFIX="true"
 zstyle ':omz:update' mode disabled
 
 # -----------------------------------------------------------------------------
-# OH MY ZSH CONFIGURATION
+# Plugins Manager
 # -----------------------------------------------------------------------------
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+# Set locations
+zsh_plugins=${ZDOTDIR:-~}/.zsh_plugins.txt
+antidote_dir=${ZDOTDIR:-~}/.antidote
 
-# Plugins
-plugins=(
-  git
-  uv
-  zsh-vi-mode
-)
-
-source $ZSH/oh-my-zsh.sh
-
+source $antidote_dir/antidote.zsh
+antidote load
 # -----------------------------------------------------------------------------
 # LAZY LOAD NVM (Node Version Manager)
 # -----------------------------------------------------------------------------

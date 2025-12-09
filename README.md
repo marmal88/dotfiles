@@ -14,6 +14,7 @@
 
 ## 1. Stuff Installed
 - gnu stow - symlink manager, [install](https://www.gnu.org/software/stow/)
+- antidote - zsh plugin manager [install](https://antidote.sh/install)
 - neovim - Code editor, [install](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 - wezterm - Terminal Emulator, [install](https://wezterm.org/install/linux.html)
 - starship - Shell prompts, [install](https://starship.rs/guide/)
@@ -39,8 +40,11 @@ GNU stow symlinks the files in the repo to the respective location from the `$HO
 ### 2.2.1 Blink CMP
 For Blink CMP installation, read the documentation [here](https://cmp.saghen.dev/configuration/fuzzy.html)
 
-## 2.3 Oh-my-zsh (zsh-vi-mode)
-For zsh plugin (zsh-vi-mode) installation, read documentation [here](https://github.com/jeffreytse/zsh-vi-mode)
+## 2.3 antidote (zsh-vi-mode)
+Zsh plugins are managed via the plugin manager `antidote`.
+
+Currently the following plugins are installed:
+- zsh-vi-mode: This allows for vim cursor settings in terminal, read documentation [here](https://github.com/jeffreytse/zsh-vi-mode)
 
 ## 2.4 Lazygit
 For lazygit, read documentation [here](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
