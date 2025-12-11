@@ -39,12 +39,15 @@ return require('blink.cmp').setup({
 		-- Combine select menu and snippet
 		['<S-Tab>'] = { 'select_prev', 'snippet_backward', 'fallback' },
 		['<Tab>'] = { 'select_next', 'snippet_forward', 'fallback' },
+		['<Up>'] = { 'select_prev', 'fallback' },
+		['<Down>'] = { 'select_next', 'fallback' },
 		-- documentation
 		['<C-o>'] = { 'show_documentation', 'hide_documentation' },
 		['<C-j>'] = { 'scroll_documentation_up', 'fallback' },
 		['<C-n>'] = { 'scroll_documentation_down', 'fallback' },
 		-- signature
 		['<C-s>'] = { 'show_signature', 'hide_signature', 'fallback' },
+		-- selection
 		['<C-k>'] = { 'select_and_accept' }
 	},
 	-- sources
