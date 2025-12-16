@@ -89,7 +89,8 @@ if [[ "${widgets[zle-keymap-select]#user:}" == "starship_zle-keymap-select" || \
     zle -N zle-keymap-select ""
 fi
 
-# Starship (Loads fast)
+# Starship 
+STARSHIP_CONFIG=~/.config/starship.toml
 eval "$(starship init zsh)"
 
 # Uncomment this line when profiling 
