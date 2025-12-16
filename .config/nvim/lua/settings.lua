@@ -5,7 +5,7 @@ vim.lsp.set_log_level("off")
 -- Installed packages
 vim.pack.add({
 	{ src = 'https://github.com/rebelot/kanagawa.nvim',                  desc = 'colorscheme' },
-	{ src = 'https://github.com/nvim-tree/nvim-web-devicons',            desc = 'icon pack' },
+	{ src = 'https://github.com/nvim-mini/mini.icons',                   desc = 'icon pack' },
 	{ src = 'https://github.com/ibhagwan/fzf-lua',                       desc = 'Picker fzf' },
 	{ src = 'https://github.com/nvim-mini/mini.pick',                    desc = 'Picker mini' },
 	{ src = 'https://github.com/nvim-treesitter/nvim-treesitter',        version = 'main' },
@@ -47,6 +47,7 @@ vim.pack.add({
 })
 
 -- Import necessary plugins
+require('mini.icons').setup()
 require('plugin.oil')
 require('plugin.lualine')
 require('plugin.keymaps')
