@@ -1,6 +1,5 @@
 -- Stores the plugins and packages
 -- For configuration files please see configs/keymaps.lua
-vim.lsp.set_log_level("off")
 
 -- Installed packages
 vim.pack.add({
@@ -70,5 +69,5 @@ vim.cmd('colorscheme kanagawa')
 require('lsp.luals')
 require('plugin.diagnostics')
 require('mason').setup()
-vim.lsp.enable({ 'luals', 'pyright', 'ruff', 'bashls' })
+vim.lsp.enable({ 'luals', 'pyright', 'ruff', 'bashls', 'terraformls' })
 require('plugin.debugger')
