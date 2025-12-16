@@ -3,13 +3,14 @@ vim.g.opencode_opts = {
 		enabled = "wezterm",
 		wezterm = {
 			direction = "right",
-			top_level = false,
+			top_level = true,
 			percent = 40,
 		},
 	}
 }
---
+-- allow automatic reloading of files
 vim.o.autoread = true
+
 -- Keybindings
 local os = require('opencode')
 
