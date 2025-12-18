@@ -24,7 +24,7 @@
 			"",
 			"# Command to run the application",
 			"CMD [\"uv\", \"run\", \"--host=0.0.0.0\", \"--port=${4}\", \"${5:main:app}\"]",
-			"",
+			""
 		],
 		"description": "Generate a Dockerfile for a Python project using UV"
 	}
