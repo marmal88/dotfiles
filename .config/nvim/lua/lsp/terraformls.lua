@@ -1,4 +1,4 @@
 return {
 	cmd = { "terraformls" },
-	filetypes = { 'terrafom', 'tf', 'hcl' },
+	filetypes = { 'terraform', 'tf', 'hcl' },
 }
