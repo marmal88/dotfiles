@@ -8,6 +8,7 @@ vim.pack.add({
 	{ src = 'https://github.com/nvim-tree/nvim-web-devicons',            desc = 'icon pack' },
 	{ src = 'https://github.com/ibhagwan/fzf-lua',                       desc = 'Picker fzf' },
 	{ src = 'https://github.com/nvim-mini/mini.pick',                    desc = 'Picker mini' },
+	{ src = 'https://github.com/nvim-mini/mini.pairs',                   desc = 'Autopairs' },
 	{ src = 'https://github.com/nvim-treesitter/nvim-treesitter',        version = 'main' },
 	{ src = 'https://github.com/nvim-lualine/lualine.nvim',              desc = 'Lua line manager' },
 	{ src = 'https://github.com/nvim-lua/plenary.nvim',                  desc = 'async' },
@@ -53,6 +54,7 @@ require('plugin.lualine')
 require('plugin.keymaps')
 require('plugin.fzf-lua')
 require('plugin.mini-pick')
+require('plugin.mini-pairs')
 require('plugin.mini-snippets')
 require('mini.indentscope').setup({ symbol = '│' })
 require('plugin.smear-cursor')
