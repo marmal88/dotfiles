@@ -37,11 +37,13 @@ function nvm node npm {
 # EXPORTS & PATHS
 # -----------------------------------------------------------------------------
 export PATH="$HOME/.local/bin:$PATH"
-export PATH=$PATH:$(go env GOPATH)/bin
 [[ -d /Applications/WezTerm.app/Contents/MacOS ]] && export PATH="/Applications/WezTerm.app/Contents/MacOS:$PATH"
 
 # Ruby
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+# Go
+export PATH=$PATH:$(go env GOPATH)/bin
 
 # # Pyenv (Initializes relatively quickly)
 # export PYENV_ROOT="$HOME/.pyenv"

@@ -16,6 +16,7 @@ vim.pack.add({
 	{ src = 'https://github.com/tpope/vim-surround',                     desc = 'Surround' },
 	{ src = 'https://github.com/iamcco/markdown-preview.nvim',           desc = 'Markdown Previewer' },
 	{ src = 'https://github.com/tmhedberg/SimpylFold',                   desc = 'Python folding' },
+	{ src = 'https://github.com/fatih/vim-go',                           desc = 'Go plugin' },
 	-- Appearence
 	{ src = 'https://github.com/nvim-mini/mini.indentscope',             desc = 'Indent' },
 	{ src = 'https://github.com/sphamba/smear-cursor.nvim',              desc = 'Cursor Animation' },

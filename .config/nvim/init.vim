@@ -35,3 +35,7 @@ set foldlevelstart=99
 " Cursor
 let &t_SI = "\e[5 q"    " changes curor to thin line on insert
 let &t_EI = "\e[1 q"    " changes cursor to block on insert end
+
+" Vim-Go
+let g:go_fmt_command = "goimports"   " format imports with goimports
+let g:go_fmt_autosave = 1            " autoformat on save
