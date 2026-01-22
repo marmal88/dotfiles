@@ -17,6 +17,7 @@ vim.pack.add({
 	{ src = 'https://github.com/iamcco/markdown-preview.nvim',           desc = 'Markdown Previewer' },
 	{ src = 'https://github.com/tmhedberg/SimpylFold',                   desc = 'Python folding' },
 	{ src = 'https://github.com/fatih/vim-go',                           desc = 'Go plugin' },
+	{ src = 'https://github.com/danymat/neogen',                         desc = 'Doc Strings' },
 	-- Appearence
 	{ src = 'https://github.com/nvim-mini/mini.indentscope',             desc = 'Indent' },
 	{ src = 'https://github.com/sphamba/smear-cursor.nvim',              desc = 'Cursor Animation' },
@@ -65,6 +66,7 @@ require('plugin.blink-cmp')
 require('plugin.marks')
 require('plugin.conform')
 require('plugin.opencode')
+require('plugin.neogen')
 
 -- Colorscheme
 vim.cmd('colorscheme kanagawa')

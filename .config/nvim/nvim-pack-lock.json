@@ -84,6 +84,10 @@
       "rev": "fa61e06",
       "src": "https://github.com/nvim-neo-tree/neo-tree.nvim"
     },
+    "neogen": {
+      "rev": "23e7e9f883d01289ebd90e98025acc860ea26366",
+      "src": "https://github.com/danymat/neogen"
+    },
     "neogit": {
       "rev": "c6d00913",
       "src": "https://github.com/NeogitOrg/neogit"
