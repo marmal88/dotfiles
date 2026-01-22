@@ -21,9 +21,6 @@ vim.keymap.set('n', '<leader>h', '<CMD>FzfLua helptags<CR>', { desc = 'Picker he
 
 -- Plugins shortkeys
 vim.keymap.set('n', '<leader>e', '<CMD>Oil<CR>', { desc = 'File explorer' })
-vim.keymap.set('n', '<leader>gg', '<CMD>Neogit kind=auto<CR>', { desc = 'Neogit right' })
-vim.keymap.set('n', '<leader>gf', '<CMD>Neogit kind=floating<CR>', { desc = 'Neogit floating' })
-vim.keymap.set('n', '<leader>lg', '<CMD>LazyGit<CR>', { desc = 'Neogit floating' })
 vim.keymap.set('n', '<leader>mp', '<CMD>MarkdownPreviewToggle<CR>', { desc = 'Markdown Preview Toggle' })
 vim.keymap.set('n', '<leader>u', '<CMD>UndotreeToggle<CR>', { desc = 'UndoTree Toggle' })
 
@@ -44,6 +41,14 @@ vim.keymap.set('t', '<leader>q', '<C-\\><C-N>')                          -- Deta
 
 -- Coding
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Goto Definition' })
+
+-- Undotree
+vim.keymap.set('n', '<leader>gg', '<CMD>Neogit kind=auto<CR>', { desc = 'Neogit right' })
+vim.keymap.set('n', '<leader>gf', '<CMD>Neogit kind=floating<CR>', { desc = 'Neogit floating' })
+vim.keymap.set('n', '<leader>gl', '<CMD>LazyGit<CR>', { desc = 'Neogit floating' })
+vim.keymap.set('n', '<leader>gs', '<CMD>Gitsigns toggle_current_line_blame<CR>', { desc = 'Toggle Git signs on current line' })
+vim.keymap.set('n', '<leader>gb', '<CMD>Gitsigns blame<CR>', { desc = 'Open Git blame in new buffer' })
+
 
 --Diffview
 vim.keymap.set('n', '<leader>dh', '<CMD>DiffviewFileHistory<CR>', { desc = 'View file history' })
