@@ -1,0 +1,2 @@
+# Zsh Vi Mode
+jeffreytse/zsh-vi-mode

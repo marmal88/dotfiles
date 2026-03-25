@@ -1,0 +1,5 @@
+# the below is to allow rg to view hidden files
+--hidden
+--no-ignore
+--glob
+!**/.git/*
