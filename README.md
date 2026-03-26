@@ -1,6 +1,6 @@
 # Dotfiles
 
-# General Installation
+## General Installation
 
 Install scripts run via for `chezmoi`. Installation docs [here](https://www.chezmoi.io/install/)
 
@@ -11,7 +11,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply marmal88
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --one-shot marmal88
 ```
 
-# Software
+## Software
 - chezmoi - dotfiles manager, [docs](https://www.chezmoi.io/user-guide/command-overview/)
 - neovim - Code editor, [docs](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 - wezterm - Terminal Emulator, [docs](https://wezterm.org/install/linux.html)
@@ -19,7 +19,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --one-shot marmal88
 - ripgrep - Finder [docs](https://docs.rs/crate/ripgrep/latest)
 - lazygit - Git manager [docs](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
 
-# Programming
+## Programming
 - python (General programming)
     - uv - package manager [docs](https://docs.astral.sh/uv/)
 - rust (Used in nvim blink-cmp)
