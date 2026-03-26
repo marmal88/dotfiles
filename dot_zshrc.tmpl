@@ -1,23 +1,15 @@
 # Uncomment this line when profiling
 # zmodload zsh/zprof
 
-# -----------------------------------------------------------------------------
-# PERFORMANCE SETTINGS
-# -----------------------------------------------------------------------------
-
-# 1. Skip security checks on directory permissions (Save ~1.0s)
-#    This prevents Zsh from checking permissions on every plugin file at startup.
 ZSH_DISABLE_COMPFIX="true"
 
-# -----------------------------------------------------------------------------
-# Plugins Manager
-# -----------------------------------------------------------------------------
-# Set locations
+# Plugin manager (Antidote)
 zsh_plugins=${ZDOTDIR:-~}/.zsh_plugins.txt
 antidote_dir=${ZDOTDIR:-~}/.antidote
 
 source $antidote_dir/antidote.zsh
 antidote load
+
 # -----------------------------------------------------------------------------
 # LAZY LOAD NVM (Node Version Manager)
 # -----------------------------------------------------------------------------
@@ -33,8 +25,8 @@ function nvm node npm {
 # EXPORTS & PATHS
 # -----------------------------------------------------------------------------
 export PATH="$HOME/.local/bin:$PATH"
-{{ if eq .chezmoi.os "darwin" -}}
-[[ -d /Applications/WezTerm.app/Contents/MacOS ]] && export PATH="/Applications/WezTerm.app/Contents/MacOS:$PATH"
+{{ if eq .hostOS "darwin" -}}
+[[ -d /Applications/WezTerm.app/Contents/MacOS ]] && export PATH="/Applications/WezTerm.app/Contents/MacOS:$PATH" 
 
 # Ruby
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
@@ -51,7 +43,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 # Google Cloud SDK
 # Note: The completion line below is heavy. If startup is still slow,
 # comment out the second line (completion.zsh.inc).
-if [ -f "{{ .common.google_cloud_sdk_path }}/path.zsh.inc" ]; then . "{{ .common.google_cloud_sdk_path }}/path.zsh.inc"; fi
+if [ -f "{{ .google_cloud_sdk_path }}/path.zsh.inc" ]; then . "{{ .google_cloud_sdk_path }}/path.zsh.inc"; fi
 if [ -f '/Users/daniel.low/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/daniel.low/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 # ripgrep
@@ -71,8 +63,8 @@ export CURL_CA_BUNDLE=/Users/daniel.low/Certs/macOS-cacerts.pem
 # -----------------------------------------------------------------------------
 # Pyspark
 # -----------------------------------------------------------------------------
-{{ if eq .chezmoi.os "darwin" -}}
-export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+{{ if eq .hostOS "darwin" -}}
+export JAVA_HOME=$(/usr/libexec/java_home -v 17) 
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export SPARK_HOME=$(brew --prefix apache-spark)/libexec
 export PATH=$SPARK_HOME/bin:$PATH
@@ -81,14 +73,7 @@ export PATH=$SPARK_HOME/bin:$PATH
 # -----------------------------------------------------------------------------
 # ALIASES & UI
 # -----------------------------------------------------------------------------
-alias k="kubectl"
-alias vim="nvim"
-alias vi="nvim"
-alias tg="terragrunt"
-alias tr="terraform"
-alias g="git"
-alias we="wezterm"
-alias lg='lazygit'
+{{ template "shell_aliases" . }}
 
 bindkey -v
 HIST_STAMPS="mm/dd/yyyy"

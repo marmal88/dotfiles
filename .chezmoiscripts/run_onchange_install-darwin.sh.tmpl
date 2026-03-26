@@ -1,6 +1,6 @@
 #!/bin/bash
 
-{{ template "functions.sh.tmpl" . }}
+{{ template "install_functions.sh.tmpl" . }}
 
 {{ if and (.dev_computer) (eq .chezmoi.os "darwin") -}}
 echo "macOS detected. Checking for Homebrew..."
