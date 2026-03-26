@@ -5,8 +5,10 @@
 Install scripts run via for `chezmoi`. Installation docs [here](https://www.chezmoi.io/install/)
 
 ```
-export GITHUB_USERNAME=marmal88
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME
+# Install and retain files
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $marmal88
+# Install and remove source directory
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --one-shot $marmal88
 ```
 
 # Software
