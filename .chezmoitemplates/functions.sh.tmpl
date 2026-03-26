@@ -4,6 +4,7 @@ install_starship() {
     if ! command -v starship &> /dev/null; then
         echo "Installing Starship..."
         curl -sS https://starship.rs/install.sh | sh -s -- -y
+		eval "$(starship init zsh)"
     fi
 }
 
