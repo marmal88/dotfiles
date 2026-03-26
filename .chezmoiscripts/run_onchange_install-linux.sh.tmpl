@@ -1,0 +1,40 @@
+#!/bin/bash
+
+{{ template "functions.sh.tmpl" . }}
+
+{{ if and (.dev_computer) ( eq .chezmoi.os "linux" ) -}}
+echo "Linux detected. Checking for apt-get..."
+
+if command -v apt-get &> /dev/null; then
+    echo "apt-get found. Updating and installing packages."
+    sudo apt-get update
+
+    # Generate the package list from data
+    apt_packages=(
+    {{- range .packages.apt }}
+        {{ . | quote }}
+    {{- end }}
+    )
+
+    if [ ${#apt_packages[@]} -gt 0 ]; then
+        echo "Installing: ${apt_packages[*]}"
+        sudo apt-get install -y "${apt_packages[@]}"
+    fi
+
+    if ! command -v uv &> /dev/null; then
+        echo "Installing uv..."
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+    fi
+
+    # Helper functions from .chezmoihelpers.sh.tmpl
+    install_starship
+    install_pynvim
+    install_zshplugins
+	install_lazygit
+else
+    echo "apt-get not found. Skipping apt-related installations."
+fi
+
+{{ end -}}
+
+echo "Installation complete!"

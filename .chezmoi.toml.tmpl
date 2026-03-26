@@ -5,3 +5,4 @@
 [data]
     email = {{ $email | quote }}
 	dev_computer = {{ $dev_computer }}
+	google_cloud_sdk_path = {{ joinPath .chezmoi.homeDir "Downloads" "google-cloud-sdk" | quote }}

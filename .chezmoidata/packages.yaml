@@ -1,0 +1,14 @@
+packages:
+  brew:
+    - ripgrep
+    - lazygit
+    - neovim
+    - wezterm
+    - uv
+    - fzf
+    - bat
+  apt:
+    - ripgrep
+    - neovim
+    - python3-pip
+    - tree

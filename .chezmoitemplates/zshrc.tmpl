@@ -9,10 +9,6 @@
 #    This prevents Zsh from checking permissions on every plugin file at startup.
 ZSH_DISABLE_COMPFIX="true"
 
-# 2. Disable Oh My Zsh auto-updates (Save startup checks)
-#    Manual update via 'omz update' is preferred for speed.
-zstyle ':omz:update' mode disabled
-
 # -----------------------------------------------------------------------------
 # Plugins Manager
 # -----------------------------------------------------------------------------
@@ -37,10 +33,12 @@ function nvm node npm {
 # EXPORTS & PATHS
 # -----------------------------------------------------------------------------
 export PATH="$HOME/.local/bin:$PATH"
+{{ if eq .chezmoi.os "darwin" -}}
 [[ -d /Applications/WezTerm.app/Contents/MacOS ]] && export PATH="/Applications/WezTerm.app/Contents/MacOS:$PATH"
 
 # Ruby
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+{{ end -}}
 
 # Go
 export PATH=$PATH:$(go env GOPATH)/bin
@@ -53,7 +51,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 # Google Cloud SDK
 # Note: The completion line below is heavy. If startup is still slow,
 # comment out the second line (completion.zsh.inc).
-if [ -f '/Users/daniel.low/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/daniel.low/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "{{ .common.google_cloud_sdk_path }}/path.zsh.inc" ]; then . "{{ .common.google_cloud_sdk_path }}/path.zsh.inc"; fi
 if [ -f '/Users/daniel.low/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/daniel.low/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 # ripgrep
@@ -73,10 +71,12 @@ export CURL_CA_BUNDLE=/Users/daniel.low/Certs/macOS-cacerts.pem
 # -----------------------------------------------------------------------------
 # Pyspark
 # -----------------------------------------------------------------------------
+{{ if eq .chezmoi.os "darwin" -}}
 export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export SPARK_HOME=$(brew --prefix apache-spark)/libexec
 export PATH=$SPARK_HOME/bin:$PATH
+{{ end -}}
 
 # -----------------------------------------------------------------------------
 # ALIASES & UI
