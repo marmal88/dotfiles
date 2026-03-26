@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# --- HELPER: Install starship (Cross-platform script) ---
+# --- HELPER: Install starship ( Command line ) ---
 install_starship() {
     if ! command -v starship &> /dev/null; then
         echo "Installing Starship..."
@@ -16,6 +16,21 @@ install_pynvim() {
     else
         echo "uv not found, skipping pynvim"
     fi
+}
+
+# --- HELPER: Install antidote (Zsh plugin manager) ---
+install_zshplugins() {
+    if [ ! -d "${HOME}/.antidote" ]; then
+        echo "Installing Antidote..."
+        git clone --depth=1 https://github.com/mattmc3/antidote.git "${HOME}/.antidote"
+    fi
+
+	PLUGINS_FILE="${HOME}/.zsh_plugins.txt"
+	touch "${PLUGINS_FILE}"
+	if ! grep -q "jeffreytse/zsh-vi-mode" "${PLUGINS_FILE}"; then                                       
+		 echo "jeffreytse/zsh-vi-mode" >> "${PLUGINS_FILE}"                                              
+		 echo "Added jeffreytse/zsh-vi-mode to plugins."                                                 
+    fi    
 }
 
 {{ if and ( eq .chezmoi.os "darwin") .dev_computer -}}
@@ -40,6 +55,7 @@ if command -v brew &> /dev/null; then
 
     install_starship
     install_pynvim
+    install_zshplugins
 else
     echo "Homebrew not found! Please install it first."
 fi
@@ -80,6 +96,7 @@ fi
 # 5. Starship & Pynvim
 install_starship
 install_pynvim
+install_zshplugins
 
 {{ end -}}
 
