@@ -1,6 +1,7 @@
 #!/bin/bash
 
 {{ template "install_functions.sh.tmpl" . }}
+{{ template "setup_zsh_shell.sh.tmpl" . }}
 
 {{ if and (.dev_computer) ( eq .chezmoi.os "linux" ) -}}
 echo "Linux detected. Checking for apt-get..."
@@ -35,6 +36,8 @@ if command -v apt-get &> /dev/null; then
 else
     echo "apt-get not found. Skipping apt-related installations."
 fi
+
+setup_zsh_shell
 
 {{ end -}}
 
