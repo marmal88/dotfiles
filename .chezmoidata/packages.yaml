@@ -4,10 +4,12 @@ packages:
     - kitty
     - tmux
     - neovim
+    - podman
     - fzf
   apt:
     - ripgrep
     - kitty
     - tmux
     - neovim
+    - podman
     - fzf
