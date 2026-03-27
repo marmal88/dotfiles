@@ -8,9 +8,4 @@ setup_zsh_shell() {
         echo "Changing your default shell to Zsh..."
         chsh -s "$zsh_path" "$(whoami)"
     fi
-	
-	if [ -n "$zsh_path" ]; then
-        echo "Switching to Zsh now..."
-        exec "$zsh_path" -l
-    fi
 }
