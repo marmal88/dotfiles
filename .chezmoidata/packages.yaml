@@ -1,14 +1,13 @@
 packages:
   brew:
     - ripgrep
-    - lazygit
+    - kitty
+    - tmux
     - neovim
-    - wezterm
-    - uv
     - fzf
-    - bat
   apt:
     - ripgrep
+    - kitty
+    - tmux
     - neovim
-    - python3-pip
-    - tree
+    - fzf

@@ -33,8 +33,10 @@ if command -v brew &> /dev/null; then
         fi
     done
     
+    # Helper functions from .install_functions.sh.tmpl
     install_starship
     install_pynvim
+	install_lazygit
     install_zshplugins
 else
     echo "Error: Homebrew could not be found or installed."

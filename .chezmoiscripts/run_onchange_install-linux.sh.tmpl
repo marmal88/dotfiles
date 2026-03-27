@@ -18,7 +18,7 @@ if command -v apt-get &> /dev/null; then
 
     if [ ${#apt_packages[@]} -gt 0 ]; then
         echo "Installing: ${apt_packages[*]}"
-        apt-get install -y "${apt_packages[@]}"
+ 		DEBIAN_FRONTEND=noninteractive apt-get install -y "${apt_packages[@]}"
     fi
 
     if ! command -v uv &> /dev/null; then
@@ -27,7 +27,7 @@ if command -v apt-get &> /dev/null; then
 		source $HOME/.local/bin/env
     fi
 
-    # Helper functions from .chezmoihelpers.sh.tmpl
+    # Helper functions from .install_functions.sh.tmpl
     install_starship
     install_pynvim
 	install_lazygit
