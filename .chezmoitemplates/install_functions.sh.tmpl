@@ -4,13 +4,6 @@ install_starship() {
     if ! command -v starship &> /dev/null; then
         echo "Installing Starship..."
         curl -sS https://starship.rs/install.sh | sh -s -- -y
-	    if [[ -n "$ZSH_VERSION" ]]; then
-			echo ".. on zsh"
-	        eval "$(starship init zsh)"
-	    elif [[ -n "$BASH_VERSION" ]]; then
-			echo ".. on bash"
-	        eval "$(starship init bash)"
-	    fi
     fi
 }
 

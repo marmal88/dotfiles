@@ -56,9 +56,11 @@ export FZF_CTRL_T_OPTS="--preview='bat --color=always {}' --preview-window='righ
 export FZF_ALT_C_OPTS="--preview='tree -C {} | head=-200' --preview-window='right:50%'"
 
 # Certs
+{{ if eq .chezmoi.os "darwin" -}}
 export SSL_CERT_FILE=/Users/daniel.low/Certs/macOS-cacerts.pem
 export REQUESTS_CA_BUNDLE=/Users/daniel.low/Certs/macOS-cacerts.pem
 export CURL_CA_BUNDLE=/Users/daniel.low/Certs/macOS-cacerts.pem
+{{ end -}}
 
 # -----------------------------------------------------------------------------
 # Pyspark
