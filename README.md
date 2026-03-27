@@ -12,11 +12,6 @@ apt update && apt install curl -y
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --one-shot marmal88
 ```
 
-```
-# To use zshell run
-exec zsh
-```
-
 ## Software
 - chezmoi - dotfiles manager, [docs](https://www.chezmoi.io/user-guide/command-overview/)
 - zshell - shell emulator, [docs](https://github.com/zsh-users/zsh)
