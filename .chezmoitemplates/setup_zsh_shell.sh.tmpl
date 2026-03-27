@@ -5,7 +5,7 @@ setup_zsh_shell() {
 	if [ "$SHELL" != "$(which zsh)" ]; then
 		echo "Changing your default shell to Zsh..."
 		# This will ask for your password
-		sudo chsh -s "$(which zsh)" "$USER"
+		chsh -s "$(which zsh)" "$USER"
 	fi
 	# Exec zsh
 	if command -v zsh &> /dev/null; then
