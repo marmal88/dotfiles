@@ -1,15 +1,16 @@
 #!/bin/bash
 
 setup_zsh_shell() {
-	# Switch shell to zsh
-	if [ "$SHELL" != "$(which zsh)" ]; then
-		echo "Changing your default shell to Zsh..."
-		# This will ask for your password
-		chsh -s "$(which zsh)" "$USER"
-	fi
-	# Exec zsh
-	if command -v zsh &> /dev/null; then
-		echo "Switching to Zsh now..."
-		exec zsh -l
-	fi
+	local zsh_path
+    zsh_path=$(command -v zsh)
+
+	if [ "$SHELL" != "$zsh_path" ]; then
+        echo "Changing your default shell to Zsh..."
+        chsh -s "$zsh_path" "$(whoami)"
+    fi
+	
+	if [ -n "$zsh_path" ]; then
+        echo "Switching to Zsh now..."
+        exec "$zsh_path" -l
+    fi
 }

@@ -1,4 +1,4 @@
-#!/bin/bash
+#g/bin/bash
 
 {{ template "install_functions.sh.tmpl" . }}
 {{ template "setup_zsh_shell.sh.tmpl" . }}
@@ -37,8 +37,8 @@ else
     echo "apt-get not found. Skipping apt-related installations."
 fi
 
-setup_zsh_shell
-
 {{ end -}}
 
 echo "Installation complete!"
+
+setup_zsh_shell
