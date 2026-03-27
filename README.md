@@ -8,7 +8,7 @@ Install scripts run via for `chezmoi`. Installation docs [here](https://www.chez
 # Install and retain files
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply marmal88
 # Install and remove source directory
-apt update && apt install curl
+apt update && apt install curl -y
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --one-shot marmal88
 ```
 
