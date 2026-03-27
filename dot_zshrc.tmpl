@@ -73,7 +73,7 @@ export PATH=$SPARK_HOME/bin:$PATH
 # -----------------------------------------------------------------------------
 # ALIASES & UI
 # -----------------------------------------------------------------------------
-{{ template "shell_aliases" . }}
+{{ template "shell_aliases.sh.tmpl" . }}
 
 bindkey -v
 HIST_STAMPS="mm/dd/yyyy"
