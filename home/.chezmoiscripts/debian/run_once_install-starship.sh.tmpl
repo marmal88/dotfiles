@@ -1,7 +1,17 @@
 #!/bin/sh
 
 {{ if and .dev_computer (eq .osid "linux-debian" "linux-ubuntu") }}
-echo "Installing Starship shell prompt..."
-curl -sS https://starship.rs/install.sh | sh -s -- -y
+echo "Installing lazygit..."
+LATEST_TAG=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v${LATEST_TAG}/lazygit_${LATEST_TAG}_Linux_${ARCH}.tar.gz"
+tar xf lazygit.tar.gz lazygit
 
+{{ if .ephemeral }}
+install lazygit /usr/local/bin
+{{ else }}
+sudo install lazygit /usr/local/bin
+{{ end }}
+
+rm lazygit lazygit.tar.gz
+echo "Lazygit installed successfully."
 {{ end }}
