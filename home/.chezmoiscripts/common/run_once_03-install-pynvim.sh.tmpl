@@ -1,5 +1,6 @@
 #!/bin/sh
 
 {{ if and (.dev_computer) }}
+export PATH="$HOME/.local/bin:$PATH"
 uv tool install --upgrade pynvim
 {{- end -}}
