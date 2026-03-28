@@ -3,11 +3,7 @@
 {{ if (.dev_computer) }}
 zsh_path=$(command -v zsh)
 
- export PATH="/usr/bin:/bin:$PATH"
- 
-        echo "--- Diagnostic: Antidote Script Start ---"
-        echo "PATH: $PATH"
-        command -v git || echo "git not found in Antidote script"
+export PATH="/usr/bin:/bin:$PATH"
 
 # Install Antidote plugin manager if not found
 if [ ! -d "${HOME}/.antidote" ]; then
@@ -16,7 +12,7 @@ if [ ! -d "${HOME}/.antidote" ]; then
 fi
 
 # Configure Zsh plugins using Antidote
-ANTIDOTE_PLUGINS_FILE="${HOME}/.antidote/plugins.txt" # This will be the file Antidote reads
+ANTIDOTE_PLUGINS_FILE="${HOME}/.antidote/plugins.txt" 
 mkdir -p "$(dirname "$ANTIDOTE_PLUGINS_FILE")"
 touch "${ANTIDOTE_PLUGINS_FILE}"
 

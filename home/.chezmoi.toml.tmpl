@@ -25,6 +25,7 @@
 {{/* gets current hostname */}}
 {{- $hostname := .chezmoi.hostname -}}
 {{- if eq .chezmoi.os "darwin" -}}
+{{-   $dev_computer = true -}}
 {{-   $hostname = output "scutil" "--get" "LocalHostName" | trim -}}
 {{- end -}}
 

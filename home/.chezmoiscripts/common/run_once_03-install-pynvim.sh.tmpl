@@ -1,9 +1,6 @@
 #!/bin/sh
 
 {{ if and (.dev_computer) }}
- export PATH="$HOME/.local/bin:$PATH"
-        echo "--- Diagnostic: Pynvim Script Start ---"
-        echo "PATH: $PATH"
-        command -v uv || echo "uv not found in Pynvim script"
- uv tool install --upgrade pynvim
+export PATH="$HOME/.local/bin:$PATH"
+uv tool install --upgrade pynvim
 {{- end -}}

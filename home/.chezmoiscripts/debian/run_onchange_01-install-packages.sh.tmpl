@@ -1,39 +1,25 @@
 #!/bin/sh
 
-{{ if and (.dev_computer) ( eq .osid "linux-debian" "linux-ubuntu" ) -}}
-if command -v apt-get &> /dev/null; then
-    echo "apt-get found. Updating and installing packages."
-    apt-get update
+{{ if and (.dev_computer) ( or (eq .osid "linux-debian") (eq .osid "linux-ubuntu") ) -}}
+if command -v apt-get > /dev/null 2>&1; then
+    echo "apt-get found. Updating..."
+    sudo apt-get update
 
-    # Generate the package list from data
-    apt_packages=(
-    {{- range .packages.apt }}
-        {{ . | quote }}
-    {{- end }}
-    )
+    # We remove the 'echo' from inside the template range
+    apt_packages="{{ range .packages.apt }}{{ . }} {{ end }}"
 
-    echo "--- Diagnostic: apt_packages array ---"
-    echo "Packages to install: ${apt_packages[*]}"
-    command -v git || echo "git not found before apt install"
+    if [ -n "$apt_packages" ]; then
+        echo "Installing: $apt_packages"
+        sudo DEBIAN_FRONTEND=noninteractive apt-get install -y $apt_packages
+    fi
 
-    echo "Installing apt packages..."
-    DEBIAN_FRONTEND=noninteractive apt-get install -y "${apt_packages[@]}"
-
-    echo "--- Diagnostic: After apt-get install ---"
-    echo "PATH: $PATH"
-    command -v git || echo "git not found after apt install"
-
-
-    if ! command -v uv &> /dev/null; then
+    if ! command -v uv > /dev/null 2>&1; then
         echo "Installing uv..."
         curl -LsSf https://astral.sh/uv/install.sh | sh
- 		source $HOME/.local/bin/env
-        echo "--- Diagnostic: After uv install ---"
-        echo "PATH: $PATH"
-        command -v uv || echo "uv not found after uv install"
+        export PATH="$HOME/.local/bin:$PATH"
     fi
 else
-    echo "apt-get not found. Skipping apt-related installations."
+    echo "apt-get not found. Skipping."
 fi
 
 {{ end -}}
