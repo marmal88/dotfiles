@@ -1,6 +1,6 @@
 #!/bin/sh
 
-{{ if and (.dev_computer) (eq .osid "linux-debian")}}
+{{ if and ( .dev_computer ) ( eq .osid "linux-debian" "linux-ubuntu" ) }}
 if [ "$(command -v zsh)" ]; then
     echo "Zsh is already installed. Skipping installation."
     exit 0

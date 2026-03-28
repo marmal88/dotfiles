@@ -1,6 +1,6 @@
 #!/bin/sh
 
-{{ if and (.dev_computer) (eq .osid "linux-debian") }}
+{{ if and (.dev_computer) (eq .osid "linux-debian" "linux-ubuntu") }}
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 {{ if .ephermeral }}
 apt install starship
