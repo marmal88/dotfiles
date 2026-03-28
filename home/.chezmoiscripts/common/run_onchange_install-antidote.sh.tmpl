@@ -16,7 +16,7 @@ touch "${ANTIDOTE_PLUGINS_FILE}"
 
 echo "Configuring Zsh plugins with Antidote..."
 {
-{{- range .data.zsh_plugins }}
+{{- range .zsh_plugins }}
     echo "bundle {{ . }}"
 {{- end }}
 } > "${ANTIDOTE_PLUGINS_FILE}"
