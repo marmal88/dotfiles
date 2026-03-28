@@ -1,59 +1,75 @@
 # Uncomment this line when profiling
 # zmodload zsh/zprof
 
-# Turn on vim mode in zsh
+export PATH="$HOME/.local/bin:/usr/local/bin:$PATH"
+
+# macOS Specific Homebrew & Ruby
+{{ if and (.work) (eq .chezmoi.os "darwin") -}}
+[[ -f /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
+[[ -d /opt/homebrew/opt/ruby/bin ]] && export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+# Work macOS WezTerm
+[[ -d /Applications/WezTerm.app/Contents/MacOS ]] && export PATH="/Applications/WezTerm.app/Contents/MacOS:$PATH"
+{{- end }}
+
 bindkey -v
+export KEYTIMEOUT=1 # Faster Vi-mode switching
 
-# Zsh plugin manager (Antidote)
-zsh_plugins=${ZDOTDIR:-~}/.zsh_plugins.txt
-antidote_dir=${ZDOTDIR:-~}/.antidote
+# zsh plugin manager
+ANTIDOTE_DIR="${ZDOTDIR:-$HOME}/.antidote"
+PLUGINS_TXT="${ZDOTDIR:-$HOME}/.zsh_plugins.txt"
 
-source $antidote_dir/antidote.zsh
-antidote load
-
-# LAZY LOAD NVM (Node Version Manager)
-# This setup saves ~1.0s by only loading NVM when you type nvm/node/npm
-export NVM_DIR="$HOME/.nvm"
-function nvm node npm {
-  unfunction nvm node npm
-  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-  "$0" "$@"
-}
-
-# PATHS
-export PATH="$HOME/.local/bin:$PATH"
-{{ if and ( .work ) -}}
-[[ -d /Applications/WezTerm.app/Contents/MacOS ]] && export PATH="/Applications/WezTerm.app/Contents/MacOS:$PATH" 
-
-# Ruby
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-{{ end -}}
-
-# Go
-export PATH=$PATH:$(go env GOPATH)/bin
-
-# ripgrep
-export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
-
-# fzf
-source <(fzf --zsh)
-export FZF_DEFAULT_OPTS="--height=60% --layout=reverse --info=inline --bind='ctrl-/:toggle-preview'"
-export FZF_CTRL_T_OPTS="--preview='bat --color=always {}' --preview-window='right:50%'"
-export FZF_ALT_C_OPTS="--preview='tree -C {} | head=-200' --preview-window='right:50%'"
-
-{{- template "work_settings.sh.tmpl" . -}}
-{{- template "shell_aliases.sh.tmpl" . -}}
-
-# Starship 
-STARSHIP_CONFIG=~/.config/starship.toml
-eval "$(starship init zsh)"
-if [[ "${widgets[zle-keymap-select]#user:}" == "starship_zle-keymap-select"* ]]; then
-    zle -N zle-keymap-select ""
+if [[ -f "$ANTIDOTE_DIR/antidote.zsh" ]]; then
+    source "$ANTIDOTE_DIR/antidote.zsh"
+    [[ -f "$PLUGINS_TXT" ]] && antidote load "$PLUGINS_TXT"
 fi
 
-# Generated for envman and tgswitch. Do not edit.
+# --- LAZY LOAD NVM (Node Version Manager) ---
+export NVM_DIR="$HOME/.nvm"
+if [[ -d "$NVM_DIR" ]]; then
+    function nvm node npm npx {
+      unfunction nvm node npm npx
+      [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+      "$0" "$@"
+    }
+fi
+
+# --- GO ENVIRONMENT ---
+if command -v go >/dev/null 2>&1; then
+    export GOPATH=$(go env GOPATH)
+    export PATH="$PATH:$GOPATH/bin"
+fi
+
+# --- FZF CONFIGURATION ---
+if command -v fzf >/dev/null 2>&1; then
+    # Handles Ubuntu/Debian (older fzf) vs macOS (newer fzf)
+    if fzf --version | grep -qE "0\.(4[8-9]|[5-9])|[1-9]\."; then
+        source <(fzf --zsh)
+    else
+        # Fallback paths for apt-installed fzf on Linux
+        [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]] && source /usr/share/doc/fzf/examples/key-bindings.zsh
+        [[ -f /usr/share/doc/fzf/examples/completion.zsh ]] && source /usr/share/doc/fzf/examples/completion.zsh
+    fi
+    export FZF_DEFAULT_OPTS="--height=60% --layout=reverse --info=inline --bind='ctrl-/:toggle-preview'"
+fi
+
+# --- STARSHIP ---
+if command -v starship >/dev/null 2>&1; then
+    eval "$(starship init zsh)"
+    # Fix cursor issues with vi-mode
+    if [[ "${widgets[zle-keymap-select]#user:}" == "starship_zle-keymap-select"* ]]; then
+        zle -N zle-keymap-select ""
+    fi
+fi
+
+# --- RIPGREP ---
+[[ -f "$HOME/.config/ripgrep/config" ]] && export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
+
+{{ template "work_settings.sh.tmpl" . }}
+{{ template "shell_aliases.sh.tmpl" . }}
+
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
-export PATH=$PATH:$HOME/bin
+export PATH="$PATH:$HOME/bin"
 
 # Uncomment this line when profiling 
 # zprof
