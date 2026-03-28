@@ -24,8 +24,11 @@ echo "Configuring Zsh plugins with Antidote..."
 } > "${ANTIDOTE_PLUGINS_FILE}"
 
 # Change default shell to zsh if it's not already
+{{ if and (.dev_computer) (eq .osid "linux-debian" "linux-ubuntu") }}
 if [ "$SHELL" != "$zsh_path" ]; then
     echo "Changing your default shell to Zsh..."
     chsh -s "$zsh_path" "$(whoami)"
 fi
+{{- end }}
+
 {{- end }}
