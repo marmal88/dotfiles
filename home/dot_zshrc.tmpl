@@ -22,7 +22,7 @@ function nvm node npm {
 
 # PATHS
 export PATH="$HOME/.local/bin:$PATH"
-{{ if eq .chezmoi.os "darwin" -}}
+{{ if and ( .work ) -}}
 [[ -d /Applications/WezTerm.app/Contents/MacOS ]] && export PATH="/Applications/WezTerm.app/Contents/MacOS:$PATH" 
 
 # Ruby
@@ -31,11 +31,6 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 # Go
 export PATH=$PATH:$(go env GOPATH)/bin
-
-# # Pyenv (Initializes relatively quickly)
-# export PYENV_ROOT="$HOME/.pyenv"
-# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
 
 # ripgrep
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
@@ -46,22 +41,7 @@ export FZF_DEFAULT_OPTS="--height=60% --layout=reverse --info=inline --bind='ctr
 export FZF_CTRL_T_OPTS="--preview='bat --color=always {}' --preview-window='right:50%'"
 export FZF_ALT_C_OPTS="--preview='tree -C {} | head=-200' --preview-window='right:50%'"
 
-# Certs
-{{ if or (eq .osid "darwin") (eq .work ) -}}
-export SSL_CERT_FILE="${HOME}/Certs/macOS-cacerts.pem"
-export REQUESTS_CA_BUNDLE=${HOME}/Certs/macOS-cacerts.pem
-export CURL_CA_BUNDLE=${HOME}/Certs/macOS-cacerts.pem
-{{ end -}}
-
-# Pyspark
-{{ if or (eq .osid "darwin") (eq .work ) -}}
-export JAVA_HOME=$(/usr/libexec/java_home -v 17) 
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
-export SPARK_HOME=$(brew --prefix apache-spark)/libexec
-export PATH=$SPARK_HOME/bin:$PATH
-{{ end -}}
-
-# ALIASES & UI
+{{- template "work_settings.sh.tmpl" . -}}
 {{- template "shell_aliases.sh.tmpl" . -}}
 
 # Starship 
