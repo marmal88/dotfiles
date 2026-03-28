@@ -42,14 +42,21 @@ fi
 
 # --- FZF CONFIGURATION ---
 if command -v fzf >/dev/null 2>&1; then
-    # Handles Ubuntu/Debian (older fzf) vs macOS (newer fzf)
-    if fzf --version | grep -qE "0\.(4[8-9]|[5-9])|[1-9]\."; then
+    # 1. Check if fzf is new enough for the --zsh flag (v0.48+)
+    if fzf --version | grep -qE "(0\.(4[8-9]|[5-9])|[1-9]\.)"; then
         source <(fzf --zsh)
     else
-        # Fallback paths for apt-installed fzf on Linux
-        [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]] && source /usr/share/doc/fzf/examples/key-bindings.zsh
-        [[ -f /usr/share/doc/fzf/examples/completion.zsh ]] && source /usr/share/doc/fzf/examples/completion.zsh
+        # These are the standard paths where 'apt' installs fzf helpers
+        [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
+        [ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
+        
+        # Fallback for older macOS versions (Homebrew)
+        if [[ -d "/opt/homebrew/opt/fzf" ]]; then
+           [ -f /opt/homebrew/opt/fzf/shell/key-bindings.zsh ] && source /opt/homebrew/opt/fzf/shell/key-bindings.zsh
+           [ -f /opt/homebrew/opt/fzf/shell/completion.zsh ] && source /opt/homebrew/opt/fzf/shell/completion.zsh
+        fi
     fi
+    
     export FZF_DEFAULT_OPTS="--height=60% --layout=reverse --info=inline --bind='ctrl-/:toggle-preview'"
 fi
 
