@@ -1,0 +1,19 @@
+packages:
+  brew:
+    - git
+    - ripgrep
+    - fzf
+    - tmux
+    - neovim
+    - podman
+    - wezterm
+    - lazygit
+    - starship
+  apt:
+    - zsh
+    - git
+    - ripgrep
+    - fzf
+    - tmux
+    - neovim
+    - podman

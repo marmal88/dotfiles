@@ -1,0 +1,29 @@
+#!/bin/sh
+
+{{ if (.dev_computer) }}
+zsh_path=$(command -v zsh)
+
+# Install Antidote plugin manager if not found
+if [ ! -d "${HOME}/.antidote" ]; then
+    echo "Installing Antidote..."
+    git clone --depth=1 https://github.com/mattmc3/antidote.git "${HOME}/.antidote"
+fi
+
+# Configure Zsh plugins using Antidote
+ANTIDOTE_PLUGINS_FILE="${HOME}/.antidote/plugins.txt" # This will be the file Antidote reads
+mkdir -p "$(dirname "$ANTIDOTE_PLUGINS_FILE")"
+touch "${ANTIDOTE_PLUGINS_FILE}"
+
+echo "Configuring Zsh plugins with Antidote..."
+{
+{{- range .data.zsh_plugins }}
+    echo "bundle {{ . }}"
+{{- end }}
+} > "${ANTIDOTE_PLUGINS_FILE}"
+
+# Change default shell to zsh if it's not already
+if [ "$SHELL" != "$zsh_path" ]; then
+    echo "Changing your default shell to Zsh..."
+    chsh -s "$zsh_path" "$(whoami)"
+fi
+{{- end }}

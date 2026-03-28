@@ -1,0 +1,79 @@
+# Uncomment this line when profiling
+# zmodload zsh/zprof
+
+# Turn on vim mode in zsh
+bindkey -v
+
+# Zsh plugin manager (Antidote)
+zsh_plugins=${ZDOTDIR:-~}/.zsh_plugins.txt
+antidote_dir=${ZDOTDIR:-~}/.antidote
+
+source $antidote_dir/antidote.zsh
+antidote load
+
+# LAZY LOAD NVM (Node Version Manager)
+# This setup saves ~1.0s by only loading NVM when you type nvm/node/npm
+export NVM_DIR="$HOME/.nvm"
+function nvm node npm {
+  unfunction nvm node npm
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+  "$0" "$@"
+}
+
+# PATHS
+export PATH="$HOME/.local/bin:$PATH"
+{{ if eq .chezmoi.os "darwin" -}}
+[[ -d /Applications/WezTerm.app/Contents/MacOS ]] && export PATH="/Applications/WezTerm.app/Contents/MacOS:$PATH" 
+
+# Ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+{{ end -}}
+
+# Go
+export PATH=$PATH:$(go env GOPATH)/bin
+
+# # Pyenv (Initializes relatively quickly)
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+
+# ripgrep
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
+
+# fzf
+source <(fzf --zsh)
+export FZF_DEFAULT_OPTS="--height=60% --layout=reverse --info=inline --bind='ctrl-/:toggle-preview'"
+export FZF_CTRL_T_OPTS="--preview='bat --color=always {}' --preview-window='right:50%'"
+export FZF_ALT_C_OPTS="--preview='tree -C {} | head=-200' --preview-window='right:50%'"
+
+# Certs
+{{ if or (eq .osid "darwin") (eq .work ) -}}
+export SSL_CERT_FILE="${HOME}/Certs/macOS-cacerts.pem"
+export REQUESTS_CA_BUNDLE=${HOME}/Certs/macOS-cacerts.pem
+export CURL_CA_BUNDLE=${HOME}/Certs/macOS-cacerts.pem
+{{ end -}}
+
+# Pyspark
+{{ if or (eq .osid "darwin") (eq .work ) -}}
+export JAVA_HOME=$(/usr/libexec/java_home -v 17) 
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export SPARK_HOME=$(brew --prefix apache-spark)/libexec
+export PATH=$SPARK_HOME/bin:$PATH
+{{ end -}}
+
+# ALIASES & UI
+{{- template "shell_aliases.sh.tmpl" . -}}
+
+# Starship 
+STARSHIP_CONFIG=~/.config/starship.toml
+eval "$(starship init zsh)"
+if [[ "${widgets[zle-keymap-select]#user:}" == "starship_zle-keymap-select"* ]]; then
+    zle -N zle-keymap-select ""
+fi
+
+# Generated for envman and tgswitch. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+export PATH=$PATH:$HOME/bin
+
+# Uncomment this line when profiling 
+# zprof

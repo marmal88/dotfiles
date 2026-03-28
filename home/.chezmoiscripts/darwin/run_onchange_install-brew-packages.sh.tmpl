@@ -1,0 +1,21 @@
+#!/bin/bash
+
+{{ if (eq .chezmoi.os "darwin") }}
+if command -v brew &> /dev/null; then
+    echo "Updating Homebrew..."
+    brew update
+
+    brew_packages=(
+    {{- range .packages.brew }}
+        {{ . | quote }}
+    {{- end }}
+    )
+
+    for pkg in "${brew_packages[@]}"; do
+        if ! brew list "$pkg" &>/dev/null; then
+            echo "Installing $pkg..."
+            brew install "$pkg"
+        fi
+    done
+fi
+{{- end -}}

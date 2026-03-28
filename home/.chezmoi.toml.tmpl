@@ -1,0 +1,51 @@
+{{/* default configs */}}
+{{- $ephemeral := false -}}
+{{- $work := true -}}{{/* Set work as default true */}}
+{{- $dev_computer := false -}}
+
+{{/* sets osID to darwin, linux-fedora, etc */}}
+{{- $osid := .chezmoi.os -}}
+{{- if (and (eq .chezmoi.os "linux") (hasKey .chezmoi.osRelease "id")) -}}
+{{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
+{{- end -}}
+
+{{/* detect GitHub codespaces, VSCode remote containers, Docker/podman containers, Multipass VMs, and Vagrant boxes */}}
+{{- if or 
+	(env "CODESPACES") 
+	(env "REMOTE_CONTAINERS_IPC") 
+	(env "CONTAINER")
+	(stat "/.dockerenv") 
+	(stat "/run/.containerenv") 
+	(eq .chezmoi.username "root" "ubuntu" "vagrant" "vscode") 
+-}}
+{{-   $ephemeral = true -}}
+{{-   $dev_computer = true -}}
+{{- end -}}
+
+{{/* gets current hostname */}}
+{{- $hostname := .chezmoi.hostname -}}
+{{- if eq .chezmoi.os "darwin" -}}
+{{-   $hostname = output "scutil" "--get" "LocalHostName" | trim -}}
+{{- end -}}
+
+{{/* define personal computer */}}
+{{- if (eq $hostname "jetson" "thinkpad" "raspberrypi") -}}
+{{-   $work = false -}}
+{{- end -}}
+
+{{- $email := "danlowgw@gmail.com" -}}
+{{- if $work -}}
+{{-   $email = "daniel.low@dyson.com" -}}
+{{- end -}}
+
+[data]
+    osid = {{ $osid | quote }}
+    email = {{ $email | quote }}
+    work = {{ $work }}
+    hostname = {{ $hostname | quote }}
+    dev_computer = {{ $dev_computer }}
+    zsh_plugins = ["jeffreytse/zsh-vi-mode"]
+
+[data.packages]
+    brew = ["zsh"]
+    apt = [] # Add your desired apt packages here

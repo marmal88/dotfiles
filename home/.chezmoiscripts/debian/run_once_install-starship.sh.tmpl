@@ -1,0 +1,10 @@
+#!/bin/sh
+
+{{ if and (.dev_computer) (.osid "linux-debian") }}
+curl -sS https://starship.rs/install.sh | sh -s -- -y
+{{ if .ephermeral }}
+apt install starship
+{{else}}
+sudo apt install starship
+{{end}}
+{{- end -}}
