@@ -12,13 +12,17 @@ if command -v apt-get &> /dev/null; then
     {{- end }}
     )
 
-    if [ ${#apt_packages[@]} -gt 0 ]; then
-        echo "Installing: ${apt_packages[*]}"
- 	DEBIAN_FRONTEND=noninteractive apt-get install -y "${apt_packages[@]}"
-        echo "--- Diagnostic: After apt-get install ---"
-        echo "PATH: $PATH"
-        command -v git || echo "git not found after apt install"
-    fi
+    echo "--- Diagnostic: apt_packages array ---"
+    echo "Packages to install: ${apt_packages[*]}"
+    command -v git || echo "git not found before apt install"
+
+    echo "Installing apt packages..."
+    DEBIAN_FRONTEND=noninteractive apt-get install -y "${apt_packages[@]}"
+
+    echo "--- Diagnostic: After apt-get install ---"
+    echo "PATH: $PATH"
+    command -v git || echo "git not found after apt install"
+
 
     if ! command -v uv &> /dev/null; then
         echo "Installing uv..."
