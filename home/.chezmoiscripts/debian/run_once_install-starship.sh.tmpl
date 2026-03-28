@@ -1,12 +1,7 @@
 #!/bin/sh
 
-{{ if and (.dev_computer) (eq .osid "linux-debian" "linux-ubuntu") }}
-curl -sS https://starship.rs/install.sh | sh 
+{{ if and .dev_computer (eq .osid "linux-debian" "linux-ubuntu") }}
+echo "Installing Starship shell prompt..."
+curl -sS https://starship.rs/install.sh | sh -s -- -y
 
-{{- if (.ephemeral) -}}
-apt install starship
-{{- else -}}
-sudo apt install starship
-{{- end }}
-
-{{- end -}}
+{{ end }}

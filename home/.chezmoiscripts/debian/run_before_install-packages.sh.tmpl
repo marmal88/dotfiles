@@ -7,11 +7,11 @@ if command -v apt-get > /dev/null 2>&1; then
 
     if [ -n "$apt_packages" ]; then
         echo "Installing: $apt_packages"
-		{{- if (.ephemeral) -}}
-			DEBIAN_FRONTEND=noninteractive apt-get install -y $apt_packages
-		{{- else -}}
+		{{ if (.ephemeral) }}
+		DEBIAN_FRONTEND=noninteractive apt-get install -y $apt_packages
+		{{ else }}
         	sudo DEBIAN_FRONTEND=noninteractive apt-get install -y $apt_packages
-		{{- end}}
+		{{ end }}
     fi
 
     if ! command -v uv > /dev/null 2>&1; then
