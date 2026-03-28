@@ -14,13 +14,19 @@ if command -v apt-get &> /dev/null; then
 
     if [ ${#apt_packages[@]} -gt 0 ]; then
         echo "Installing: ${apt_packages[*]}"
- 		DEBIAN_FRONTEND=noninteractive apt-get install -y "${apt_packages[@]}"
+ 	DEBIAN_FRONTEND=noninteractive apt-get install -y "${apt_packages[@]}"
+        echo "--- Diagnostic: After apt-get install ---"
+        echo "PATH: $PATH"
+        command -v git || echo "git not found after apt install"
     fi
 
     if ! command -v uv &> /dev/null; then
         echo "Installing uv..."
         curl -LsSf https://astral.sh/uv/install.sh | sh
-		source $HOME/.local/bin/env
+ 		source $HOME/.local/bin/env
+        echo "--- Diagnostic: After uv install ---"
+        echo "PATH: $PATH"
+        command -v uv || echo "uv not found after uv install"
     fi
 else
     echo "apt-get not found. Skipping apt-related installations."

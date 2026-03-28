@@ -3,7 +3,11 @@
 {{ if (.dev_computer) }}
 zsh_path=$(command -v zsh)
 
-export PATH="/usr/bin:/bin:$PATH"
+ export PATH="/usr/bin:/bin:$PATH"
+ 
+        echo "--- Diagnostic: Antidote Script Start ---"
+        echo "PATH: $PATH"
+        command -v git || echo "git not found in Antidote script"
 
 # Install Antidote plugin manager if not found
 if [ ! -d "${HOME}/.antidote" ]; then
