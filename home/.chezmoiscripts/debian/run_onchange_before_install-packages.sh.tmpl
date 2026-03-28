@@ -2,15 +2,16 @@
 
 {{ if and ( .dev_computer ) ( eq .osid "linux-debian" "linux-ubuntu" ) -}}
 if command -v apt-get > /dev/null 2>&1; then
-    echo "apt-get found. Updating..."
-    sudo apt-get update
-
     # We remove the 'echo' from inside the template range
     apt_packages="{{ range .packages.apt }}{{ . }} {{ end }}"
 
     if [ -n "$apt_packages" ]; then
         echo "Installing: $apt_packages"
-        sudo DEBIAN_FRONTEND=noninteractive apt-get install -y $apt_packages
+		{{- if (.ephermeral) -}}
+			DEBIAN_FRONTEND=noninteractive apt-get install -y $apt_packages
+		{{- else -}}
+        	sudo DEBIAN_FRONTEND=noninteractive apt-get install -y $apt_packages
+		{{- end}}
     fi
 
     if ! command -v uv > /dev/null 2>&1; then
