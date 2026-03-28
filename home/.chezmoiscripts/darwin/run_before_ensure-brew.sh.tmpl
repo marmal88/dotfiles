@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 {{ if and (.dev_computer) (eq .chezmoi.os "darwin") -}}
 echo "macOS detected. Checking for Homebrew and Zsh..."
@@ -7,19 +7,18 @@ if ! command -v brew &> /dev/null; then
     echo "Homebrew not found. Installing Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	
-	# Configure homebrew path
     if [[ -f /opt/homebrew/bin/brew ]]; then
-		# for apple silicon
+        # For Apple Silicon
         eval "$(/opt/homebrew/bin/brew shellenv)"
     elif [[ -f /usr/local/bin/brew ]]; then
-		# for intel mac
+        # For Intel Mac
         eval "$(/usr/local/bin/brew shellenv)"
+    fi
 fi
 
-# Install Zsh if not found
 if ! command -v zsh &> /dev/null; then
     echo "Zsh not found. Installing Zsh with Homebrew..."
     brew install zsh
 fi
 
-{{- end -}}
+{{- end }}
