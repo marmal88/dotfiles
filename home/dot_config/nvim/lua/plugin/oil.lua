@@ -9,7 +9,7 @@ vim.api.nvim_create_autocmd("User", {
 		local is_floating = config.relative ~= "" -- config relative is "" for non-floating windows
 
 		if is_floating then
-			if vim.api.nvim_get_current_buf() == args.data.buf and oil.get_cursor_entry() then
+			if vim.api.nvim_get_current_buf() == args.data.buf then
 				oil.open_preview({ vertical = true, split = 'botright' })
 			end
 		end
