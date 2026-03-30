@@ -2,18 +2,18 @@ local oil = require("oil")
 
 -- automatically open previewer
 vim.api.nvim_create_autocmd("User", {
-  pattern = "OilEnter",
-  callback = vim.schedule_wrap(function(args)
-    local win = vim.api.nvim_get_current_win()
-    local config = vim.api.nvim_win_get_config(win)
-    local is_floating = config.relative ~= "" -- config relative is "" for non-floating windows
+	pattern = "OilEnter",
+	callback = vim.schedule_wrap(function(args)
+		local win = vim.api.nvim_get_current_win()
+		local config = vim.api.nvim_win_get_config(win)
+		local is_floating = config.relative ~= "" -- config relative is "" for non-floating windows
 
-    if not is_floating then
-      if vim.api.nvim_get_current_buf() == args.data.buf and oil.get_cursor_entry() then
-        oil.open_preview({ vertical = true, split = 'botright' })
-      end
-    end
-  end),
+		if is_floating then
+			if vim.api.nvim_get_current_buf() == args.data.buf and oil.get_cursor_entry() then
+				oil.open_preview({ vertical = true, split = 'botright' })
+			end
+		end
+	end),
 })
 
 -- keymaps
