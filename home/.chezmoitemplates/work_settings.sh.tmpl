@@ -1,4 +1,8 @@
 {{ if .work -}}
+# GCLOUD
+export GOOGLE_CLOUD_PROJECT = "dde-ops-data-science-d001"
+export GOOGLE_CLOUD_LOCATION = "europe-west4"
+
 # Certs
 if [ -f "${HOME}/Certs/macOS-cacerts.pem" ]; then
     export SSL_CERT_FILE="${HOME}/Certs/macOS-cacerts.pem"
