@@ -71,7 +71,7 @@ return require('lualine').setup {
 		lualine_b = { 'branch', 'diff', 'diagnostics' },
 		lualine_c = { 'filename' },
 		lualine_x = { 'encoding', 'filetype', 'progress' },
-		lualine_y = { sidekick_status, lint_progress, 
+		lualine_y = { sidekick_status, lint_progress,
 			{
 				'lsp_status',
 				icon = '', -- f013
@@ -93,13 +93,8 @@ return require('lualine').setup {
 		lualine_y = {},
 		lualine_z = {}
 	},
-	tabline = { 
-		lualine_a = { 
-			{
-				'filename', path=1, 
-				file_status=true, 
-			} 
-		},
+	tabline = {
+		lualine_a = { { 'filename', path = 1, file_status = true } },
 		lualine_b = {},
 		lualine_c = {},
 		lualine_x = {},
