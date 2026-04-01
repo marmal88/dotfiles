@@ -9,7 +9,6 @@ vim.pack.add({
 	{ src = 'https://github.com/nvim-treesitter/nvim-treesitter',        version = 'main' },
 	{ src = 'https://github.com/nvim-lualine/lualine.nvim',              desc = 'Line manager' },
 	{ src = 'https://github.com/nvim-lua/plenary.nvim',                  desc = 'async' },
-	{ src = 'https://github.com/mbbill/undotree.git',                    desc = 'Undo tree' },
 	{ src = 'https://github.com/tpope/vim-surround',                     desc = 'Surround' },
 	{ src = 'https://github.com/iamcco/markdown-preview.nvim',           desc = 'Markdown Previewer' },
 	{ src = 'https://github.com/tmhedberg/SimpylFold',                   desc = 'Python folding' },

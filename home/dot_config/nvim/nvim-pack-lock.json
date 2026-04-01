@@ -157,10 +157,6 @@
       "rev": "994c13d",
       "src": "https://github.com/rachartier/tiny-inline-diagnostic.nvim"
     },
-    "undotree": {
-      "rev": "0f1c981",
-      "src": "https://github.com/mbbill/undotree.git"
-    },
     "vim-go": {
       "rev": "dc07b9082fecd47f8ebef5f2684758e570f66377",
       "src": "https://github.com/fatih/vim-go"
@@ -171,4 +167,3 @@
     }
   }
 }
-
