@@ -3,23 +3,24 @@
 
 -- Installed packages
 vim.pack.add({
+	-- Appearence
+	{ src = 'https://github.com/sphamba/smear-cursor.nvim',              desc = 'Cursor Animation' },
 	{ src = 'https://github.com/rebelot/kanagawa.nvim',                  desc = 'colorscheme' },
 	{ src = 'https://github.com/nvim-tree/nvim-web-devicons',            desc = 'icon pack' },
-	{ src = 'https://github.com/ibhagwan/fzf-lua',                       desc = 'Picker fzf' },
 	{ src = 'https://github.com/nvim-treesitter/nvim-treesitter',        version = 'main' },
-	{ src = 'https://github.com/nvim-lualine/lualine.nvim',              desc = 'Line manager' },
 	{ src = 'https://github.com/nvim-lua/plenary.nvim',                  desc = 'async' },
 	{ src = 'https://github.com/tpope/vim-surround',                     desc = 'Surround' },
+	-- Programming Language
 	{ src = 'https://github.com/iamcco/markdown-preview.nvim',           desc = 'Markdown Previewer' },
 	{ src = 'https://github.com/tmhedberg/SimpylFold',                   desc = 'Python folding' },
 	{ src = 'https://github.com/fatih/vim-go',                           desc = 'Go plugin' },
 	{ src = 'https://github.com/danymat/neogen',                         desc = 'Doc Strings' },
-	-- Appearence
-	{ src = 'https://github.com/sphamba/smear-cursor.nvim',              desc = 'Cursor Animation' },
 	-- Manage Marks
 	{ src = 'https://github.com/chentoast/marks.nvim',                   desc = 'Mark Signs' },
-	-- File Explorer
+	-- Utils
+	{ src = 'https://github.com/nvim-lualine/lualine.nvim',              desc = 'Line manager' },
 	{ src = 'https://github.com/stevearc/oil.nvim',                      desc = 'File Editor' },
+	{ src = 'https://github.com/ibhagwan/fzf-lua',                       desc = 'fzf' },
 	-- Language Related Plugins
 	{ src = 'https://github.com/neovim/nvim-lspconfig',                  desc = 'Lsp-server-configs' },
 	{ src = 'https://github.com/mason-org/mason.nvim',                   desc = 'Language Manager' },
