@@ -3,6 +3,8 @@
 {{ if and ( .dev_computer ) ( eq .osid "linux-debian" "linux-ubuntu" ) -}}
 if command -v apt-get > /dev/null 2>&1; then
     # We remove the 'echo' from inside the template range
+	add-apt-repository ppa:neovim-ppa/unstable
+	apt update
     apt_packages="{{ range .packages.apt }}{{ . }} {{ end }}"
 
     if [ -n "$apt_packages" ]; then
