@@ -15,22 +15,40 @@ vim.keymap.set({ "x" }, "<leader>av", function() sidekick_cli.send({ msg = "{sel
 vim.keymap.set({ "x", "n" }, "<leader>ap", function() sidekick_cli.prompt() end, { desc = "Sidekick Select Prompt" })
 
 -- NES suggestions
-vim.keymap.set({ "n" }, "<C-l>", function() sidekick_nes.apply() end, { desc = "Accept NES" })
+vim.keymap.set({ 'n', 'i' }, "<C-l>", function() sidekick_nes.apply() end, { desc = "Accept NES" })
 
 -- AI Models specifc keybindings
 vim.keymap.set({ "n" }, "<leader>ao", function() sidekick_cli.toggle({ name = "opencode", focus = true }) end,
-	{ desc = "Sidekick Toggle Opencode" })
+	{ desc = "Toggle Opencode" })
 vim.keymap.set({ "n" }, "<leader>ag", function() sidekick_cli.toggle({ name = "gemini", focus = true }) end,
-	{ desc = "Sidekick Toggle Gemini" })
-
--- Env var
-vim.env.GOOGLE_CLOUD_PROJECT = "dde-ops-data-science-d001"
-vim.env.GOOGLE_CLOUD_LOCATION = "europe-west4"
+	{ desc = "Toggle Gemini" })
+vim.keymap.set({ "n" }, "<leader>ac", function() sidekick_cli.toggle({ name = "claude", focus = true }) end,
+	{ desc = "Toggle Claude" })
+vim.keymap.set({ "n" }, "<leader>am", function() sidekick_cli.toggle({ name = "copilot", focus = true }) end,
+	{ desc = "Toggle Copilot" })
 
 return require('sidekick').setup({
 	nes = {
 		enabled = true,
 		debounce = 75,
+	},
+	tools = {
+		claude = {
+			env = {
+				NODE_EXTRA_CA_CERTS = '{{ .work.node_extra_ca_certs }}',
+				ANTHROPIC_MODEL = '{{ .work.anthropic_model }}',
+				ANTHROPIC_BASE_URL = '{{ .work.anthropic_base_url }}',
+				ANTHROPIC_AUTH_TOKEN = '{{ .work.anthropic_auth_token }}',
+				CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = 1,
+				NODE_TLS_REJECT_UNAUTHORIZED = 0
+			}
+		},
+		gemini = {
+			env = {
+				GOOGLE_CLOUD_PROJECT = "{{ .work.google_cloud_project }}",
+				GOOGLE_CLOUD_LOCATION = "{{ .work.google_cloud_location }}"
+			}
+		}
 	},
 	cli = {
 		prompts = {
@@ -47,7 +65,7 @@ return require('sidekick').setup({
 		win = {
 			layout = "right",
 			split = {
-				width = 0.4,
+				width = 0.5,
 				height = 1.0,
 			}
 		},
