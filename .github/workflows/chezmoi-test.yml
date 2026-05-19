@@ -1,0 +1,42 @@
+name: Chezmoi CI
+
+on: [workflow_dispatch, push, pull_request]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install chezmoi on Ubuntu
+        if: runner.os == 'Linux'
+        run: |
+          sudo snap install chezmoi --classic
+
+      - name: Install chezmoi on macOS
+        if: runner.os == 'macOS'
+        run: |
+          brew install chezmoi
+
+      - name: Verify chezmoi installation
+        run: chezmoi --version
+
+      - name: Initialize chezmoi
+        run: chezmoi init --apply --source ${{ github.workspace }}/home
+
+      - name: Verify .zshrc file
+        run: |
+          if [ "$(uname)" = "Linux" ]; then
+            test -f "$HOME/.zshrc"
+            grep -q "alias ll='ls -la'" "$HOME/.zshrc"
+          elif [ "$(uname)" = "Darwin" ]; then
+            test -f "$HOME/.zshrc"
+            grep -q "alias ll='ls -la'" "$HOME/.zshrc"
+          else
+            echo "Unsupported OS"
+            exit 1
+          fi
