@@ -32,10 +32,11 @@ return require('sidekick').setup({
 		enabled = true,
 		debounce = 75,
 	},
+	{{ if .is_work -}}
 	tools = {
 		claude = {
 			env = {
-				NODE_EXTRA_CA_CERTS = '{{ .work.node_extra_ca_certs }}',
+				NODE_EXTRA_CA_CERTS = '~/.certs/Dyson-Servers-CA-V2.pem',
 				ANTHROPIC_MODEL = '{{ .work.anthropic_model }}',
 				ANTHROPIC_BASE_URL = '{{ .work.anthropic_base_url }}',
 				ANTHROPIC_AUTH_TOKEN = '{{ .work.anthropic_auth_token }}',
@@ -50,6 +51,7 @@ return require('sidekick').setup({
 			}
 		}
 	},
+	{{- end }}
 	cli = {
 		prompts = {
 			diagnostics = "Can you help me fix the diagnostics in {file}?\n{diagnostics}",
