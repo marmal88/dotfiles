@@ -1,7 +1,7 @@
 {{ if .is_work -}}
 # GCLOUD
-export GOOGLE_CLOUD_PROJECT="{{ .work.google_cloud_project }}"
-export GOOGLE_CLOUD_LOCATION="{{ .work.google_cloud_location }}"
+export GOOGLE_CLOUD_PROJECT="{{ index .work "google_cloud_project" }}"
+export GOOGLE_CLOUD_LOCATION="{{ index .work "google_cloud_location" }}"
 
 # Certs
 if [ -f "${HOME}/Certs/macOS-cacerts.pem" ]; then

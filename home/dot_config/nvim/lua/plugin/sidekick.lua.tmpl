@@ -37,17 +37,17 @@ return require('sidekick').setup({
 		claude = {
 			env = {
 				NODE_EXTRA_CA_CERTS = '~/.certs/Dyson-Servers-CA-V2.pem',
-				ANTHROPIC_MODEL = '{{ .work.anthropic_model }}',
-				ANTHROPIC_BASE_URL = '{{ .work.anthropic_base_url }}',
-				ANTHROPIC_AUTH_TOKEN = '{{ .work.anthropic_auth_token }}',
+				ANTHROPIC_MODEL = '{{ index .work "anthropic_model" }}',
+				ANTHROPIC_BASE_URL = '{{ index .work "anthropic_base_url" }}',
+				ANTHROPIC_AUTH_TOKEN = '{{ index .work "anthropic_auth_token" }}',
 				CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = 1,
 				NODE_TLS_REJECT_UNAUTHORIZED = 0
 			}
 		},
 		gemini = {
 			env = {
-				GOOGLE_CLOUD_PROJECT = "{{ .work.google_cloud_project }}",
-				GOOGLE_CLOUD_LOCATION = "{{ .work.google_cloud_location }}"
+				GOOGLE_CLOUD_PROJECT = "{{ index .work "google_cloud_project" }}",
+				GOOGLE_CLOUD_LOCATION = "{{ index .work "google_cloud_location" }}"
 			}
 		}
 	},
