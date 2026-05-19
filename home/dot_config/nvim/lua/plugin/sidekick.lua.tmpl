@@ -36,7 +36,7 @@ return require('sidekick').setup({
 	tools = {
 		claude = {
 			env = {
-				NODE_EXTRA_CA_CERTS = '~/.certs/Dyson-Servers-CA-V2.pem',
+				NODE_EXTRA_CA_CERTS = '{{ index .work "node_extra_ca_certs" }}',
 				ANTHROPIC_MODEL = '{{ index .work "anthropic_model" }}',
 				ANTHROPIC_BASE_URL = '{{ index .work "anthropic_base_url" }}',
 				ANTHROPIC_AUTH_TOKEN = '{{ index .work "anthropic_auth_token" }}',
