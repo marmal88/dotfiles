@@ -23,6 +23,8 @@ vim.keymap.set('n', '<leader>h', '<CMD>FzfLua helptags<CR>', { desc = 'Fzf-lua h
 
 -- Plugins shortkeys
 vim.keymap.set('n', '<leader>mp', '<CMD>MarkdownPreviewToggle<CR>', { desc = 'Markdown Preview Toggle' })
+vim.cmd("packadd nvim.undotree")
+vim.keymap.set('n', '<leader>u', require('undotree').open, { desc = 'Undotree Toggle' })
 vim.keymap.set("n", "<Leader>cc", "<CMD>Neogen func<CR>", { noremap = true, silent = true, desc = 'Neogen' })
 
 -- Keybindings (Others)
