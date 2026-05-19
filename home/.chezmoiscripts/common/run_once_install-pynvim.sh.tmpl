@@ -2,5 +2,7 @@
 
 {{ if and (.dev_computer) }}
 export PATH="$HOME/.local/bin:$PATH"
-uv tool install --upgrade pynvim
+if command -v uv >/dev/null 2>&1; then
+    uv tool install --upgrade pynvim
+fi
 {{- end -}}
