@@ -15,7 +15,7 @@ jobs:
       - name: Install chezmoi on Ubuntu
         if: runner.os == 'Linux'
         run: |
-          sudo snap install chezmoi --classic
+          sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/local/bin
 
       - name: Install chezmoi on macOS
         if: runner.os == 'macOS'
