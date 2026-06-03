@@ -47,6 +47,6 @@ require('mini.notify').setup({
 	lsp_progress = {
 		enable = true,
 		level = 'INFO',
-		duration_last = 2000,
+		duration_last = 100000,
 	}
 })

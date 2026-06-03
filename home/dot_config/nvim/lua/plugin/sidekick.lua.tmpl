@@ -2,6 +2,14 @@
 local sidekick_cli = require('sidekick.cli')
 local sidekick_nes = require('sidekick.nes')
 
+-- Close Sidekick buffer on 'q' and ignore Esc
+vim.api.nvim_create_autocmd("TermOpen", {
+	pattern = "term://*",
+	callback = function()
+		vim.api.nvim_buf_set_keymap(0, "t", "<Esc><Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
+	end,
+})
+
 -- Set keymaps
 vim.keymap.set({ "n", "t", "i", "x" }, "<c-.>", function() sidekick_cli.toggle() end,
 	{ desc = "Sidekick Toggle" })
