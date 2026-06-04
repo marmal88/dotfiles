@@ -3,18 +3,11 @@
 export GOOGLE_CLOUD_PROJECT="{{ index .work "google_cloud_project" }}"
 export GOOGLE_CLOUD_LOCATION="{{ index .work "google_cloud_location" }}"
 
-# Certs
-if [ -f "${HOME}/Certs/macOS-cacerts.pem" ]; then
-    export SSL_CERT_FILE="${HOME}/Certs/macOS-cacerts.pem"
-    export REQUESTS_CA_BUNDLE="${HOME}/Certs/macOS-cacerts.pem"
-    export CURL_CA_BUNDLE="${HOME}/Certs/macOS-cacerts.pem"
-fi
-
 # 2. PySpark / Java
 {{ if eq .chezmoi.os "darwin" -}}
 # macOS Java Logic
 if [ -x /usr/libexec/java_home ]; then
-    export JAVA_HOME=$(/usr/libexec/java_home -v 17) 
+    export JAVA_HOME=$(/usr/libexec/java_home -v 17)
     export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 fi
 
