@@ -1,6 +1,7 @@
 --
 local sidekick_cli = require('sidekick.cli')
 local sidekick_nes = require('sidekick.nes')
+local notify = require('mini.notify')
 
 -- Close Sidekick buffer on 'q' and ignore Esc
 vim.api.nvim_create_autocmd("TermOpen", {
@@ -23,22 +24,36 @@ vim.keymap.set({ "x" }, "<leader>av", function() sidekick_cli.send({ msg = "{sel
 vim.keymap.set({ "x", "n" }, "<leader>ap", function() sidekick_cli.prompt() end, { desc = "Sidekick Select Prompt" })
 
 -- NES suggestions
+vim.keymap.set({ 'n' }, "<leader>nt", function()
+	sidekick_nes.toggle()
+	vim.schedule(function()
+		notify.add(sidekick_nes.enabled and 'NES Enabled' or 'NES Disabled', 'INFO')
+	end)
+end, { desc = "Toggle NES" })
+vim.keymap.set({ 'n' }, "<leader>np", function()
+	notify.add('Updating NES suggestions...', 'INFO')
+	sidekick_nes.update()
+end, { desc = "Update NES" })
 vim.keymap.set({ 'n', 'i' }, "<C-l>", function() sidekick_nes.apply() end, { desc = "Accept NES" })
 
 -- AI Models specifc keybindings
-vim.keymap.set({ "n" }, "<leader>ao", function() sidekick_cli.toggle({ name = "opencode", focus = true }) end,
-	{ desc = "Toggle Opencode" })
-vim.keymap.set({ "n" }, "<leader>ag", function() sidekick_cli.toggle({ name = "gemini", focus = true }) end,
-	{ desc = "Toggle Gemini" })
-vim.keymap.set({ "n" }, "<leader>ac", function() sidekick_cli.toggle({ name = "claude", focus = true }) end,
-	{ desc = "Toggle Claude" })
-vim.keymap.set({ "n" }, "<leader>am", function() sidekick_cli.toggle({ name = "copilot", focus = true }) end,
-	{ desc = "Toggle Copilot" })
+vim.keymap.set({ "n" }, "<leader>ao", function() sidekick_cli.toggle({ name = "opencode", focus = true }) end)
+vim.keymap.set({ "n" }, "<leader>ag", function() sidekick_cli.toggle({ name = "gemini", focus = true }) end)
+vim.keymap.set({ "n" }, "<leader>ac", function() sidekick_cli.toggle({ name = "claude", focus = true }) end)
+vim.keymap.set({ "n" }, "<leader>am", function() sidekick_cli.toggle({ name = "copilot", focus = true }) end)
+vim.keymap.set({ "n" }, "<leader>ap", function() sidekick_cli.toggle({ name = "pi", focus = true }) end)
 
 return require('sidekick').setup({
+	debug = true,
 	nes = {
 		enabled = true,
 		debounce = 75,
+	},
+	copilot = {
+		status = {
+			enabled = true,
+			level = vim.log.level.WARNa,
+		}
 	},
 	{{ if .is_work -}}
 	tools = {
